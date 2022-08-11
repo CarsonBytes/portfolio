@@ -94,7 +94,7 @@
 							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
 						</div>
 			        </div><!--//dark-mode-switch-->
-                    <a class="btn btn-cta-primary" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20make%20an%20inquiry." target="_blank"><i class="fas fa-paper-plane"></i> Contact
+                    <a class="btn btn-cta-primary" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20make%20an%20inquiry." target="_blank"><i class="fa-brands fa-whatsapp"></i><!-- <i class="fas fa-paper-plane"></i> --> Contact
                         Me</a>
                 </div>
                 <!--//col-->
@@ -118,10 +118,10 @@
                                 development of enterprise applications. The applications involved include
                                 E-Learning, ERP, HRM, CRM, Chatbot, E-Commerce, etc.</p>
                             <p>Having worked and lived in Germany and Japan for 10+ years, I am accustomed to work
-                                as a team, and place a high value on code practice, automated testing, code review,
+                                as a team, and place a high value on coding standards, automated testing, code review,
                                 as well as collaborative documentation.</p>
-                            <p>In March 2021, I formed a team with some fellows called <b>"smartBits"</b>. We hope
-                                to deliver the best possible solutions to our clients. After final deliverable, we continue to provide maintenance support for content and catalog updates, as well as bugfix.</p>
+                            <p>In March 2021, I formed a team with some fellows called <b>"smartBits"</b>. My team and I strive
+                                to deliver the best possible solutions to our clients. After delivering final product, we continue to provide maintenance support for content and catalog updates, as well as bugfix.</p>
                         </div>
                         <!--//content-->
                     </div>
@@ -137,33 +137,33 @@
                             <div class="item featured text-center">
 
                                 <div class="featured-image has-ribbon">
-                                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
-                                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" />
-                                    </a>
+                                    <!-- <a href="#" target="_blank"> -->
+                                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/hot_project.jpg" alt="project name" />
+                                    <!-- </a> -->
                                     <div class="ribbon">
-                                        <div class="text">New</div>
+                                        <div class="text">Hot</div>
                                     </div>
                                 </div>
 
-                                <h3 class="title mb-3"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">smartBits ERP - The Ultimate Solution for Enterprise Resource Planning</a>
+                                <h3 class="title mb-3" style="color:white;"><!-- <a href="#" target="_blank"> -->smartBits ERP - The Ultimate Solution for Enterprise Resource Planning<!-- </a> -->
                                 </h3>
 
                                 <div class="desc text-start">
-                                    <p>smartBits ERP is the most competent utility tool to help you manage various aspects like Accounting, HRM, CRM, POS in 1 platform with the utmost ease. We provide further customization to tailor make for specific business needs.</p>
+                                    <p>smartBits ERP is the most competent utility tool to help you manage various aspects like Accounting, HRM, CRM, POS in 1 platform with the utmost ease. We provide further customization to tailor-make for specific business needs.</p>
                                 </div>
                                 <!--//desc-->
-                                <a class="btn btn-cta-secondary" target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20ask%20for%20a%20demo%20on%20smartBits%20ERP."><i class="fa-solid fa-circle-question"></i> Ask for a Demo</a>
+                                <a class="btn btn-cta-secondary" target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20ask%20for%20a%20demo%20on%20smartBits%20ERP."><i class="fa-brands fa-whatsapp"></i> Ask for a Demo</a>
                             </div>
                             <!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-12" href="#" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-1.png" alt="project name" />
+                                <a class="col-md-4 col-12 moodle_screenshots" href="#" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/moodle/landing_blurred_thumb.jpg" alt="e-learning" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="#" target="_blank">smartBits Learning - E-Learning Learning Management System</a></h3>
-                                    <p class="mb-2">Built upon Moodle system, SmartBits Learning is a fully customizable learning management system for teachers and students. Plugin and Theme customization is supported.</p>
-                                    <p><a id="dynamic-gallery-demo" class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
+                                    <h3 class="title"><a href="#" target="_blank" class="moodle_screenshots">smartBits Learning - E-Learning Learning Management System</a></h3>
+                                    <p class="mb-2">Being adopted by HKSAR government, SmartBits Learning is a fully customizable learning management system for teachers and students. Plugin and Theme customization is supported.</p>
+                                    <p><a class="more-link moodle_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
                                     </p>
                                 </div>
                                 <!--//desc-->
@@ -171,13 +171,13 @@
                             <!--//item-->
 
                             <div class="item row">
-                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-2.png" alt="project name" />
+                                <a class="col-md-4 col-12 e-commerce_screenshots" href="#" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/e-commerce/ahkns_home_blurred.jpg" alt="E-commerce site" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank">E-Commerce Sites for Online Business</a></h3>
+                                    <h3 class="title"><a href="#" class="e-commerce_screenshots" target="_blank">E-Commerce Sites for Online Business</a></h3>
                                     <p class="mb-2">My team and I build and customize E-commerce platforms for specific business needs. Integration of leading shipping methods and payment methods are supported.</p>
-                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
+                                    <p><a class="more-link e-commerce_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
                                     </p>
                                 </div>
                                 <!--//desc-->
@@ -185,20 +185,20 @@
                             <!--//item-->
 
                             <div class="item row">
-                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-4.png" alt="project name" />
+                                <a class="col-md-4 col-12 pmp_screenshots" href="#" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/pmp/main_manager_blurred.png" alt="Property Management Platform" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Internal Property Management (IPM) Platform</a></h3>
-                                    <p class="mb-2">being used by a current property management enterprise, this IPM platform provides HRM and task management between housing estates.</p>
-                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
+                                    <h3 class="title"><a href="#" class="pmp_screenshots" target="_blank">Internal Property Management Platform</a></h3>
+                                    <p class="mb-2">Being adopted by a current property management enterprise, this internal property management platform provides HRM and task management among the housing estates. Customization could be provided for potential customers.</p>
+                                    <p><a class="more-link pmp_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
                                     </p>
                                 </div>
                                 <!--//desc-->
                             </div>
                             <!--//item-->
 
-                            <a class="btn btn-cta-secondary float-end" target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20ask%20for%20a%20demo."><i class="fa-solid fa-circle-question"></i> Ask for a Demo</a>
+                            <a class="btn btn-cta-secondary float-end" target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20ask%20for%20a%20demo."><i class="fa-brands fa-whatsapp"></i> Ask for a Demo</a>
                             <div class="clearfix"></div>
 
                         </div>
@@ -213,25 +213,25 @@
                         <h2 class="heading">Other Projects</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="#" target="_blank">CMS development</a>
+                                <h3 class="title"><a href="#" class="cms_screenshots" target="_blank">UI and CMS development</a>
                                 </h3>
-                                <p class="summary">I got involved in various CMS platforms, such as Joomla!, Wordpress, and TYPO3. </p>
-                                <p>Apart from the open source CMS platforms, I build and develop CMS for specific business needs. Plugin and Theme customization is supported.</p>
+                                <p class="summary">I am familiar with various CMS platforms, such as Joomla!, Wordpress, and TYPO3. Plugin and Theme customization is supported.</p>
+                                <p>Apart from open source CMS platforms, my team and I could offer dedicated CMS based on specific business needs.</p>
                                 <p>My work includes:
                                 <ul>
                                     <li>build UI layout to be alike Amazon shopping site,</li>
                                     <li>bulk product import via CSV,</li>
                                     <li>build product thumbnail magnifier lens,</li>
-                                    <li>build data-table organization,</li>
+                                    <li>organize and tweak data display on table,</li>
                                     <li>build ebook preview simulation.</li>
                                 </ul>
                                 </p>
-                                <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a></p>
+                                <p><a class="more-link cms_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a></p>
                                 <p><a class="more-link" href="https://github.com/carsonng/sensai" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
                             </div>
                             <!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="#" target="_blank">Python + Selenium - Web Scraping Automation Tool</a></h3>
+                                <h3 class="title"><a href="https://github.com/carsonng/python_scraping" target="_blank">Python + Selenium - Web Scraping Automation Tool <i class="fas fa-external-link-alt"></i></a></h3>
                                 <p class="summary">Scraping website content with Python and headless Selenium ChromeDriver</p>
                                 <p>
                                     In the course of development, I came across some challenges, such as ajax pagination and image loading, random waiting time and redirection to Cloudflare page. With patient observation and proper refinements on specific functions, the problems could be solved effectively.
@@ -246,7 +246,7 @@
                             </div>
                             <!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="#" target="_blank">Internal Visa/MasterCard charging system</a>
+                                <h3 class="title"><a href="https://github.com/carsonng/booking_stripe_charge" target="_blank">Internal Visa/MasterCard charging system <i class="fas fa-external-link-alt"></i></a>
                                 </h3>
                                 <p class="summary">Direct credit/debit card charging system via Stripe API.</p>
                                 <p>It was forked from https://github.com/stripe/stripe-php.
@@ -262,7 +262,7 @@
                             </div>
                             <!--//item-->
 
-                            <a class="btn btn-cta-secondary float-end" target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20ask%20for%20a%20demo."><i class="fa-solid fa-circle-question"></i> Ask for a Demo</a>
+                            <a class="btn btn-cta-secondary float-end" target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20ask%20for%20a%20demo."><i class="fa-brands fa-whatsapp"></i> Ask for a Demo</a>
                             <div class="clearfix"></div>
                             <!-- <a class="btn btn-cta-secondary" href="#">More on GitHub <i
                                     class="fas fa-chevron-right pt-1"></i></a> -->
