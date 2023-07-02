@@ -67,7 +67,7 @@
                 <div class="col">
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
                     <div class="profile-content">
-                        <h1 class="name">Chi Tsun Ng (Carson)
+                        <h1 class="name">Carson Ng
                             <a href="https://github.com/carsonng" data-bs-toggle="tooltip" title="My GitHub"><i class="fab fa-github"></i></a>
                         </h1>
                         <h2 class="desc">Co-Founder & Lead Developer @ <b>smartBits</b>
@@ -82,6 +82,8 @@
                         <div class="icons">
                             <a target="_blank" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="profile for Capitaine at Stack Overflow, Q&amp;A for professional and enthusiast programmers" data-bs-toggle="tooltip" title="My Stack Overflow"></a>
                             <a target="_blank" href="https://www.zend-zce.com/en/yellow-pages/ZEND020400"><img data-src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" data-loaded="true" data-fully-loaded="true"></a>
+                            <img data-src="assets/images/tvp-logo-en.webp" height="58" alt="Supplier For Technology Voucher Programme" data-bs-toggle="tooltip" title="Supplier For Technology Voucher Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/tvp-logo-en.webp" data-loaded="true" data-fully-loaded="true">
+                            <!-- <img data-src="assets/images/ccmf.PNG" height="58" alt="Incubatee For Cyberport Incubation Programme" data-bs-toggle="tooltip" title="Incubatee For Cyberport Incubation Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/ccmf.PNG" data-loaded="true" data-fully-loaded="true"> -->
                         </div>
                     </div>
                     <!--//profile-->
@@ -112,16 +114,10 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I have been in web application industry for 15+ years. Currently I work with several tech
-                                companies and offer professional services such as team management, project consultation,
-                                and
-                                development of enterprise applications. The applications involved include
-                                E-Learning, ERP, HRM, CRM, Chatbot, E-Commerce, etc.</p>
-                            <p>Having worked and lived in Germany and Japan for 10+ years, I am accustomed to work
-                                as a team, and place a high value on coding standards, automated testing, code review,
-                                as well as collaborative documentation.</p>
-                            <p>In March 2021, I formed a team with some fellows called <b>"smartBits"</b>. My team and I strive
-                                to deliver the best possible solutions to our clients. After delivering final product, we continue to provide maintenance support for content and catalog updates, as well as bugfix.</p>
+                            <p>I have been in the web application industry for over 15 years. Currently, I work with several tech companies and offer professional services such as team management, project consultation, and development of enterprise applications. The areas I specialize in include app development, RPA, e-learning, ERP, HRM, CRM, chatbot, e-commerce, and more.</p>
+                            <p>Having worked and lived in Germany and Japan for over 10 years, I am accustomed to working as part of a team and place a high value on coding standards, code review, as well as collaborative documentation.</p>
+                            <p>In March 2021, I formed a team with some colleagues called "smartBits." Together, our team strives to deliver the best possible solutions to our clients. Even after delivering the final product, we continue to provide maintenance support for content and catalog updates, as well as bug fixes.</p>
+                            <p>Overall, my extensive experience in the web and mobile application industry, combined with my international background and commitment to quality, enables me to provide exceptional services to my clients.</p>
                         </div>
                         <!--//content-->
                     </div>
@@ -138,7 +134,7 @@
 
                                 <div class="featured-image has-ribbon">
                                     <!-- <a href="#" target="_blank"> -->
-                                        <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/hot_project.jpg" alt="project name" />
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/hot_project.jpg" alt="project name" />
                                     <!-- </a> -->
                                     <div class="ribbon">
                                         <div class="text">Hot</div>
@@ -149,7 +145,7 @@
                                 </h3>
 
                                 <div class="desc text-start">
-                                    <p>smartBits ERP is the most competent utility tool to help you manage various aspects like Accounting, HRM, CRM, POS in 1 platform with the utmost ease. We provide further customization to tailor-make for specific business needs.</p>
+                                    <p>smartBits ERP is the most competent utility tool to help you manage various aspects such as accounting, HRM, CRM, and POS in one platform with utmost ease. We also provide further customization to tailor-make it for specific business needs.</p>
                                 </div>
                                 <!--//desc-->
                                 <a class="btn btn-cta-secondary" target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20ask%20for%20a%20demo%20on%20smartBits%20ERP."><i class="fa-brands fa-whatsapp"></i> Ask for a Demo</a>
@@ -162,7 +158,7 @@
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="#" target="_blank" class="moodle_screenshots">smartBits Learning - E-Learning Learning Management System</a></h3>
-                                    <p class="mb-2">Being adopted by HKSAR government, SmartBits Learning is a fully customizable learning management system for teachers and students. Plugin and Theme customization is supported.</p>
+                                    <p class="mb-2">SmartBits Learning is a fully customizable learning management system for teachers and students, which has been adopted by the HKSAR government. We offer plugin and theme customization to meet specific requirements.</p>
                                     <p><a class="more-link moodle_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
                                     </p>
                                 </div>
@@ -176,7 +172,7 @@
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="#" class="e-commerce_screenshots" target="_blank">E-Commerce Sites for Online Business</a></h3>
-                                    <p class="mb-2">My team and I build and customize E-commerce platforms for specific business needs. Integration of leading shipping methods and payment methods are supported.</p>
+                                    <p class="mb-2">Our team specializes in building and customizing E-commerce platforms tailored to the unique needs of businesses. We support the integration of leading shipping methods and payment methods to ensure smooth operations.</p>
                                     <p><a class="more-link e-commerce_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
                                     </p>
                                 </div>
@@ -190,7 +186,7 @@
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="#" class="pmp_screenshots" target="_blank">Internal Property Management Platform</a></h3>
-                                    <p class="mb-2">Being adopted by a current property management enterprise, this internal property management platform provides HRM and task management among the housing estates. Customization could be provided for potential customers.</p>
+                                    <p class="mb-2">Our internal property management platform has been adopted by a current property management enterprise. It provides HRM and task management functionalities for housing estates. We offer customization options for potential customers to meet their specific needs.</p>
                                     <p><a class="more-link pmp_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a>
                                     </p>
                                 </div>
@@ -213,34 +209,34 @@
                         <h2 class="heading">Other Projects</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="#" class="cms_screenshots" target="_blank">UI and CMS development</a>
+                                <h3 class="title"><a href="#" class="cms_screenshots" target="_blank">UI and CMS Development</a>
                                 </h3>
-                                <p class="summary">I am familiar with various CMS platforms, such as Joomla!, Wordpress, and TYPO3. Plugin and Theme customization is supported.</p>
-                                <p>Apart from open source CMS platforms, my team and I could offer dedicated CMS based on specific business needs.</p>
-                                <p>My work includes:
+                                <p class="summary">I am experienced in working with major CMS and e-commerce platforms, such as Joomla!, WordPress, and Magento. My services include plugin and theme customization for these platforms.</p>
+                                <p>In addition to open-source CMS platforms, my team and I also specialize in providing dedicated CMS solutions that are tailored to meet specific business needs.</p>
+                                <p>Here are some examples of the work we have done:
                                 <ul>
-                                    <li>build UI layout to be alike Amazon shopping site,</li>
-                                    <li>bulk product import via CSV,</li>
-                                    <li>build product thumbnail magnifier lens,</li>
-                                    <li>organize and tweak data display on table,</li>
-                                    <li>build ebook preview simulation.</li>
+                                    <li>We have built a UI layout that closely resembles the Amazon shopping site.</li>
+                                    <li>We have successfully implemented bulk product import functionality through CSV files.</li>
+                                    <li>We have developed a magnifier lens feature for product thumbnails on the product view page.</li>
+                                    <li>We have organized and optimized data display on tables for improved user experience.</li>
+                                    <li>We have created an ebook preview simulation to enhance user engagement.</li>
                                 </ul>
                                 </p>
+                                <p>With my expertise in UI and CMS development, I am dedicated to helping you create visually appealing and user-friendly websites or applications that are customized to meet your specific requirements.</p>
                                 <p><a class="more-link cms_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a></p>
                                 <p><a class="more-link" href="https://github.com/carsonng/sensai" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
                             </div>
                             <!--//item-->
                             <div class="item">
                                 <h3 class="title"><a href="https://github.com/carsonng/python_scraping" target="_blank">Python + Selenium - Web Scraping Automation Tool <i class="fas fa-external-link-alt"></i></a></h3>
-                                <p class="summary">Scraping website content with Python and headless Selenium ChromeDriver</p>
+                                <p class="summary">I have developed a web scraping automation tool using Python and headless Selenium ChromeDriver. This tool allows for efficient scraping of website content.</p>
+                                <p>During the development process, I encountered various challenges, including handling ajax pagination, image loading, random waiting time, and dealing with redirection to Cloudflare pages. Through patient observation and careful refinement of specific functions, I was able to effectively overcome these challenges.</p>
+                                <p>However, it is important to note that there are certain cases where scraping may not be feasible. For example, when a captcha is required, or when there are limitations on the number of pages or images that can be accessed with a registered user account.</p>
                                 <p>
-                                    In the course of development, I came across some challenges, such as ajax pagination and image loading, random waiting time and redirection to Cloudflare page. With patient observation and proper refinements on specific functions, the problems could be solved effectively.
+                                    The scraped website content is stored in both JSON and image formats. You can refer to the "json" folder for examples of the stored data.
                                 </p>
                                 <p>
-                                    There are also cases that scraping is not quite feasible, such as when the captcha is needed, or there are limitation to the number of pages to view or the number of images to download for each registered user account.
-                                </p>
-                                <p>
-                                    The scraped website content would be stored in JSON format as well as image format. Please check the folder json for reference.
+                                    With this Python + Selenium web scraping automation tool, I aim to provide a reliable solution for extracting website content efficiently and effectively.
                                 </p>
                                 <p><a class="more-link" href="https://github.com/carsonng/python_scraping" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
                             </div>
@@ -248,15 +244,21 @@
                             <div class="item">
                                 <h3 class="title"><a href="https://github.com/carsonng/booking_stripe_charge" target="_blank">Internal Visa/MasterCard charging system <i class="fas fa-external-link-alt"></i></a>
                                 </h3>
-                                <p class="summary">Direct credit/debit card charging system via Stripe API.</p>
-                                <p>It was forked from https://github.com/stripe/stripe-php.
-                                <p>My work includes:
+                                <p class="summary">I have developed an internal charging system that allows for direct credit/debit card charging via the Stripe API. This system is built on top of the existing Stripe PHP library, which was forked from https://github.com/stripe/stripe-php.</p>
+
+                                <p>The main features of this system include:
                                 <ul>
-                                    <li>build UI that enables merchant to create customers,</li>
-                                    <li>charge customers by their credit card details,</li>
-                                    <li>switch between different Stripe live or test account(s),</li>
-                                    <li>log the charge history.</li>
+                                    <li>User Interface (UI): I have built a user-friendly UI that enables merchants to easily create customers within the system.
+                                    </li>
+                                    <li>Credit Card Charging: Merchants can charge customers by inputting their credit card details directly into the system. This allows for seamless and secure transactions.
+                                    </li>
+                                    <li>Account Switching: The system allows for easy switching between different Stripe live or test accounts. This flexibility ensures that merchants can manage their transactions effectively.
+                                    </li>
+                                    <li>Charge History Logging: I have implemented a logging feature that records the charge history. This allows merchants to keep track of all transactions made through the system.
+                                    </li>
                                 </ul>
+                                </p>
+                                <p>With this internal Visa/MasterCard charging system, merchants can streamline their payment processes and provide a seamless experience for their customers.
                                 </p>
                                 <p><a class="more-link" href="https://github.com/carsonng/booking_stripe_charge" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
                             </div>
@@ -322,8 +324,7 @@
                         <h2 class="heading">Skills</h2>
                         <div class="content">
                             <p class="intro">
-                                My team and I specialize in Business Management Software (ERP, CRM, HRM, POS,
-                                CMS), E-learning, and E-Commerce. We understand various languages:</p>
+                                We understand various languages, including:</p>
                             <div class="skillset">
 
                                 <div class="item">
