@@ -37,7 +37,7 @@ rss.render(); */
 
 /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
 //new GitHubCalendar("#github-graph", "IonicaBizau", { responsive: true });
-new GitHubCalendar("#github-graph", "carsonng", { responsive: true, tooltips: true, cache: 10 });
+//new GitHubCalendar("#github-graph", "carsonng", { responsive: true, tooltips: true, cache: 10 });
 
 
 /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */

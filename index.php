@@ -18,16 +18,23 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
 
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-
+    <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <?php /*
     <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" /> -->
     <!-- github activity css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css"> -->
 
     <!-- lightgallery css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css">
+
+*/ ?>
+    <!-- elastic grid -->
+    <!-- <link rel="stylesheet" type="text/css" href="jquery-elastic-grid-master/css/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="jquery-elastic-grid-master/css/elastic_grid.min.css" />
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
@@ -70,7 +77,7 @@
                         <h1 class="name">Carson Ng
                             <a href="https://github.com/carsonng" data-bs-toggle="tooltip" title="My GitHub"><i class="fab fa-github"></i></a>
                         </h1>
-                        <h2 class="desc">Co-Founder & Lead Developer @ <b>smartBits</b>
+                        <h2 class="desc">Co-Founder & Lead Developer @ <b>HKIT.Supply</b>
                         </h2>
                         <!-- <ul class="social list-inline">
                             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -80,7 +87,8 @@
 		                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>      
                         </ul> -->
                         <div class="icons">
-                            <a target="_blank" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="profile for Capitaine at Stack Overflow, Q&amp;A for professional and enthusiast programmers" data-bs-toggle="tooltip" title="My Stack Overflow"></a>
+                            <a target="_blank" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
+                            <a target="_blank" href="https://github.com/carsonng"><img src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
                             <a target="_blank" href="https://www.zend-zce.com/en/yellow-pages/ZEND020400"><img data-src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" data-loaded="true" data-fully-loaded="true"></a>
                             <img data-src="assets/images/tvp-logo-en.webp" height="58" alt="Supplier For Technology Voucher Programme" data-bs-toggle="tooltip" title="Supplier For Technology Voucher Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/tvp-logo-en.webp" data-loaded="true" data-fully-loaded="true">
                             <img data-src="assets/images/shopify-partner.jpg" height="58" alt="Shopify Partner" data-bs-toggle="tooltip" title="Shopify Partner" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/shopify-partner.jpg" data-loaded="true" data-fully-loaded="true">
@@ -115,10 +123,13 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I have been in the web application industry for over 15 years. Currently, I work with several tech companies and offer professional services such as team management, project consultation, and development of enterprise applications. The areas I specialize in include app development, RPA, e-learning, ERP, HRM, CRM, chatbot, e-commerce, and more.</p>
-                            <p>Having worked and lived in Germany and Japan for over 10 years, I am accustomed to working as part of a team and place a high value on coding standards, code review, as well as collaborative documentation.</p>
-                            <p>In March 2021, I formed a team with some colleagues called "smartBits." Together, our team strives to deliver the best possible solutions to our clients. Even after delivering the final product, we continue to provide maintenance support for content and catalog updates, as well as bug fixes.</p>
-                            <p>Overall, my extensive experience in the web and mobile application industry, combined with my international background and commitment to quality, enables me to provide exceptional services to my clients.</p>
+                            <p>With over 15 years of experience in the web application industry, I specialize in web & app development, ERP, E-commerce, and more. Currently based in Hong Kong, I offer professional services such as team management, project consultation, and enterprise application development to multiple tech companies.</p>
+
+                            <p><a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();" data-bs-target="#collapseExample" href="#">More...</a></p>
+                            <div class="collapse" id="collapseExample">
+                                <p>During my time in Germany and Japan from 2009 to 2019, I excelled in collaborative team environments, emphasizing coding standards, code review, and collaborative documentation.</p>
+                                <p>In response to the challenges of the COVID-19 pandemic, I transitioned to self-employment, delivering exceptional results while fostering positive relationships with clients and prospective employers. This experience has honed my adaptability and ability to thrive in dynamic environments.</p>
+                            </div>
                         </div>
                         <!--//content-->
                     </div>
@@ -126,6 +137,15 @@
                 </section>
                 <!--//section-->
 
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Projects</h2>
+                        <div class="content">
+                            <div id="elastic_grid_demo"></div>
+                        </div>
+                    </div>
+                </section>
+                <?php /*
                 <section class="latest section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
@@ -285,9 +305,11 @@
                                 Calendar</a> widget. -->
                         <a href="https://github.com/carsonng" target="_blank">https://github.com/carsonng</a>
 
-                        <div id="github-graph" class="github-graph">
 
-                        </div>
+                        <!-- Prepare a container for your calendar. -->
+                        <!-- <div class="calendar">
+                            Loading the data just for you.
+                        </div> -->
                         <!--//github-graph-->
 
                         <!-- <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.    -->
@@ -300,6 +322,7 @@
                     <!--//secton-inner-->
                 </section>
                 <!--//section-->
+                */ ?>
             </div>
             <!--//primary-->
             <div class="secondary col-lg-4 col-12">
@@ -337,11 +360,10 @@
                                 </div>
                                 <!--//item-->
 
-
                                 <div class="item">
-                                    <h3 class="level-title">Node.js & React<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="96"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="94"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
@@ -357,28 +379,28 @@
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">Node.js & React<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="96"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="90"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Flutter<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <h3 class="level-title">React Native<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="96"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Python &amp; Selenium<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <h3 class="level-title">Python &amp; Selenium<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Good</span></h3>
 
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="96"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
@@ -476,18 +498,333 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
     <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <?php /*<!-- github calendar plugin -->
+    <!-- <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    <script>
+        GitHubCalendar(".calendar", "carsonng");
+    </script> -->
     <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script> -->
 
     <!-- lightgallery plugins -->
     <script type="text/javascript" src="assets/plugins/lightgallery/lightgallery.umd.car.js"></script>
     <script type="text/javascript" src="assets/plugins/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+*/ ?>
+    <!-- elastic grid -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery-elastic-grid-master/js/modernizr.custom.js"></script>
+    <script src="jquery-elastic-grid-master/js/classie.js"></script>
+    <script type="text/javascript" src="jquery-elastic-grid-master/js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="jquery-elastic-grid-master/js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="jquery-elastic-grid-master/js/elastic_grid.js"></script>
+
 
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#elastic_grid_demo").elastic_grid({
+                'showAllText': 'All',
+                'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 500,
+                'items': [{
+                        'title': 'Azuki bean',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/1.jpg', 'jquery-elastic-grid-master/images/small/2.jpg', 'jquery-elastic-grid-master/images/small/3.jpg', 'jquery-elastic-grid-master/images/small/10.jpg', 'jquery-elastic-grid-master/images/small/11.jpg'],
+                        'large': ['https://youtu.be/-6Xl9tBWt54', 'jquery-elastic-grid-master/images/large/2.jpg', 'jquery-elastic-grid-master/images/large/3.jpg', 'jquery-elastic-grid-master/images/large/10.jpg', 'jquery-elastic-grid-master/images/large/11.jpg'],
+                        'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': false
+                            }
+                        ],
+                        'tags': ['Self Portrait']
+                    },
+                    {
+                        'title': 'Swiss chard pumpkin',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/4.jpg', 'jquery-elastic-grid-master/images/small/5.jpg', 'jquery-elastic-grid-master/images/small/6.jpg', 'jquery-elastic-grid-master/images/small/7.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/4.jpg', 'jquery-elastic-grid-master/images/large/5.jpg', 'jquery-elastic-grid-master/images/large/6.jpg', 'jquery-elastic-grid-master/images/large/7.jpg'],
+                        'img_title': ['jquery elastic grid 6 ', 'jquery elastic grid 7 ', 'jquery elastic grid 8', 'jquery elastic grid 9', 'jquery elastic grid 9'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Landscape']
+                    },
+                    {
+                        'title': 'Spinach winter purslane',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Self Portrait', 'Landscape']
+                    },
+                    {
+                        'title': 'Aubergine napa cabbage',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/12.jpg', 'jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/14.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/16.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/12.jpg', 'jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/14.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/16.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Portrait']
+                    },
+                    {
+                        'title': 'Swiss chard pumpkin',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/17.jpg', 'jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/19.jpg', 'jquery-elastic-grid-master/images/small/20.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/17.jpg', 'jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/19.jpg', 'jquery-elastic-grid-master/images/large/20.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Landscape']
+                    },
+                    {
+                        'title': 'Spinach winter purslane',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Vintage']
+                    },
+                    {
+                        'title': 'Spinach winter purslane',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/7.jpg', 'jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/7.jpg', 'jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Portrait']
+                    },
+                    {
+                        'title': 'Azuki bean',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/16.jpg', 'jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/14.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/16.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/16.jpg', 'jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/14.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/16.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Vintage']
+                    },
+                    {
+                        'title': 'Swiss chard pumpkin',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/19.jpg', 'jquery-elastic-grid-master/images/small/20.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/19.jpg', 'jquery-elastic-grid-master/images/large/20.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Landscape']
+                    },
+                    {
+                        'title': 'Winter purslane',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Portrait']
+                    },
+                    {
+                        'title': 'Spinach winter purslane',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/3.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/3.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Vintage']
+                    },
+                    {
+                        'title': 'Spinach winter purslane',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/5.jpg', 'jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/5.jpg', 'jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Portrait', 'Landscape']
+                    },
+                    {
+                        'title': 'Azuki bean',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/6.jpg', 'jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/14.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/16.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/6.jpg', 'jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/14.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/16.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Vintage']
+                    },
+                    {
+                        'title': 'Swiss chard pumpkin',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/19.jpg', 'jquery-elastic-grid-master/images/small/20.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/19.jpg', 'jquery-elastic-grid-master/images/large/20.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Landscape']
+                    },
+                    {
+                        'title': 'Spinach winter purslane',
+                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                        'thumbnail': ['jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
+                        'large': ['jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
+                        'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                        'button_list': [{
+                                'title': 'Demo',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Download',
+                                'url': 'http://porfolio.bonchen.net/',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['Vintage', 'Landscape']
+                    }
+
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>
