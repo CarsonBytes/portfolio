@@ -41,8 +41,16 @@
 
 </head>
 <style>
+    @media (min-width: 1400px) {
+        .container {
+            width: auto;
+            max-width: inherit;
+        }
+    }
+
     .profile-content .icons {
         display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
         gap: 10px;
     }
@@ -64,18 +72,30 @@
     .width-full.f6.px-0.px-md-5.py-1 {
         display: none;
     }
+
+    @media (min-width:961px) {
+        .fadein img {
+            opacity: 0.7;
+            transition: 1s ease;
+        }
+
+        .fadein img:hover {
+            opacity: 1;
+            transition: 1s ease;
+        }
+    }
 </style>
 
 <body data-theme="dark">
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center" style="padding: 0 30px;">
                 <div class="col">
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
                     <div class="profile-content">
                         <h1 class="name">Carson Ng
-                            <a href="https://github.com/carsonng" data-bs-toggle="tooltip" title="My GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/carsonng" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
                         <h2 class="desc">Co-Founder & Lead Developer @ <b>HKIT.Supply</b>
                         </h2>
@@ -87,9 +107,9 @@
 		                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>      
                         </ul> -->
                         <div class="icons">
-                            <a target="_blank" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
-                            <a target="_blank" href="https://github.com/carsonng"><img src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
-                            <a target="_blank" href="https://www.zend-zce.com/en/yellow-pages/ZEND020400"><img data-src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" data-loaded="true" data-fully-loaded="true"></a>
+                            <a target="_blank" class="fadein" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
+                            <a target="_blank" class="fadein" href="https://github.com/carsonng"><img src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
+                            <a target="_blank" class="fadein" href="https://www.zend-zce.com/en/yellow-pages/ZEND020400"><img data-src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" data-loaded="true" data-fully-loaded="true"></a>
                             <img data-src="assets/images/tvp-logo-en.webp" height="58" alt="Supplier For Technology Voucher Programme" data-bs-toggle="tooltip" title="Supplier For Technology Voucher Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/tvp-logo-en.webp" data-loaded="true" data-fully-loaded="true">
                             <img data-src="assets/images/shopify-partner.jpg" height="58" alt="Shopify Partner" data-bs-toggle="tooltip" title="Shopify Partner" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/shopify-partner.jpg" data-loaded="true" data-fully-loaded="true">
                             <!-- <img data-src="assets/images/ccmf.PNG" height="58" alt="Incubatee For Cyberport Incubation Programme" data-bs-toggle="tooltip" title="Incubatee For Cyberport Incubation Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/ccmf.PNG" data-loaded="true" data-fully-loaded="true"> -->
@@ -123,10 +143,9 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>With over 15 years of experience in the web application industry, I specialize in web & app development, ERP, E-commerce, and more. Currently based in Hong Kong, I offer professional services such as team management, project consultation, and enterprise application development to multiple tech companies.</p>
-
-                            <p><a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();" data-bs-target="#collapseExample" href="#">More...</a></p>
+                            <p>With over 15 years of experience in the web application industry, I specialize in web & app development, ERP, E-commerce, and <a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();$('.more-link-sub').show();" data-bs-target="#collapseExample" href="#">more...</a><span class="more-link-sub" style="display: none">more...</span></p>
                             <div class="collapse" id="collapseExample">
+                                <p>Currently based in Hong Kong, I offer professional services such as team management, project consultation, and enterprise application development to multiple tech companies.</p>
                                 <p>During my time in Germany and Japan from 2009 to 2019, I excelled in collaborative team environments, emphasizing coding standards, code review, and collaborative documentation.</p>
                                 <p>In response to the challenges of the COVID-19 pandemic, I transitioned to self-employment, delivering exceptional results while fostering positive relationships with clients and prospective employers. This experience has honed my adaptability and ability to thrive in dynamic environments.</p>
                             </div>
@@ -487,7 +506,7 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">© <?php echo date("Y"); ?> Chi Tsun Ng (Carson). All Rights Reserved.</small>
+            <small class="copyright">© <?php echo date("Y"); ?> Carson Ng. All Rights Reserved.</small>
         </div>
         <!--//container-->
     </footer>
