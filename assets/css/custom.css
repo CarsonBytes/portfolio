@@ -1,0 +1,60 @@
+@media (min-width: 1400px) {
+  .container {
+    width    : auto;
+    max-width: inherit;
+  }
+}
+
+.profile-content .icons {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: flex-start;
+  gap            : 10px;
+}
+
+@media (max-width: 767.98px) {
+  .profile-content .icons {
+    justify-content: center;
+  }
+}
+
+a.btn .svg-inline--fa {
+  top: 0;
+}
+
+body[data-theme="dark"] .text-muted {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.width-full.f6.px-0.px-md-5.py-1 {
+  display: none;
+}
+
+@media (min-width:961px) {
+  .fadein img {
+    opacity   : 0.7;
+    transition: 1s ease;
+  }
+
+  .fadein img:hover {
+    opacity   : 1;
+    transition: 1s ease;
+  }
+}
+
+.dark-mode-switch input {
+  cursor: pointer;
+}
+
+body[data-theme="light"] .skills .skillset .level-title .level-label,
+body[data-theme="light"] .education .item .university .year {
+  color: #a5acb3;
+}
+
+body[data-theme="light"] footer.footer {
+  background: #f5f5f5;
+}
+
+body[data-theme="light"] .info .svg-inline--fa {
+  color: #767a7f
+}
