@@ -269,7 +269,7 @@ $(function () {
 	var thumbnail_paths = [];
 	var large_paths = [];
 	for (var key1 in folder) {
-		console.log(folder[key1])
+		/* console.log(folder[key1]) */
 		large_paths[folder[key1]] = [];
 		images[folder[key1]].forEach(element => {
 			large_paths[folder[key1]].push(projects_path + folder[key1] + '/' + element);
@@ -279,8 +279,8 @@ $(function () {
 			thumbnail_paths[folder[key1]][0] = projects_path + folder[key1] + '/' + covers[folder[key1]]
 		}
 	}
-	console.log(thumbnail_paths)
-	console.log(large_paths);
+	/* console.log(thumbnail_paths)
+	console.log(large_paths); */
 	$("#elastic_grid_demo").elastic_grid({
 		'showAllText': 'All',
 		'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup

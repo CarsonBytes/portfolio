@@ -476,7 +476,7 @@ $(function() {
                 $item.data( 'offsetTop', $item.offset().top );
                 if( saveheight ) {
                     $item.find('img').load(function() {
-                        console.log($item.outerHeight());
+                        //console.log($item.outerHeight());
                         $item.data( 'height', $item.height());
                     }).each(function() {
                       if(this.complete) $(this).load();
