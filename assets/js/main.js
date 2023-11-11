@@ -225,7 +225,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 $(function () {
-	var folder = ['moodle','thermometer','awc','dsj','erp','elpms','sensai','urbanp','ahkns','sb','stripe'];
+	var folder = ['moodle','thermometer','AWC','dsj','erp','elpms','sensai','urbanp','ahkns','sb','stripe'];
 	var projects_path='assets/images/projects/';
 
 	var images = [];
@@ -261,7 +261,7 @@ $(function () {
 	covers['dsj'] = ['front_thumb.PNG'];
 	covers['erp'] = ['accounting_dashboard_thumb.PNG'];
 	covers['sensai'] = ['product_thumb.PNG'];
-	covers['urbanp'] = ['front_thumb.PNG'];
+	covers['urbanp'] = ['front_thumb.png'];
 	covers['ahkns'] = ['front_thumb.PNG'];
 	covers['sb'] = ['landing_thumb.jpg'];
 	covers['stripe'] = ['past_thumb.PNG'];
