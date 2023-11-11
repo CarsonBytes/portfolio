@@ -1,6 +1,7 @@
 @media (min-width: 1400px) {
   .container {
-    width    : 1160px;
+    /* width    : 1160px; */
+    width: auto;
     max-width: inherit;
   }
 }
@@ -81,7 +82,7 @@ body[data-theme="light"] .info .svg-inline--fa {
   }
 
   #og-grid>li>a>img {
-    max-width: 150px;
+    max-width: 300px;
   }
 }
 
