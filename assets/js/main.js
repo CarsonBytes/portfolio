@@ -355,7 +355,7 @@ $(function () {
 			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
 		}, {
 			'title': 'Customized ERP',
-			'description': 'Under the Technology Voucher Programme (TVP), customized Enterprise Resource Planning (ERP) systems were developed with unique designs for clients.<br><br>Code and interface display can be demonstrated upon prior request.',
+			'description': 'Under the Technology Voucher Programme (TVP), customized Enterprise Resource Planning (ERP) systems were developed with unique designs for clients.<br><br>For live site access, please use the following credentials:<br>Username: admin@company.com<br>Password: 123456<br><br>Code and interface display can be demonstrated upon prior request.',
 			'thumbnail': thumbnail_paths['erp'],
 			'large': large_paths['erp'],
 			'img_title': titles['erp'],
