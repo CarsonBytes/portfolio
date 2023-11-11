@@ -237,7 +237,7 @@ $(function () {
 	images['elpms'] = ['front.PNG', 'main_blurred.png', 'main_manager_blurred.png', 'search_blurred.png', 'complaint_blurred.png', 'users_manager_blurred.png'];
 	images['sensai'] = ['product.PNG', 'ss_main.jpg', '2.gif', '3.gif'];
 	images['urbanp'] = ['front.PNG', 'gallery.PNG'];
-	images['ahkns'] = ['front.PNG', 'products.PNG'];
+	images['ahkns'] = ['front.PNG', 'products.PNG', 'product.PNG'];
 	images['sb'] = ['landing.jpg', 'departments.jpg', 'news.jpg', 'organisation.jpg', 'profile.jpg', 'projects.jpg'];
 	images['stripe'] = ['past.PNG','scheduled.PNG','new.PNG'];
 
@@ -250,7 +250,7 @@ $(function () {
 	titles['elpms'] = ['Login', 'Front page', 'Main management', 'Search', 'Complaint', 'Users management'];
 	titles['sensai'] = ['Product gallery', 'Front Page', 'Magnifier', 'Mapping between image area and table content'];
 	titles['urbanp'] = ['Front page', 'Image carousel'];
-	titles['ahkns'] = ['Front page', 'Product Catalog'];
+	titles['ahkns'] = ['Front page', 'Product Catalog', 'Product Detail'];
 	titles['sb'] = ['Landing', 'Departments', 'News', 'Organisation', 'Profile', 'Projects'];
 	titles['stripe'] = ['Past capture','Scheduled capture','New customer'];
 
@@ -424,8 +424,8 @@ $(function () {
 			'large': large_paths['ahkns'],
 			'img_title': titles['ahkns'],
 			'button_list': [{
-				'title': 'Live',
-				'url': 'https://eahkns.nurse.org.hk/',
+				'title': 'Live (for testing)',
+				'url': 'https://eshop-test.nurse.org.hk/',
 				'new_window': true
 			} /*, {
 				'title': 'Interactive Prototype',
