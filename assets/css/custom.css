@@ -1,6 +1,6 @@
 @media (min-width: 1400px) {
   .container {
-    width    : auto;
+    width    : 1160px;
     max-width: inherit;
   }
 }
@@ -12,9 +12,17 @@
   gap            : 10px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .profile-content .icons {
     justify-content: center;
+  }
+
+  .header .btn {
+    margin-top: 0;
+  }
+
+  .col-12.col-md-auto {
+    margin-top: 25px;
   }
 }
 
@@ -51,10 +59,55 @@ body[data-theme="light"] .education .item .university .year {
   color: #a5acb3;
 }
 
-body[data-theme="light"] footer.footer {
+/* body[data-theme="light"] footer.footer {
   background: #f5f5f5;
-}
+} */
 
 body[data-theme="light"] .info .svg-inline--fa {
   color: #767a7f
+}
+
+@media (min-width: 768px) {
+
+  .og-fullimg,
+  .og-details {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+  }
+
+  .og-details {
+    flex-direction: column;
+  }
+
+  #og-grid>li>a>img {
+    max-width: 150px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #og-grid>li>a>img {
+    max-width: 250px;
+  }
+
+  .og-expander-inner {
+    display       : flex;
+    flex-direction: column;
+  }
+}
+
+.og-grid li a figure {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.og-grid li a figure span {
+  margin: 0 20px;
+}
+
+.og-details p,
+.og-details a.link-button {
+  font-size: 16px !important;
 }

@@ -114,7 +114,7 @@
 
                 <section class="projects section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Past & Ongoing Projects</h2>
+                        <h2 class="heading">Some Past & Ongoing Projects</h2>
                         <div class="content">
                             <div id="elastic_grid_demo"></div>
                         </div>
@@ -363,9 +363,18 @@
                                 <!--//item-->
 
                                 <div class="item">
+                                    <h3 class="level-title">Figma Prototyping<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86"></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
                                     <h3 class="level-title">React Native<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>

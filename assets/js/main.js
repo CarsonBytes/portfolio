@@ -224,7 +224,63 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 	return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-$(function() {
+$(function () {
+	var folder = ['moodle','thermometer','awc','dsj','erp','elpms','sensai','urbanp','ahkns','sb','stripe'];
+	var projects_path='assets/images/projects/';
+
+	var images = [];
+	images['moodle'] = ['landing_blurred.jpg', 'home_blurred.jpg', 'course_list_blurred.jpg', 'course_intro.png', 'resource_list_blurred.png', 'lib_admin.png', 'lib_records_blurred.png'];
+	images['thermometer'] = ['landing_large.jpg', 'indicator2.jpg', 'setup_cook.jpg', 'paired_devices.jpg', 'dark_mode.jpg'];
+	images['awc'] = ['landing.jpg', 'event_detail.jpg', 'popup.jpg', 'event_application.jpg', 'list_detail.jpg'];
+	images['dsj'] = ['front.PNG', 'magnifier.PNG', 'icon_design.PNG', 'cms.png'];
+	images['erp'] = ['accounting_dashboard.PNG', 'login.PNG', 'role_permissions.PNG', 'support_ticket_system.PNG', 'chat_messenger.PNG', 'edit_insurance_policy.PNG', 'export_renewal_notice.png'];
+	images['elpms'] = ['front.PNG', 'main_blurred.png', 'main_manager_blurred.png', 'search_blurred.png', 'complaint_blurred.png', 'users_manager_blurred.png'];
+	images['sensai'] = ['product.PNG', 'ss_main.jpg', '2.gif', '3.gif'];
+	images['urbanp'] = ['front.PNG', 'gallery.PNG'];
+	images['ahkns'] = ['front.PNG', 'products.PNG'];
+	images['sb'] = ['landing.jpg', 'departments.jpg', 'news.jpg', 'organisation.jpg', 'profile.jpg', 'projects.jpg'];
+	images['stripe'] = ['past.PNG','scheduled.PNG','new.PNG'];
+
+	var titles = [];
+	titles['moodle'] = ['Landing page', 'Home page', 'Course list', 'Course introduction', 'Resource list page', 'Links for Library admin role', 'Library book record list page']
+	titles['thermometer'] = ['indicator 1', 'indicator 2', 'Setup Cook', 'Paired device list', 'Dark Mode'];
+	titles['awc'] = ['Landing page', 'Event detail', 'Popup', 'Event Application', 'List detail'];
+	titles['dsj'] = ['Front page', 'Magnifier function in product detail page', 'Icon design', 'CMS'];
+	titles['erp'] = ['Accounting dashboard', 'login', 'Role permissions', 'Support ticket system', 'Chat messenger', 'Edit insurance policy', 'Export renewal notice'];
+	titles['elpms'] = ['Login', 'Front page', 'Main management', 'Search', 'Complaint', 'Users management'];
+	titles['sensai'] = ['Product gallery', 'Front Page', 'Magnifier', 'Mapping between image area and table content'];
+	titles['urbanp'] = ['Front page', 'Image carousel'];
+	titles['ahkns'] = ['Front page', 'Product Catalog'];
+	titles['sb'] = ['Landing', 'Departments', 'News', 'Organisation', 'Profile', 'Projects'];
+	titles['stripe'] = ['Past capture','Scheduled capture','New customer'];
+
+	var covers = [];
+	covers['moodle'] = 'landing_blurred_thumb.jpg';
+	covers['thermometer'] = ['landing.jpg'];
+	covers['awc'] = ['logo.jpg'];
+	covers['dsj'] = ['front_thumb.PNG'];
+	covers['erp'] = ['accounting_dashboard_thumb.PNG'];
+	covers['sensai'] = ['product_thumb.PNG'];
+	covers['urbanp'] = ['front_thumb.PNG'];
+	covers['ahkns'] = ['front_thumb.PNG'];
+	covers['sb'] = ['landing_thumb.jpg'];
+	covers['stripe'] = ['past_thumb.PNG'];
+
+	var thumbnail_paths = [];
+	var large_paths = [];
+	for (var key1 in folder) {
+		console.log(folder[key1])
+		large_paths[folder[key1]] = [];
+		images[folder[key1]].forEach(element => {
+			large_paths[folder[key1]].push(projects_path + folder[key1] + '/' + element);
+		});
+		thumbnail_paths[folder[key1]] = [...large_paths[folder[key1]]]
+		if (folder[key1] in covers) {
+			thumbnail_paths[folder[key1]][0] = projects_path + folder[key1] + '/' + covers[folder[key1]]
+		}
+	}
+	console.log(thumbnail_paths)
+	console.log(large_paths);
 	$("#elastic_grid_demo").elastic_grid({
 		'showAllText': 'All',
 		'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
@@ -232,293 +288,191 @@ $(function() {
 		'hoverDelay': 0,
 		'hoverInverse': false,
 		'expandingSpeed': 500,
-		'expandingHeight': 500,
+		'expandingHeight': 650,
 		'items': [{
-				'title': 'Azuki bean',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/1.jpg', 'jquery-elastic-grid-master/images/small/2.jpg', 'jquery-elastic-grid-master/images/small/3.jpg', 'jquery-elastic-grid-master/images/small/10.jpg', 'jquery-elastic-grid-master/images/small/11.jpg'],
-				'large': ['https://youtu.be/-6Xl9tBWt54', 'jquery-elastic-grid-master/images/large/2.jpg', 'jquery-elastic-grid-master/images/large/3.jpg', 'jquery-elastic-grid-master/images/large/10.jpg', 'jquery-elastic-grid-master/images/large/11.jpg'],
-				'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': false
-					}
-				],
-				'tags': ['Self Portrait']
-			},
-			{
-				'title': 'Swiss chard pumpkin',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/4.jpg', 'jquery-elastic-grid-master/images/small/5.jpg', 'jquery-elastic-grid-master/images/small/6.jpg', 'jquery-elastic-grid-master/images/small/7.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/4.jpg', 'jquery-elastic-grid-master/images/large/5.jpg', 'jquery-elastic-grid-master/images/large/6.jpg', 'jquery-elastic-grid-master/images/large/7.jpg'],
-				'img_title': ['jquery elastic grid 6 ', 'jquery elastic grid 7 ', 'jquery elastic grid 8', 'jquery elastic grid 9', 'jquery elastic grid 9'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Landscape']
-			},
-			{
-				'title': 'Spinach winter purslane',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Self Portrait', 'Landscape']
-			},
-			{
-				'title': 'Aubergine napa cabbage',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/12.jpg', 'jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/14.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/16.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/12.jpg', 'jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/14.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/16.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Portrait']
-			},
-			{
-				'title': 'Swiss chard pumpkin',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/17.jpg', 'jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/19.jpg', 'jquery-elastic-grid-master/images/small/20.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/17.jpg', 'jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/19.jpg', 'jquery-elastic-grid-master/images/large/20.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Landscape']
-			},
-			{
-				'title': 'Spinach winter purslane',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Vintage']
-			},
-			{
-				'title': 'Spinach winter purslane',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/7.jpg', 'jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/7.jpg', 'jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Portrait']
-			},
-			{
-				'title': 'Azuki bean',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/16.jpg', 'jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/14.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/16.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/16.jpg', 'jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/14.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/16.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Vintage']
-			},
-			{
-				'title': 'Swiss chard pumpkin',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/19.jpg', 'jquery-elastic-grid-master/images/small/20.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/19.jpg', 'jquery-elastic-grid-master/images/large/20.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Landscape']
-			},
-			{
-				'title': 'Winter purslane',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Portrait']
-			},
-			{
-				'title': 'Spinach winter purslane',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/3.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/3.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Vintage']
-			},
-			{
-				'title': 'Spinach winter purslane',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/5.jpg', 'jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/5.jpg', 'jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Portrait', 'Landscape']
-			},
-			{
-				'title': 'Azuki bean',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/6.jpg', 'jquery-elastic-grid-master/images/small/13.jpg', 'jquery-elastic-grid-master/images/small/14.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/16.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/6.jpg', 'jquery-elastic-grid-master/images/large/13.jpg', 'jquery-elastic-grid-master/images/large/14.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/16.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Vintage']
-			},
-			{
-				'title': 'Swiss chard pumpkin',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/8.jpg', 'jquery-elastic-grid-master/images/small/18.jpg', 'jquery-elastic-grid-master/images/small/19.jpg', 'jquery-elastic-grid-master/images/small/20.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/8.jpg', 'jquery-elastic-grid-master/images/large/18.jpg', 'jquery-elastic-grid-master/images/large/19.jpg', 'jquery-elastic-grid-master/images/large/20.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Landscape']
-			},
-			{
-				'title': 'Spinach winter purslane',
-				'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-				'thumbnail': ['jquery-elastic-grid-master/images/small/9.jpg', 'jquery-elastic-grid-master/images/small/15.jpg', 'jquery-elastic-grid-master/images/small/11.jpg', 'jquery-elastic-grid-master/images/small/10.jpg'],
-				'large': ['jquery-elastic-grid-master/images/large/9.jpg', 'jquery-elastic-grid-master/images/large/15.jpg', 'jquery-elastic-grid-master/images/large/11.jpg', 'jquery-elastic-grid-master/images/large/10.jpg'],
-				'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-				'button_list': [{
-						'title': 'Demo',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					},
-					{
-						'title': 'Download',
-						'url': 'http://porfolio.bonchen.net/',
-						'new_window': true
-					}
-				],
-				'tags': ['Vintage', 'Landscape']
+			'title': 'e-Learning for HKSARS',
+			'description': 'The e-Learning Centre, based on Moodle, is a customizable learning management system adopted by the HKSAR government. Plugin and theme customization is done to meet specific requirements.<br><br>Code or interface access can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['moodle'],
+			'large': large_paths['moodle'],
+			'img_title': titles['moodle'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
 			}
-
+			],
+			'tags': ['Web', 'ERP', 'CMS']
+		}, {
+			'title': 'Thermometer Interface',
+			'description': 'To accurately address client requirements, an interactive prototype was developed using Figma prior to app development.<br><br>Access to the Figma source link and the corresponding color system can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['thermometer'],
+			'large': large_paths['thermometer'],
+			'img_title': titles['thermometer'],
+			'button_list': [{
+				'title': 'UIs in PDF',
+				'url': folder['thermometer'] + 'pdf.pdf',
+				'new_window': true
+			}/* , {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Mobile app', 'UI/UX design']
+		}, {
+			'title': 'App development for Andy Lau',
+			'description': 'A mobile app is currently under development for Andy Lau, a renowned actor and singer in Hong Kong, and his club, Andy World Club.<br><br>Code or more screenshots can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['awc'],
+			'large': large_paths['awc'],
+			'img_title': titles['awc'],
+			'button_list': [/*{
+				'title': 'UIs in PDF',
+				'url': folder['thermometer'] + 'pdf.pdf',
+				'new_window': true
+			} , {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Mobile app', 'UI/UX design']
+		}, {
+			'title': 'Website development for Dashijie',
+			'description': 'The web shop was built using the popular Ztore system, a well-known web store in Hong Kong. Customizations were made to the database, CMS, and coupon system to meet specific requirements. Content maintenance is necessary to cater to different seasons.<br><br>Code and interface display can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['dsj'],
+			'large': large_paths['dsj'],
+			'img_title': titles['dsj'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://www.dashijie.com.hk/',
+				'new_window': true
+			} /* , {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+		}, {
+			'title': 'Customized ERP',
+			'description': 'Under the Technology Voucher Programme (TVP), customized Enterprise Resource Planning (ERP) systems were developed with unique designs for clients.<br><br>Code and interface display can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['erp'],
+			'large': large_paths['erp'],
+			'img_title': titles['erp'],
+			'button_list': [{
+				'title': 'Demo',
+				'url': '/demo/erp',
+				'new_window': true
+			} /* , {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Web', 'ERP', 'CMS']
+		}, {
+			'title': 'Property Management System',
+			'description': 'This Enterprise Resource Planning (ERP) system was developed using the Node.js framework and served as an internal property management system.<br><br>Code and interface display can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['elpms'],
+			'large': large_paths['elpms'],
+			'img_title': titles['elpms'],
+			'button_list': [/*{
+				'title': 'Demo',
+				'url': '/demo/erp',
+				'new_window': true
+			}  , {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Web', 'ERP', 'CMS']
+		}, {
+			'title': 'Poster catalog',
+			'description': 'This poster catalog was developed using the Joomla framework.<br><br>For live site access, please use the following credentials:<br>Username: demo<br>Password: Testing!<br><br>The backend panel can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['sensai'],
+			'large': large_paths['sensai'],
+			'img_title': titles['sensai'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://sensaihonya.jp/',
+				'new_window': true
+			}
+			],
+			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+		}, {
+			'title': 'Urban Project',
+			'description': 'The website, which highlights various architecture projects, has been successfully developed and includes an implemented image carousel function.<br><br>CMS can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['urbanp'],
+			'large': large_paths['urbanp'],
+			'img_title': titles['urbanp'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://www.urbanp.com/',
+				'new_window': true
+			} /*, {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Web', 'CMS', 'UI/UX design']
+		}, {
+			'title': 'Association of Hong Kong Nursing Staff',
+			'description': 'The Magento-based website requires customization for the following key functionalities:<br>- making an API call to the client\'s server upon order confirmation in Magento,<br>- creating a scheduled task for synchronizing updated product stock and new customer data between the client\'s server and the webshop, <br>- integrating a secure 3rd party payment gateway during the checkout process.<br><br>Code or backend panel can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['ahkns'],
+			'large': large_paths['ahkns'],
+			'img_title': titles['ahkns'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://eahkns.nurse.org.hk/',
+				'new_window': true
+			} /*, {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+		}, {
+			'title': 'App for Project Management',
+			'description': 'The mobile app, built upon React Native, has been developed for Project Management with multilingual support. It is connected to an Odoo database. Additionally, there is a UAT (User Acceptance Testing) version specifically designed for internal testing purposes. <br><br>Code can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['sb'],
+			'large': large_paths['sb'],
+			'img_title': titles['sb'],
+			'button_list': [/*{
+				'title': 'UIs in PDF',
+				'url': folder['thermometer'] + 'pdf.pdf',
+				'new_window': true
+			} , {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Mobile app', 'UI/UX design']
+		}, {
+			'title': 'Mangement interface connected with Stripe payment',
+			'description': 'In this project, an online payment service has been developed specifically for hotels. The system utilizes the Stripe API to pre-authorize or capture funds from customer credit cards.<br><br>Code or interface display can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['stripe'],
+			'large': large_paths['stripe'],
+			'img_title': titles['stripe'],
+			'button_list': [/*{
+				'title': 'Live',
+				'url': 'https://eahkns.nurse.org.hk/',
+				'new_window': true
+			} , {
+				'title': 'Interactive Prototype',
+				'url': 'https://www.elc.swd.gov.hk/',
+				'new_window': true
+			} */
+			],
+			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+		}
 		]
 	});
+
+	$('body').on('mouseenter', 'img.related_photo', function () {
+		$(this).tooltip('show')
+	})
 });
