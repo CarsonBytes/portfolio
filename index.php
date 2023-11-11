@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Carson Ng</title>
+    <title>Carson</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carson Ng">
-    <meta name="author" content="Carson Ng">
+    <meta name="description" content="Carson">
+    <meta name="author" content="Carson">
     <link rel="shortcut icon" href="favicon2.ico">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -50,7 +50,7 @@
                 <div class="col">
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
                     <div class="profile-content">
-                        <h1 class="name">Carson Ng
+                        <h1 class="name">Carson
                             <a href="https://github.com/carsonng" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
                         <h2 class="desc">Co-Founder & Lead Developer @ <b>HKIT.Supply</b>
@@ -466,7 +466,7 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">© <?php echo date("Y"); ?> Carson Ng. All Rights Reserved.</small>
+            <small class="copyright">© <?php echo date("Y"); ?> HKIT.Supply. All Rights Reserved.</small>
         </div>
         <!--//container-->
     </footer>
