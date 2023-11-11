@@ -225,7 +225,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 $(function () {
-	var folder = ['moodle','thermometer','AWC','dsj','erp','elpms','sensai','urbanp','ahkns','sb','stripe'];
+	var folder = ['moodle','thermometer','awc','dsj','erp','elpms','sensai','urbanp','ahkns','sb','stripe'];
 	var projects_path='assets/images/projects/';
 
 	var images = [];
