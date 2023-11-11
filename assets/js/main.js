@@ -236,7 +236,7 @@ $(function () {
 	images['erp'] = ['accounting_dashboard.PNG', 'login.PNG', 'role_permissions.PNG', 'support_ticket_system.PNG', 'chat_messenger.PNG', 'edit_insurance_policy.PNG', 'export_renewal_notice.png'];
 	images['elpms'] = ['front.PNG', 'main_blurred.png', 'main_manager_blurred.png', 'search_blurred.png', 'complaint_blurred.png', 'users_manager_blurred.png'];
 	images['sensai'] = ['product.PNG', 'ss_main.jpg', '2.gif', '3.gif'];
-	images['urbanp'] = ['front.PNG', 'gallery.PNG'];
+	images['urbanp'] = ['front.PNG', 'gallery.PNG', 'gallery2.PNG'];
 	images['ahkns'] = ['front.PNG', 'products.PNG', 'product.PNG'];
 	images['sb'] = ['landing.jpg', 'departments.jpg', 'news.jpg', 'organisation.jpg', 'profile.jpg', 'projects.jpg'];
 	images['stripe'] = ['past.PNG','scheduled.PNG','new.PNG'];
