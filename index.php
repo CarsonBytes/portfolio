@@ -51,7 +51,7 @@
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
                     <div class="profile-content">
                         <h1 class="name">Carson
-                            <a href="https://github.com/carsonng" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/CarsonBytes" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
                         <h2 class="desc">Co-Founder & Lead Developer @ <b>HKIT.Supply</b>
                         </h2>
@@ -64,7 +64,7 @@
                         </ul> */ ?>
                         <div class="icons">
                             <a target="_blank" class="fadein" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
-                            <a target="_blank" class="fadein" href="https://github.com/carsonng"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
+                            <a target="_blank" class="fadein" href="https://github.com/CarsonBytes"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
                             <a target="_blank" class="fadein" href="https://www.zend-zce.com/en/yellow-pages/ZEND020400"><img data-src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" data-loaded="true" data-fully-loaded="true"></a>
                             <img data-src="assets/images/tvp-logo-en.webp" height="58" alt="Supplier For Technology Voucher Programme" data-bs-toggle="tooltip" title="Supplier For Technology Voucher Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/tvp-logo-en.webp" data-loaded="true" data-fully-loaded="true">
                             <img data-src="assets/images/shopify-partner.jpg" height="58" alt="Shopify Partner" data-bs-toggle="tooltip" title="Shopify Partner" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/shopify-partner.jpg" data-loaded="true" data-fully-loaded="true">
@@ -220,11 +220,11 @@
                                 </p>
                                 <p>With my expertise in UI and CMS development, I am dedicated to helping you create visually appealing and user-friendly websites or applications that are customized to meet your specific requirements.</p>
                                 <p><a class="more-link cms_screenshots" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>More Screenshots</a></p>
-                                <p><a class="more-link" href="https://github.com/carsonng/sensai" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
+                                <p><a class="more-link" href="https://github.com/CarsonBytes/sensai" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
                             </div>
                             <!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="https://github.com/carsonng/python_scraping" target="_blank">Python + Selenium - Web Scraping Automation Tool <i class="fas fa-external-link-alt"></i></a></h3>
+                                <h3 class="title"><a href="https://github.com/CarsonBytes/python_scraping" target="_blank">Python + Selenium - Web Scraping Automation Tool <i class="fas fa-external-link-alt"></i></a></h3>
                                 <p class="summary">I have developed a web scraping automation tool using Python and headless Selenium ChromeDriver. This tool allows for efficient scraping of website content.</p>
                                 <p>During the development process, I encountered various challenges, including handling ajax pagination, image loading, random waiting time, and dealing with redirection to Cloudflare pages. Through patient observation and careful refinement of specific functions, I was able to effectively overcome these challenges.</p>
                                 <p>However, it is important to note that there are certain cases where scraping may not be feasible. For example, when a captcha is required, or when there are limitations on the number of pages or images that can be accessed with a registered user account.</p>
@@ -234,11 +234,11 @@
                                 <p>
                                     With this Python + Selenium web scraping automation tool, I aim to provide a reliable solution for extracting website content efficiently and effectively.
                                 </p>
-                                <p><a class="more-link" href="https://github.com/carsonng/python_scraping" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
+                                <p><a class="more-link" href="https://github.com/CarsonBytes/python_scraping" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
                             </div>
                             <!--//item-->
                             <div class="item">
-                                <h3 class="title"><a href="https://github.com/carsonng/booking_stripe_charge" target="_blank">Internal Visa/MasterCard charging system <i class="fas fa-external-link-alt"></i></a>
+                                <h3 class="title"><a href="https://github.com/CarsonBytes/booking_stripe_charge" target="_blank">Internal Visa/MasterCard charging system <i class="fas fa-external-link-alt"></i></a>
                                 </h3>
                                 <p class="summary">I have developed an internal charging system that allows for direct credit/debit card charging via the Stripe API. This system is built on top of the existing Stripe PHP library, which was forked from https://github.com/stripe/stripe-php.</p>
 
@@ -256,7 +256,7 @@
                                 </p>
                                 <p>With this internal Visa/MasterCard charging system, merchants can streamline their payment processes and provide a seamless experience for their customers.
                                 </p>
-                                <p><a class="more-link" href="https://github.com/carsonng/booking_stripe_charge" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
+                                <p><a class="more-link" href="https://github.com/CarsonBytes/booking_stripe_charge" target="_blank"><i class="fas fa-external-link-alt"></i>View Example Code in Github</a></p>
                             </div>
                             <!--//item-->
 
@@ -278,7 +278,7 @@
                         <!-- <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a
                                 href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub
                                 Calendar</a> widget. -->
-                        <a href="https://github.com/carsonng" target="_blank">https://github.com/carsonng</a>
+                        <a href="https://github.com/CarsonBytes" target="_blank">https://github.com/CarsonBytes</a>
 
 
                         <!-- Prepare a container for your calendar. -->
