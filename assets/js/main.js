@@ -225,8 +225,8 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 $(function () {
-	var folder = ['moodle','thermometer','awc','dsj','erp','elpms','sensai','urbanp','ahkns','sb','stripe'];
-	var projects_path='assets/images/projects/';
+	var folder = ['moodle', 'thermometer', 'awc', 'dsj', 'erp', 'elpms', 'sensai', 'urbanp', 'ahkns', 'sb', 'stripe', 'lhc', 'nlc', 'mib', 'csb'];
+	var projects_path = 'assets/images/projects/';
 
 	var images = [];
 	images['moodle'] = ['landing_blurred.jpg', 'home_blurred.jpg', 'course_list_blurred.jpg', 'course_intro.png', 'resource_list_blurred.png', 'lib_admin.png', 'lib_records_blurred.png'];
@@ -239,7 +239,11 @@ $(function () {
 	images['urbanp'] = ['front.PNG', 'gallery.PNG', 'gallery2.PNG'];
 	images['ahkns'] = ['front.PNG', 'products.PNG', 'product.PNG'];
 	images['sb'] = ['landing.jpg', 'departments.jpg', 'news.jpg', 'organisation.jpg', 'profile.jpg', 'projects.jpg'];
-	images['stripe'] = ['past.PNG','scheduled.PNG','new.PNG'];
+	images['stripe'] = ['past.PNG', 'scheduled.PNG', 'new.PNG'];
+	images['lhc'] = ['front.PNG', 'products.PNG', 'cart_popup.PNG'];
+	images['nlc'] = ['front.PNG', 'life.PNG', 'news.PNG'];
+	images['mib'] = ['front.PNG', 'login.PNG', 'info.PNG'];
+	images['csb'] = ['front.PNG', 'intro.PNG', 'news.PNG'];
 
 	var titles = [];
 	titles['moodle'] = ['Landing page', 'Home page', 'Course list', 'Course introduction', 'Resource list page', 'Links for Library admin role', 'Library book record list page']
@@ -252,7 +256,11 @@ $(function () {
 	titles['urbanp'] = ['Front page', 'Image carousel'];
 	titles['ahkns'] = ['Front page', 'Product Catalog', 'Product Detail'];
 	titles['sb'] = ['Landing', 'Departments', 'News', 'Organisation', 'Profile', 'Projects'];
-	titles['stripe'] = ['Past capture','Scheduled capture','New customer'];
+	titles['stripe'] = ['Past capture', 'Scheduled capture', 'New customer'];
+	titles['lhc'] = ['Front page', 'Product Catalog', 'Cart popup'];
+	titles['nlc'] = ['Front page', 'Life page', 'News page'];
+	titles['mib'] = ['Front page', 'Login page', 'Info page'];
+	titles['csb'] = ['Front page', 'Intro page', 'News page'];
 
 	var covers = [];
 	covers['moodle'] = 'landing_blurred_thumb.jpg';
@@ -265,6 +273,10 @@ $(function () {
 	covers['ahkns'] = ['front_thumb.PNG'];
 	covers['sb'] = ['landing_thumb.jpg'];
 	covers['stripe'] = ['past_thumb.PNG'];
+	covers['lhc'] = ['front_thumb.png'];
+	covers['nlc'] = ['logo_thumb.jpg'];
+	covers['mib'] = ['front_thumb.PNG'];
+	covers['csb'] = ['logo_thumb.jpg'];
 
 	var thumbnail_paths = [];
 	var large_paths = [];
@@ -452,7 +464,7 @@ $(function () {
 			],
 			'tags': ['Mobile app', 'UI/UX design']
 		}, {
-			'title': 'Mangement interface connected with Stripe payment',
+			'title': 'Management interface connected with Stripe payment',
 			'description': 'In this project, an online payment service has been developed specifically for hotels. The system utilizes the Stripe API to pre-authorize or capture funds from customer credit cards.<br><br>Code or interface display can be demonstrated upon prior request.',
 			'thumbnail': thumbnail_paths['stripe'],
 			'large': large_paths['stripe'],
@@ -467,7 +479,59 @@ $(function () {
 				'new_window': true
 			} */
 			],
+			'tags': ['Web', 'E-commerce']
+		}, {
+			'title': 'Wordpress + WooCommerce',
+			'description': 'The WordPress-based website has been seamlessly integrated with WooCommerce, empowering the site with robust e-commerce functionality. Through this integration, customers can effortlessly browse and purchase products. Furthermore, the website boasts a captivating web design that enhances the presentation of static content, ensuring an engaging and visually appealing user experience.<br><br>Backend panel can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['lhc'],
+			'large': large_paths['lhc'],
+			'img_title': titles['lhc'],
+			'button_list': [{
+				'title': 'Live (for testing)',
+				'url': 'https://demo.ladieshealthcare.org/',
+				'new_window': true
+			}
+			],
 			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+		}, {
+			'title': 'Wordpress development',
+			'description': 'The WordPress-based website boasts a captivating web design that enhances the presentation of static content, ensuring an engaging and visually appealing user experience.<br><br>Backend panel can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['nlc'],
+			'large': large_paths['nlc'],
+			'img_title': titles['nlc'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'http://www.nlcitychurch.org.hk/',
+				'new_window': true
+			}
+			],
+			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+		}, {
+			'title': 'Single sign-on development',
+			'description': 'This broker agent site requires customization for single sign-on (SSO) functionality. The customization will allow users to sign in once and access both the local and foreign markets without the need for separate sign-ins on each platform.<br><br>Code can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['mib'],
+			'large': large_paths['mib'],
+			'img_title': titles['mib'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://www.mib.com.hk',
+				'new_window': true
+			}
+			],
+			'tags': ['Web', 'CMS', 'E-commerce']
+		}, {
+			'title': 'Maintenance for Citic Securities',
+			'description': 'This broker agent site requires regular updates to its content and menu. To facilitate this, a backend content management system (CMS) and database are currently being developed. Once completed, the site owner will have the ability to easily update the content themselves, ensuring timely and efficient updates.<br><br>Code can be demonstrated upon prior request.',
+			'thumbnail': thumbnail_paths['csb'],
+			'large': large_paths['csb'],
+			'img_title': titles['csb'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://www.citics.com.hk',
+				'new_window': true
+			}
+			],
+			'tags': ['Web', 'CMS']
 		}
 		]
 	});
