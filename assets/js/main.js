@@ -373,13 +373,9 @@ $(function () {
 			'img_title': titles['erp'],
 			'button_list': [{
 				'title': 'Demo',
-				'url': '/demo/erp',
+				'url': 'https://hkit.supply/demo/erp/',
 				'new_window': true
-			} /* , {
-				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
-				'new_window': true
-			} */
+			}
 			],
 			'tags': ['Web', 'ERP', 'CMS']
 		}, {
@@ -388,15 +384,7 @@ $(function () {
 			'thumbnail': thumbnail_paths['elpms'],
 			'large': large_paths['elpms'],
 			'img_title': titles['elpms'],
-			'button_list': [/*{
-				'title': 'Demo',
-				'url': '/demo/erp',
-				'new_window': true
-			}  , {
-				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
-				'new_window': true
-			} */
+			'button_list': [
 			],
 			'tags': ['Web', 'ERP', 'CMS']
 		}, {
