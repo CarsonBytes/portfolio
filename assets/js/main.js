@@ -522,20 +522,26 @@ $(function () {
 			'tags': ['Web', 'CMS']
 		}
 		]
+	})
+	
+	$("#elastic_grid_demo").imagesLoaded(function(){
+		if ($(location).attr('hash').substring(1) != '') {
+			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
+		}
 	});
 
 	$('body').on('mouseenter', 'img.related_photo', function () {
 		$(this).tooltip('show')
 	})
 
-	setTimeout(
+	/* setTimeout(
 		function () {
 			if ($(location).attr('hash').substring(1) != '') {
 				$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
 			}
-		}, 1500);
+		}, 1500); */
 
-	$(window).on('load hashchange', function () {
+	$(window).on('hashchange', function () {
 		if ($(location).attr('hash').substring(1) != '') {
 			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
 		}
