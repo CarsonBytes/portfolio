@@ -528,8 +528,14 @@ $(function () {
 		$(this).tooltip('show')
 	})
 
+	setTimeout(
+		function () {
+			if ($(location).attr('hash').substring(1) != '') {
+				$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
+			}
+		}, 500);
 
-	$(window).on('load hashchange', function () {
+	$(window).on('hashchange', function () {
 		if ($(location).attr('hash').substring(1) != '') {
 			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
 		}
