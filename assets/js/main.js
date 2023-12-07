@@ -527,4 +527,11 @@ $(function () {
 	$('body').on('mouseenter', 'img.related_photo', function () {
 		$(this).tooltip('show')
 	})
+
+
+	$(window).on('load hashchange', function () {
+		if ($(location).attr('hash').substring(1) != '') {
+			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
+		}
+	})
 });
