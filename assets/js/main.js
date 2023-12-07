@@ -528,20 +528,14 @@ $(function () {
 		$(this).tooltip('show')
 	})
 
-	/* setTimeout(
+	setTimeout(
 		function () {
 			if ($(location).attr('hash').substring(1) != '') {
 				$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
 			}
-		}, 500); */
-	
-	$('#elastic_grid_demo').waitForImages(function() {
-		if ($(location).attr('hash').substring(1) != '') {
-			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
-		}
-	});	
+		}, 1500);
 
-	$(window).on('hashchange', function () {
+	$(window).on('load hashchange', function () {
 		if ($(location).attr('hash').substring(1) != '') {
 			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
 		}

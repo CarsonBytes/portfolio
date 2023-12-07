@@ -500,9 +500,6 @@
     <script type="text/javascript" src="jquery-elastic-grid-master/js/jquery.hoverdir.js"></script>
     <script type="text/javascript" src="jquery-elastic-grid-master/js/elastic_grid.js"></script>
 
-    <!-- waitForImages -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
-
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
