@@ -233,7 +233,7 @@ $(function () {
 	images['thermometer'] = ['landing_large.jpg', 'indicator2.jpg', 'setup_cook.jpg', 'paired_devices.jpg', 'dark_mode.jpg'];
 	images['awc'] = ['landing.jpg', 'event_detail.jpg', 'popup.jpg', 'event_application.jpg', 'list_detail.jpg'];
 	images['dsj'] = ['front.PNG', 'magnifier.PNG', 'icon_design.PNG', 'cms.png'];
-	images['erp'] = ['accounting_dashboard.PNG', 'login.PNG', 'role_permissions.PNG', 'support_ticket_system.PNG', 'chat_messenger.PNG', 'edit_insurance_policy.PNG', 'export_renewal_notice.png'];
+	images['erp'] = ['accounting_dashboard.PNG', 'login.PNG', 'role_permissions.PNG', 'support_ticket_system.PNG', 'chat_messenger.PNG', 'edit_insurance_policy.PNG', 'export_renewal_notice.PNG'];
 	images['elpms'] = ['front.PNG', 'main_blurred.png', 'main_manager_blurred.png', 'search_blurred.png', 'complaint_blurred.png', 'users_manager_blurred.png'];
 	images['sensai'] = ['product.PNG', 'ss_main.jpg', '2.gif', '3.gif'];
 	images['urbanp'] = ['front.PNG', 'gallery.PNG', 'gallery2.PNG'];
@@ -533,13 +533,6 @@ $(function () {
 	$('body').on('mouseenter', 'img.related_photo', function () {
 		$(this).tooltip('show')
 	})
-
-	/* setTimeout(
-		function () {
-			if ($(location).attr('hash').substring(1) != '') {
-				$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
-			}
-		}, 1500); */
 
 	$(window).on('hashchange', function () {
 		if ($(location).attr('hash').substring(1) != '') {
