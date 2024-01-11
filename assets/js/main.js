@@ -322,13 +322,9 @@ $(function () {
 			'img_title': titles['thermometer'],
 			'button_list': [{
 				'title': 'UIs in PDF',
-				'url': folder['thermometer'] + 'pdf.pdf',
+				'url': projects_path + 'thermometer/ui.pdf',
 				'new_window': true
-			}/* , {
-				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
-				'new_window': true
-			} */
+			}
 			],
 			'tags': ['Mobile app', 'UI/UX design']
 		}, {
@@ -337,15 +333,7 @@ $(function () {
 			'thumbnail': thumbnail_paths['awc'],
 			'large': large_paths['awc'],
 			'img_title': titles['awc'],
-			'button_list': [/*{
-				'title': 'UIs in PDF',
-				'url': folder['thermometer'] + 'pdf.pdf',
-				'new_window': true
-			} , {
-				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
-				'new_window': true
-			} */
+			'button_list': [
 			],
 			'tags': ['Mobile app', 'UI/UX design']
 		}, {
@@ -440,16 +428,7 @@ $(function () {
 			'thumbnail': thumbnail_paths['sb'],
 			'large': large_paths['sb'],
 			'img_title': titles['sb'],
-			'button_list': [/*{
-				'title': 'UIs in PDF',
-				'url': folder['thermometer'] + 'pdf.pdf',
-				'new_window': true
-			} , {
-				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
-				'new_window': true
-			} */
-			],
+			'button_list': [],
 			'tags': ['Mobile app', 'UI/UX design']
 		}, {
 			'title': 'Management interface connected with Stripe payment',
@@ -523,8 +502,8 @@ $(function () {
 		}
 		]
 	})
-	
-	$("#elastic_grid_demo").imagesLoaded(function(){
+
+	$("#elastic_grid_demo").imagesLoaded(function () {
 		if ($(location).attr('hash').substring(1) != '') {
 			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');
 		}
