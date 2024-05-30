@@ -41,7 +41,15 @@
 
     <link id="theme-style" rel="stylesheet" href="assets/css/custom.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GKX11D756Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-GKX11D756Y');
+</script>
 <body data-theme="dark">
     <!-- ******HEADER****** -->
     <header class="header">
