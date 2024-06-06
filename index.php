@@ -44,12 +44,16 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKX11D756Y"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-GKX11D756Y');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GKX11D756Y');
 </script>
+
 <body data-theme="dark">
     <!-- ******HEADER****** -->
     <header class="header">
@@ -335,36 +339,27 @@
                             <div class="skillset">
 
                                 <div class="item">
+                                    <h3 class="level-title">Node.js & React<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
                                     <h3 class="level-title">PHP & Laravel<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="94"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">Flutter & React Native<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="94"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="94"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Node.js & React<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="90"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
@@ -380,12 +375,28 @@
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">React Native<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <h3 class="level-title">Kotlin & Java<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="70"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
+                                <!--//item-->
+
+                                <!-- <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="94"></div>
+                                    </div>
+                                    </div> -->
+                                <!--//item-->
+
+                                <!-- <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="94"></div>
+                                    </div>
+                            </div> -->
                                 <!--//item-->
 
                                 <div class="item">
