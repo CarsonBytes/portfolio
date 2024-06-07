@@ -65,7 +65,7 @@
                         <h1 class="name">Carson
                             <a href="https://github.com/CarsonBytes" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
-                        <h2 class="desc">Co-Founder & Lead Developer @ <b>HKIT.Supply</b>
+                        <h2 class="desc">Team Lead & Senior Software Developer @ <b>HKIT.Supply</b>
                         </h2>
                         <?php /* <ul class="social list-inline">
                             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -113,9 +113,9 @@
                         <div class="content">
                             <p>With over 15 years of experience in the web application industry, I specialize in web & app development, ERP, E-commerce, and <a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();$('.more-link-sub').show();" data-bs-target="#collapseExample" href="#">more...</a><span class="more-link-sub" style="display: none">more...</span></p>
                             <div class="collapse" id="collapseExample">
-                                <p>Currently based in Hong Kong, I offer professional services such as team management, project consultation, and enterprise application development to multiple tech companies.</p>
+                                <p>Currently based in Hong Kong, I engage in technical project and team management, as well as enterprise solutions.</p>
                                 <p>During my time in Germany and Japan from 2009 to 2019, I excelled in collaborative team environments, emphasizing coding standards, code review, and collaborative documentation.</p>
-                                <p>In response to the challenges of the COVID-19 pandemic, I transitioned to self-employment, delivering exceptional results while fostering positive relationships with clients and prospective employers. This experience has honed my adaptability and ability to thrive in dynamic environments.</p>
+                                <!-- <p>In response to the challenges of the COVID-19 pandemic, I transitioned to self-employment, delivering exceptional results while fostering positive relationships with clients and prospective employers. This experience has honed my adaptability and ability to thrive in dynamic environments.</p> -->
                             </div>
                         </div>
                         <!--//content-->
