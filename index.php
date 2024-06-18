@@ -65,7 +65,7 @@
                         <h1 class="name">Carson
                             <a href="https://github.com/CarsonBytes" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
-                        <h2 class="desc">Team Lead & Senior Software Developer @ <b>HKIT.Supply</b>
+                        <h2 class="desc">Team Lead & Senior Software Developer <?php /*  @ <b>HKIT.Supply</b>  */ ?>
                         </h2>
                         <?php /* <ul class="social list-inline">
                             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -485,7 +485,7 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">© <?php echo date("Y"); ?> HKIT.Supply. All Rights Reserved.</small>
+            <small class="copyright">© <?php echo date("Y"); ?> Carson N. All Rights Reserved.</small>
         </div>
         <!--//container-->
     </footer>
