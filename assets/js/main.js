@@ -413,7 +413,7 @@ $(function () {
 			'img_title': titles['ahkns'],
 			'button_list': [{
 				'title': 'Live (for testing)',
-				'url': 'https://eshop-test.nurse.org.hk/',
+				'url': 'http://ahkns-eshop-prod-alb1-1925844921.ap-east-1.elb.amazonaws.com/',
 				'new_window': true
 			} /*, {
 				'title': 'Interactive Prototype',
