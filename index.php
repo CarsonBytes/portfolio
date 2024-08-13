@@ -65,7 +65,7 @@
                         <h1 class="name">Carson
                             <a href="https://github.com/CarsonBytes" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
-                        <h2 class="desc">Team Lead & Senior Software Developer <?php /*  @ <b>HKIT.Supply</b>  */ ?>
+                        <h2 class="desc">Senior Software Developer & Scrum Master<?php /*  @ <b>HKIT.Supply</b>  */ ?>
                         </h2>
                         <?php /* <ul class="social list-inline">
                             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -77,6 +77,7 @@
                         <div class="icons">
                             <a target="_blank" class="fadein" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
                             <a target="_blank" class="fadein" href="https://github.com/CarsonBytes"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
+                            <a target="_blank" class="fadein" href="https://www.credly.com/badges/e650a212-9d4d-4d7c-80fd-376a8b8256a1/public_url"><img data-src="/assets/images/professional-scrum-master-ii-psm-ii.png" height="58" alt="Professional Scrum Master™ II (PSM II)" data-bs-toggle="tooltip" title="Professional Scrum Master™ II (PSM II)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/professional-scrum-master-ii-psm-ii.png" data-loaded="true" data-fully-loaded="true"></a>
                             <a target="_blank" class="fadein" href="https://learn.microsoft.com/en-us/users/cn-5599/credentials/dc8d8ee62a0d5266"><img data-src="/assets/images/microsoft-certified-associate-badge.svg" height="58" alt="Microsoft Certified: Azure AI Engineer Associate" data-bs-toggle="tooltip" title="Microsoft Certified: Azure AI Engineer Associate" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/microsoft-certified-associate-badge.svg" data-loaded="true" data-fully-loaded="true"></a>
                             <!-- <a target="_blank" class="fadein" href="https://www.zend-zce.com/en/yellow-pages/ZEND020400"> --><img data-src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" data-loaded="true" data-fully-loaded="true"><!-- </a> -->
                             <!-- <img data-src="assets/images/tvp-logo-en.webp" height="58" alt="Supplier For Technology Voucher Programme" data-bs-toggle="tooltip" title="Supplier For Technology Voucher Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/tvp-logo-en.webp" data-loaded="true" data-fully-loaded="true"> -->
