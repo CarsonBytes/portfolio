@@ -380,7 +380,7 @@
                                 <div class="item">
                                     <h3 class="level-title">Figma Prototyping<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
