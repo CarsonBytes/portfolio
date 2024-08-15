@@ -359,7 +359,7 @@
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Flutter & React Native<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <h3 class="level-title">Vue.js & React (Native)<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar progress">
                                         <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86"></div>
                                     </div>
