@@ -341,7 +341,7 @@
                             <div class="skillset">
 
                                 <div class="item">
-                                    <h3 class="level-title">Node.js & React<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">PHP & Laravel<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar progress">
                                         <div class="progress-bar level-bar-inner" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -350,7 +350,7 @@
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">PHP & Laravel<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">Node.js & Express.js<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar progress">
                                         <div class="progress-bar level-bar-inner" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -368,18 +368,19 @@
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Figma Prototyping<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <h3 class="level-title">Python &amp; Selenium<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
+
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Kotlin & Java<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
+                                    <h3 class="level-title">Figma Prototyping<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="70"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
@@ -399,16 +400,6 @@
                                         <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="94"></div>
                                     </div>
                             </div> -->
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Selenium<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
-
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
                                 <!--//item-->
 
                                 <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
