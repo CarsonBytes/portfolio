@@ -78,9 +78,10 @@
                             <a target="_blank" class="fadein" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
                             <a target="_blank" class="fadein" href="https://www.linkedin.com/in/carsonnghk"><img class="linkedin_logo" src="/assets/images/64px-LinkedIn_logo_initials.png" height="58" alt="My LinkedIn Profile" data-bs-toggle="tooltip" title="My LinkedIn Profile"></a>
                             <a target="_blank" class="fadein" href="https://github.com/CarsonBytes"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
+                            <a target="_blank" class="fadein" href="https://www.credly.com/badges/ebcb9210-8410-4999-9c17-a3e38a62a0b1/public_url"><img data-src="/assets/images/terraform.png" height="58" alt="HashiCorp Certified: Terraform Associate (003)" data-bs-toggle="tooltip" title="HashiCorp Certified: Terraform Associate (003)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/terraform.png" data-loaded="true" data-fully-loaded="true"></a>
                             <a target="_blank" class="fadein" href="https://www.credly.com/badges/e650a212-9d4d-4d7c-80fd-376a8b8256a1/public_url"><img data-src="/assets/images/professional-scrum-master-ii-psm-ii.png" height="58" alt="Professional Scrum Master™ II (PSM II)" data-bs-toggle="tooltip" title="Professional Scrum Master™ II (PSM II)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/professional-scrum-master-ii-psm-ii.png" data-loaded="true" data-fully-loaded="true"></a>
                             <a target="_blank" class="fadein" href="https://learn.microsoft.com/en-us/users/cn-5599/credentials/dc8d8ee62a0d5266"><img data-src="/assets/images/microsoft-certified-associate-badge.svg" height="58" alt="Microsoft Certified: Azure AI Engineer Associate" data-bs-toggle="tooltip" title="Microsoft Certified: Azure AI Engineer Associate" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/microsoft-certified-associate-badge.svg" data-loaded="true" data-fully-loaded="true"></a>
-                            <a target="_blank" class="fadein" href="https://media.licdn.com/dms/image/v2/D4D2DAQHDrd1dRLPRfg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1721168735325?e=1723726800&v=beta&t=7k4Tie-Ga855ld9i5hcK9Z00zv5UlGrVhm9J2RYjXUU"><img data-src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="https://www.zend.com/sites/zend/files/image/2019-09/zf-zce-logo.gif" data-loaded="true" data-fully-loaded="true"></a>
+                            <a target="_blank" class="fadein" href="/assets/images/zend_cert.jfif"><img data-src="/assets/images/zce-2017-php-155x155_0.webp" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/zce-2017-php-155x155_0.webp" data-loaded="true" data-fully-loaded="true"></a>
                             <!-- <img data-src="assets/images/tvp-logo-en.webp" height="58" alt="Supplier For Technology Voucher Programme" data-bs-toggle="tooltip" title="Supplier For Technology Voucher Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/tvp-logo-en.webp" data-loaded="true" data-fully-loaded="true"> -->
                             <!-- <img data-src="assets/images/shopify-partner.jpg" height="58" alt="Shopify Partner" data-bs-toggle="tooltip" title="Shopify Partner" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/shopify-partner.jpg" data-loaded="true" data-fully-loaded="true"> -->
                             <!-- <img data-src="assets/images/ccmf.PNG" height="58" alt="Incubatee For Cyberport Incubation Programme" data-bs-toggle="tooltip" title="Incubatee For Cyberport Incubation Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/ccmf.PNG" data-loaded="true" data-fully-loaded="true"> -->
@@ -332,6 +333,52 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//aside-->
+
+                <aside class="certifications aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Certifications</h2>
+                        <div class="content">
+                            <ul class="badge-list">
+                                <li class="badge-item">
+                                    <a href="https://www.credly.com/badges/ebcb9210-8410-4999-9c17-a3e38a62a0b1/public_url" class="link" target="_blank">
+                                        <img data-src="/assets/images/terraform.png" src="/assets/images/terraform.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="HashiCorp Certified: Terraform Associate (003)" title="HashiCorp Certified: Terraform Associate (003)" data-loaded="true" data-fully-loaded="true">
+                                    </a>
+                                    <div>
+                                        <a href="https://www.credly.com/badges/ebcb9210-8410-4999-9c17-a3e38a62a0b1/public_url" class="link" target="_blank">HashiCorp Certified: Terraform Associate (003)</a>
+                                    </div>
+                                </li>
+                                <li class="badge-item">
+                                    <a href="https://www.credly.com/badges/e650a212-9d4d-4d7c-80fd-376a8b8256a1/public_url" class="link" target="_blank">
+                                        <img data-src="/assets/images/professional-scrum-master-ii-psm-ii.png" src="/assets/images/professional-scrum-master-ii-psm-ii.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="Professional Scrum Master™ II (PSM II)" title="Professional Scrum Master™ II (PSM II)" data-loaded="true" data-fully-loaded="true">
+                                    </a>
+                                    <div>
+                                        <a href="https://www.credly.com/badges/e650a212-9d4d-4d7c-80fd-376a8b8256a1/public_url" class="link" target="_blank">Professional Scrum Master™ II (PSM II)</a>
+                                    </div>
+                                </li>
+                                <li class="badge-item">
+                                    <a href="https://learn.microsoft.com/en-us/users/cn-5599/credentials/dc8d8ee62a0d5266" class="link" target="_blank">
+                                        <img data-src="/assets/images/microsoft-certified-associate-badge.svg" src="/assets/images/microsoft-certified-associate-badge.svg" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="Microsoft Certified: Azure AI Engineer Associate" title="Microsoft Certified: Azure AI Engineer Associate" data-loaded="true" data-fully-loaded="true">
+                                    </a>
+                                    <div>
+                                        <a href="https://learn.microsoft.com/en-us/users/cn-5599/credentials/dc8d8ee62a0d5266" class="link" target="_blank">Microsoft Certified: Azure AI Engineer Associate</a>
+                                    </div>
+                                </li>
+                                <li class="badge-item">
+                                    <a href="/assets/images/zend_cert.jfif" class="link" target="_blank">
+                                        <img data-src="/assets/images/zce-2017-php-155x155_0.webp" src="/assets/images/zce-2017-php-155x155_0.webp" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="Zend Certified Engineer" title="Zend Certified Engineer" data-loaded="true" data-fully-loaded="true">
+                                    </a>
+                                    <div>
+                                        <a href="/assets/images/zend_cert.jfif" class="link" target="_blank">Zend Certified Engineer</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
 
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
