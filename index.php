@@ -63,7 +63,7 @@
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
                     <div class="profile-content">
                         <h1 class="name">Carson
-                            <a href="https://github.com/CarsonBytes" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
+                            <a href="https://bit.ly/3Xq7hMv" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
                         <h2 class="desc">Senior Software Developer <b>|</b> DevOps Engineer <b>|</b> Scrum Master <?php /*  @ <b>HKIT.Supply</b>  */ ?>
                         </h2>
@@ -75,12 +75,12 @@
 		                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>      
                         </ul> */ ?>
                         <div class="icons">
-                            <a target="_blank" class="fadein" href="https://stackoverflow.com/users/242058/capitaine"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
-                            <a target="_blank" class="fadein" href="https://www.linkedin.com/in/carsonnghk"><img class="linkedin_logo" src="/assets/images/64px-LinkedIn_logo_initials.png" height="58" alt="My LinkedIn Profile" data-bs-toggle="tooltip" title="My LinkedIn Profile"></a>
-                            <a target="_blank" class="fadein" href="https://github.com/CarsonBytes"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
-                            <a target="_blank" class="fadein" href="https://www.credly.com/badges/ebcb9210-8410-4999-9c17-a3e38a62a0b1/public_url"><img data-src="/assets/images/terraform.png" height="58" alt="HashiCorp Certified: Terraform Associate (003)" data-bs-toggle="tooltip" title="HashiCorp Certified: Terraform Associate (003)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/terraform.png" data-loaded="true" data-fully-loaded="true"></a>
-                            <a target="_blank" class="fadein" href="https://www.credly.com/badges/e650a212-9d4d-4d7c-80fd-376a8b8256a1/public_url"><img data-src="/assets/images/professional-scrum-master-ii-psm-ii.png" height="58" alt="Professional Scrum Master™ II (PSM II)" data-bs-toggle="tooltip" title="Professional Scrum Master™ II (PSM II)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/professional-scrum-master-ii-psm-ii.png" data-loaded="true" data-fully-loaded="true"></a>
-                            <a target="_blank" class="fadein" href="https://learn.microsoft.com/en-us/users/cn-5599/credentials/dc8d8ee62a0d5266"><img data-src="/assets/images/microsoft-certified-associate-badge.svg" height="58" alt="Microsoft Certified: Azure AI Engineer Associate" data-bs-toggle="tooltip" title="Microsoft Certified: Azure AI Engineer Associate" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/microsoft-certified-associate-badge.svg" data-loaded="true" data-fully-loaded="true"></a>
+                            <a target="_blank" class="fadein" href="https://bit.ly/4dKfMsG"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
+                            <a target="_blank" class="fadein" href="https://bit.ly/3Z1IS20"><img class="linkedin_logo" src="/assets/images/64px-LinkedIn_logo_initials.png" height="58" alt="My LinkedIn Profile" data-bs-toggle="tooltip" title="My LinkedIn Profile"></a>
+                            <a target="_blank" class="fadein" href="https://bit.ly/3Xq7hMv"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
+                            <a target="_blank" class="fadein" href="https://bit.ly/4dX2jx2"><img data-src="/assets/images/terraform.png" height="58" alt="HashiCorp Certified: Terraform Associate (003)" data-bs-toggle="tooltip" title="HashiCorp Certified: Terraform Associate (003)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/terraform.png" data-loaded="true" data-fully-loaded="true"></a>
+                            <a target="_blank" class="fadein" href="https://bit.ly/3ABF8tR"><img data-src="/assets/images/professional-scrum-master-ii-psm-ii.png" height="58" alt="Professional Scrum Master™ II (PSM II)" data-bs-toggle="tooltip" title="Professional Scrum Master™ II (PSM II)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/professional-scrum-master-ii-psm-ii.png" data-loaded="true" data-fully-loaded="true"></a>
+                            <a target="_blank" class="fadein" href="https://bit.ly/4e4JtnJ"><img data-src="/assets/images/microsoft-certified-associate-badge.svg" height="58" alt="Microsoft Certified: Azure AI Engineer Associate" data-bs-toggle="tooltip" title="Microsoft Certified: Azure AI Engineer Associate" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/microsoft-certified-associate-badge.svg" data-loaded="true" data-fully-loaded="true"></a>
                             <a target="_blank" class="fadein" href="/assets/images/zend_cert.jfif"><img data-src="/assets/images/zce-2017-php-155x155_0.webp" height="58" alt="Zend Certified Engineer" data-bs-toggle="tooltip" title="Zend Certified Engineer" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/zce-2017-php-155x155_0.webp" data-loaded="true" data-fully-loaded="true"></a>
                             <!-- <img data-src="assets/images/tvp-logo-en.webp" height="58" alt="Supplier For Technology Voucher Programme" data-bs-toggle="tooltip" title="Supplier For Technology Voucher Programme" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/tvp-logo-en.webp" data-loaded="true" data-fully-loaded="true"> -->
                             <!-- <img data-src="assets/images/shopify-partner.jpg" height="58" alt="Shopify Partner" data-bs-toggle="tooltip" title="Shopify Partner" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="assets/images/shopify-partner.jpg" data-loaded="true" data-fully-loaded="true"> -->
@@ -97,7 +97,7 @@
                             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
                         </div>
                     </div><!--//dark-mode-switch-->
-                    <a class="btn btn-cta-primary" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20make%20an%20inquiry." target="_blank"><i class="fa-brands fa-whatsapp"></i><!-- <i class="fas fa-paper-plane"></i> --> Contact
+                    <a class="btn btn-cta-primary" href="https://bit.ly/47dfvfm" target="_blank"><i class="fa-brands fa-whatsapp"></i><!-- <i class="fas fa-paper-plane"></i> --> Contact
                         Me</a>
                 </div>
                 <!--//col-->
@@ -294,7 +294,7 @@
                         <!-- <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a
                                 href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub
                                 Calendar</a> widget. -->
-                        <a href="https://github.com/CarsonBytes" target="_blank">https://github.com/CarsonBytes</a>
+                        <a href="https://bit.ly/3Xq7hMv" target="_blank">https://github.com/CarsonBytes</a>
 
 
                         <!-- Prepare a container for your calendar. -->
@@ -325,7 +325,7 @@
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location: </span>Hong Kong
                                 </li>
                                 <!-- <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span>carsonng2000 [at] gmail</li> -->
-                                <li><i class="fa-brands fa-whatsapp"></i><!-- <i class="fas fa-phone"></i> --><span class="sr-only">WhatsApp: </span><a target="_blank" href="https://wa.me/+85259173926?text=Hi%20Carson,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20make%20an%20inquiry.">+852 5917 3926</a></li>
+                                <li><i class="fa-brands fa-whatsapp"></i><!-- <i class="fas fa-phone"></i> --><span class="sr-only">WhatsApp: </span><a target="_blank" href="https://bit.ly/47dfvfm">+852 5917 3926</a></li>
                             </ul>
                         </div>
                         <!--//content-->
@@ -340,27 +340,27 @@
                         <div class="content">
                             <ul class="badge-list">
                                 <li class="badge-item">
-                                    <a href="https://www.credly.com/badges/ebcb9210-8410-4999-9c17-a3e38a62a0b1/public_url" class="link" target="_blank">
+                                    <a href="https://bit.ly/4dX2jx2" class="link" target="_blank">
                                         <img data-src="/assets/images/terraform.png" src="/assets/images/terraform.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="HashiCorp Certified: Terraform Associate (003)" title="HashiCorp Certified: Terraform Associate (003)" data-loaded="true" data-fully-loaded="true">
                                     </a>
                                     <div>
-                                        <a href="https://www.credly.com/badges/ebcb9210-8410-4999-9c17-a3e38a62a0b1/public_url" class="link" target="_blank">HashiCorp Certified: Terraform Associate (003)</a>
+                                        <a href="https://bit.ly/4dX2jx2" class="link" target="_blank">HashiCorp Certified: Terraform Associate (003)</a>
                                     </div>
                                 </li>
                                 <li class="badge-item">
-                                    <a href="https://www.credly.com/badges/e650a212-9d4d-4d7c-80fd-376a8b8256a1/public_url" class="link" target="_blank">
+                                    <a href="https://bit.ly/3ABF8tR" class="link" target="_blank">
                                         <img data-src="/assets/images/professional-scrum-master-ii-psm-ii.png" src="/assets/images/professional-scrum-master-ii-psm-ii.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="Professional Scrum Master™ II (PSM II)" title="Professional Scrum Master™ II (PSM II)" data-loaded="true" data-fully-loaded="true">
                                     </a>
                                     <div>
-                                        <a href="https://www.credly.com/badges/e650a212-9d4d-4d7c-80fd-376a8b8256a1/public_url" class="link" target="_blank">Professional Scrum Master™ II (PSM II)</a>
+                                        <a href="https://bit.ly/3ABF8tR" class="link" target="_blank">Professional Scrum Master™ II (PSM II)</a>
                                     </div>
                                 </li>
                                 <li class="badge-item">
-                                    <a href="https://learn.microsoft.com/en-us/users/cn-5599/credentials/dc8d8ee62a0d5266" class="link" target="_blank">
+                                    <a href="https://bit.ly/4e4JtnJ" class="link" target="_blank">
                                         <img data-src="/assets/images/microsoft-certified-associate-badge.svg" src="/assets/images/microsoft-certified-associate-badge.svg" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="Microsoft Certified: Azure AI Engineer Associate" title="Microsoft Certified: Azure AI Engineer Associate" data-loaded="true" data-fully-loaded="true">
                                     </a>
                                     <div>
-                                        <a href="https://learn.microsoft.com/en-us/users/cn-5599/credentials/dc8d8ee62a0d5266" class="link" target="_blank">Microsoft Certified: Azure AI Engineer Associate</a>
+                                        <a href="https://bit.ly/4e4JtnJ" class="link" target="_blank">Microsoft Certified: Azure AI Engineer Associate</a>
                                     </div>
                                 </li>
                                 <li class="badge-item">
