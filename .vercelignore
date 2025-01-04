@@ -1,7 +1,3 @@
-.DS_Store
-config.codekit
-assets/images/happy.psd
-
 #both .vercelignore and .gitignore
 
 # PHP
