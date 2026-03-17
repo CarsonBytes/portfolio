@@ -344,6 +344,10 @@
                                     <a href="https://bit.ly/3PBsx1b" class="link" target="_blank">
                                         <img data-src="/assets/images/aws-sap-c02.png" src="/assets/images/aws-sap-c02.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="AWS Certified Solutions Architect - Professional" title="AWS Certified Solutions Architect - Professional" data-loaded="true" data-fully-loaded="true">
                                     </a>
+                                    <div>
+                                        <a href="https://bit.ly/3PBsx1b" class="link" target="_blank">AWS Certified Solutions Architect - Professional</a>
+                                    </div>
+                                </li>
                                 <li class="badge-item">
                                     <a href="https://bit.ly/4dX2jx2" class="link" target="_blank">
                                         <img data-src="/assets/images/terraform.png" src="/assets/images/terraform.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="HashiCorp Certified: Terraform Associate (003)" title="HashiCorp Certified: Terraform Associate (003)" data-loaded="true" data-fully-loaded="true">
