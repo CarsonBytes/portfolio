@@ -63,7 +63,7 @@
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
                     <div class="profile-content">
                         <h1 class="name">Carson
-                            <a href="https://bit.ly/3Xq7hMv" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
+                            <a href="https://carsonng.short.gy/carsonng-github" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
                         <h2 class="desc">IT Project Manager & Team Lead <b>|</b> AWS Solution Architect Professional <b>|</b> Senior Software & DevOps Engineer  <?php /*  @ <b>HKIT.Supply</b>  */ ?>
                         </h2>
@@ -78,6 +78,7 @@
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/capitaine-stack"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/carsonng-linkedin"><img class="linkedin_logo" src="/assets/images/64px-LinkedIn_logo_initials.png" height="58" alt="My LinkedIn Profile" data-bs-toggle="tooltip" title="My LinkedIn Profile"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/carsonng-github"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
+                            <a target="_blank" class="fadein" href="https://carsonng.short.gy/credly-pmp"><img data-src="/assets/images/pmp.png" height="58" alt="Project Management Professional" data-bs-toggle="tooltip" title="Project Management Professional" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/pmp.png" data-loaded="true" data-fully-loaded="true"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/certmetrics-verify"><img data-src="/assets/images/aws-sap-c02.png" height="58" alt="AWS Certified Solutions Architect - Professional" data-bs-toggle="tooltip" title="AWS Certified Solutions Architect - Professional" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/aws-sap-c02.png" data-loaded="true" data-fully-loaded="true"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/terraform-credly"><img data-src="/assets/images/terraform.png" height="58" alt="HashiCorp Certified: Terraform Associate (003)" data-bs-toggle="tooltip" title="HashiCorp Certified: Terraform Associate (003)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/terraform.png" data-loaded="true" data-fully-loaded="true"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/psm2-credly"><img data-src="/assets/images/professional-scrum-master-ii-psm-ii.png" height="58" alt="Professional Scrum Master™ II (PSM II)" data-bs-toggle="tooltip" title="Professional Scrum Master™ II (PSM II)" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/professional-scrum-master-ii-psm-ii.png" data-loaded="true" data-fully-loaded="true"></a>
@@ -116,7 +117,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>With over 18 years of experience in ERP systems, AI automation, and scalable cloud solutions, I am skilled in leading cross-functional teams and delivering high-impact projects for clients. Over the last 2-3 years, I have transitioned into a project management-focused role, leading cross-functional teams to deliver complex solutions and working directly with clients to define requirements. <a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();$('.more-link-sub').show();" data-bs-target="#collapseExample" href="#">More...</a><span class="more-link-sub" style="display: none">More...</span></p>
+                            <p>With over 18 years of experience in ERP systems, AI automation, and scalable cloud solutions, I am skilled in leading cross-functional teams and delivering high-impact projects for clients. Over the last 4 years, I have transitioned into a project management-focused role, leading cross-functional teams to deliver complex solutions and working directly with clients to define requirements. <a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();$('.more-link-sub').show();" data-bs-target="#collapseExample" href="#">More...</a><span class="more-link-sub" style="display: none">More...</span></p>
                             <div class="collapse" id="collapseExample">
                                 <p>Currently based in Hong Kong, I engage in technical project and team management, as well as enterprise solutions.</p>
                                 <p>During my time in Germany and Japan from 2009 to 2019, I excelled in collaborative team environments, emphasizing coding standards, code review, and collaborative documentation.</p>
@@ -340,6 +341,14 @@
                         <h2 class="heading">Certifications</h2>
                         <div class="content">
                             <ul class="badge-list">
+                                <li class="badge-item">
+                                    <a href="https://carsonng.short.gy/credly-pmp" class="link" target="_blank">
+                                        <img data-src="/assets/images/pmp.png" src="/assets/images/pmp.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="Project Management Professional" title="Project Management Professional" data-loaded="true" data-fully-loaded="true">
+                                    </a>
+                                    <div>
+                                        <a href="https://carsonng.short.gy/credly-pmp" class="link" target="_blank">Project Management Professional</a>
+                                    </div>
+                                </li>
                                 <li class="badge-item">
                                     <a href="https://carsonng.short.gy/certmetrics-verify" class="link" target="_blank">
                                         <img data-src="/assets/images/aws-sap-c02.png" src="/assets/images/aws-sap-c02.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="AWS Certified Solutions Architect - Professional" title="AWS Certified Solutions Architect - Professional" data-loaded="true" data-fully-loaded="true">
