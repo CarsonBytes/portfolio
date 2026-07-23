@@ -194,12 +194,14 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 $(function () {
-	var folder = ['sprint_analyzer', 'change_impact_assessor', 'study_platform', 'event_radar', 'moodle', 'thermometer', 'awc', 'dsj', 'erp', 'elpms', 'sensai', 'urbanp', 'ahkns', 'sb', 'stripe', 'lhc', 'nlc', 'mib', 'csb'];
+	var folder = ['sprint_analyzer', 'change_impact_assessor', 'quant_dashboard', 'aws_code_review', 'study_platform', 'event_radar', 'moodle', 'thermometer', 'awc', 'dsj', 'erp', 'elpms', 'sensai', 'urbanp', 'ahkns', 'sb', 'stripe', 'lhc', 'nlc', 'mib', 'csb'];
 	var projects_path = 'assets/images/projects/';
 
 	var images = [];
 	images['sprint_analyzer'] = ['cover.png'];
 	images['change_impact_assessor'] = ['cover.png'];
+	images['quant_dashboard'] = ['cover.png'];
+	images['aws_code_review'] = ['cover.png'];
 	images['study_platform'] = ['cover.png'];
 	images['event_radar'] = ['cover.png'];
 	images['moodle'] = ['landing_blurred.jpg', 'home_blurred.jpg', 'course_list_blurred.jpg', 'course_intro.png', 'resource_list_blurred.png', 'lib_admin.png', 'lib_records_blurred.png'];
@@ -221,6 +223,8 @@ $(function () {
 	var titles = [];
 	titles['sprint_analyzer'] = ['Sprint Analyzer cover'];
 	titles['change_impact_assessor'] = ['Change Impact Assessor cover'];
+	titles['quant_dashboard'] = ['Quant Trading Dashboard cover'];
+	titles['aws_code_review'] = ['AWS AI Code Review cover'];
 	titles['study_platform'] = ['Adaptive Study Platform cover'];
 	titles['event_radar'] = ['Event Radar cover'];
 	titles['moodle'] = ['Landing page', 'Home page', 'Course list', 'Course introduction', 'Resource list page', 'Links for Library admin role', 'Library book record list page']
@@ -313,8 +317,34 @@ $(function () {
 			],
 			'tags': ['AI/ML', 'Python', 'LangGraph']
 		}, {
+			'title': 'Quantitative Trade-Analysis Platform',
+			'description': 'A research-driven trading platform for a diversified 22-ETF book: a walk-forward, deflated-Sharpe-tested backtester proves an edge before any capital is risked, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate, and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated paper account.<br><br>80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge (weekly trend-following) plus one validated satellite survived; everything else was rejected with data, not intuition.',
+			'thumbnail': thumbnail_paths['quant_dashboard'],
+			'large': large_paths['quant_dashboard'],
+			'img_title': titles['quant_dashboard'],
+			'button_list': [{
+				'title': 'GitHub',
+				'url': 'https://github.com/CarsonBytes/trade_analysis',
+				'new_window': true
+			}
+			],
+			'tags': ['AI/ML', 'Python', 'Trading']
+		}, {
+			'title': 'AWS AI Code Review & Security Scanning Demo',
+			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) — every PR is reviewed and scanned before merge, with critical findings blocking until resolved.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
+			'thumbnail': thumbnail_paths['aws_code_review'],
+			'large': large_paths['aws_code_review'],
+			'img_title': titles['aws_code_review'],
+			'button_list': [{
+				'title': 'GitHub',
+				'url': 'https://github.com/CarsonBytes/aws_code_review',
+				'new_window': true
+			}
+			],
+			'tags': ['AI/ML', 'AWS', 'Security', 'DevOps']
+		}, {
 			'title': 'Adaptive Study Platform — Production RAG',
-			'description': 'A Supabase + pgvector RAG exam-prep application serving real study content and users. Retrieval-augmented Q&A runs on Postgres-native vector search — no separate vector database to operate.<br><br>Multi-provider LLM routing with per-project usage tracking against a shared quota.',
+			'description': 'An AIGP (AI Governance Professional) exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit that targets weak topics, and Supabase + pgvector RAG for grounded AI explanations on wrong answers.<br><br>LLM-generated retrospective study plans aggregate wrong-answer patterns into a weakness analysis — Postgres-native vector search means no separate vector database to operate.',
 			'thumbnail': thumbnail_paths['study_platform'],
 			'large': large_paths['study_platform'],
 			'img_title': titles['study_platform'],
@@ -322,18 +352,26 @@ $(function () {
 				'title': 'Live',
 				'url': 'https://study.carsonng.com',
 				'new_window': true
+			}, {
+				'title': 'GitHub',
+				'url': 'https://github.com/CarsonBytes/study_platform',
+				'new_window': true
 			}
 			],
 			'tags': ['AI/ML', 'RAG']
 		}, {
 			'title': 'Event Radar — AI Event Discovery',
-			'description': 'A public AI-powered event-discovery app for Hong Kong with personalized matching, a swipe-based deck, and a live local events data connector.<br><br>Engineered request-budget resilience around a shared, rate-limited LLM API with graceful fallback, and a self-supervising backend watchdog for reliable uptime.',
+			'description': 'An AI-powered event discovery assistant for Hong Kong: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage ranking (cheap keyword filter, then LLM rerank only on the shortlist) to keep API costs sane.<br><br>Every LLM call degrades gracefully on rate limits or failures instead of taking the app down, and a closed feedback loop (thumbs up/down) adjusts per-user interest weights over time.',
 			'thumbnail': thumbnail_paths['event_radar'],
 			'large': large_paths['event_radar'],
 			'img_title': titles['event_radar'],
 			'button_list': [{
 				'title': 'Live',
 				'url': 'https://events.carsonng.com',
+				'new_window': true
+			}, {
+				'title': 'GitHub',
+				'url': 'https://github.com/CarsonBytes/event_planner',
 				'new_window': true
 			}
 			],

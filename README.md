@@ -1,56 +1,42 @@
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2018/07/free-bootstrap-portfolio-theme-for-web-developers.jpg" alt="Developer Theme" width="750" /></a>
+# Carson Ng — Portfolio
 
-## Theme Details & Demo
+[carsonng.com](https://carsonng.com) — IT Project Manager & Team Lead · AI Engineering & Governance · AWS Solutions Architect Professional
 
-**Demo:** https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/
+18 years of cross-border engineering experience (Germany + Hong Kong) across ERP systems, applied AI engineering, and scalable cloud solutions. PMP + CISA certified, AIGP (AI Governance Professional) in progress. This repo is the source for my personal portfolio site.
 
-Developer is a free Bootstrap 5 template designed to **help developers promote their work**. 
-It can be used as a **professional portal** to your other online portfolios or websites (eg. Linkedin, Blog, GitHub etc) **in a modular fashion**. 
-The template comes with all of the **source SCSS files included** so the styling/colour can easily be customised to your taste.
+## Featured AI Engineering Projects
 
-**New Feature - Dark Mode**
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2021/07/developer-template-BS5-darkmode.gif" alt="Developer Theme Dark Mode" width="750" /></a>
+| Project | What it does | Links |
+|---|---|---|
+| **Quantitative Trade-Analysis Platform** | Research-driven trading platform for a diversified 22-ETF book: a walk-forward, deflated-Sharpe-tested backtester proves an edge before capital is risked; a multi-agent LLM analyst feeds a deterministic risk gate; the live dashboard now trades real money on Interactive Brokers alongside an isolated paper account. 80+ strategy ideas tested — only one core edge survived. | [GitHub](https://github.com/CarsonBytes/trade_analysis) |
+| **Change Impact Assessor** | Retrieval-grounded risk assessor for code/infra changes. HIGH-risk changes pause a LangGraph workflow behind a real human-in-the-loop checkpoint, not just an advisory label, with structural anti-hallucination guards. | [Live demo](https://carsonng.short.gy/change-impact-assessor) · [GitHub](https://carsonng.short.gy/change-impact-assessor-github) |
+| **Sprint Analyzer** | AI sprint retrospective generator with a deterministic-numbers / LLM-prose split — pandas computes every metric from Jira/ClickUp exports, the LLM only writes prose. 110+ unit tests run without an API key. | [Live demo](https://carsonng.short.gy/sprint-analyzer) · [GitHub](https://carsonng.short.gy/sprint-analyzer-carsonng) |
+| **Adaptive Study Platform** | An AIGP exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit targeting weak topics, and Supabase + pgvector RAG for grounded AI explanations. | [Live](https://study.carsonng.com) · [GitHub](https://github.com/CarsonBytes/study_platform) |
+| **Event Radar** | AI-powered event discovery for Hong Kong: two-stage LLM ranking to keep API costs sane, graceful degradation on LLM failures, and a closed personalization feedback loop. | [Live](https://events.carsonng.com) · [GitHub](https://github.com/CarsonBytes/event_planner) |
+| **AWS AI Code Review & Security Scanning Demo** | Automated PR gate combining Amazon Q Developer (AI code review) and Amazon Inspector (security scanning). Real example: the bots caught an over-privileged IAM role, a vulnerable dependency, and a missing CloudFormation security property before merge. | [GitHub](https://github.com/CarsonBytes/aws_code_review) |
 
+## Skills
 
-## Author & License
+- **AI / ML:** LangGraph state machines, LlamaIndex, RAG with metadata filtering, prompt engineering, Whisper fine-tuning, multi-provider LLM orchestration (Anthropic, OpenAI-compatible, DeepSeek), Supabase/pgvector, Streamlit, Gradio, NiceGUI
+- **Backend & Cloud:** PHP & Laravel, Node.js & Express.js, Python, Java, REST APIs, MongoDB, Docker, AWS (EC2, CodePipeline), Terraform, GitHub Actions
+- **Frontend:** React, React Native, Vue.js
+- **Other:** Python & Selenium automation, Figma prototyping
 
-This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE as long as you **keep the footer attribution link**. You do not have the rights to resell, sublicense or redistribute (even for free) the template on its own or as a separate attachment from any of your work.
+## Certifications
 
-If you'd like to **use the template without the footer attribution link**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/)
+- Project Management Professional (PMP)
+- Certified Information Systems Auditor (CISA)
+- AWS Certified Solutions Architect – Professional
+- HashiCorp Certified: Terraform Associate (003)
+- Professional Scrum Master™ II (PSM II)
+- Microsoft Certified: Azure AI Engineer Associate
+- Zend Certified Engineer
+- AIGP – Artificial Intelligence Governance Professional *(in progress)*
 
-#### Follow Xiaoying
+---
 
-[Twitter](https://twitter.com/3rdwave_themes)
+## About this template
 
-[Facebook](https://www.facebook.com/3rdwavethemes/)
+The site is built on **Developer**, a free Bootstrap 5 resume/portfolio theme by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes), used here under its free license (footer attribution required — see [theme details](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/)).
 
-[Dribbble](https://dribbble.com/Xiaoying)
-
-[Medium](https://medium.com/@3rdwave_themes)
-
-[Linkedin](https://uk.linkedin.com/in/xiaoying)
-
-
-## Latest Version
-**Bootstrap 5 v2.0* - 2022-06-08
-
-[Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/?target=changelog)
-
-
-## Features
-
--  Fully Responsive
--  HTML5 + CSS3
--  Built on Bootstrap 5
--  No jQuery dependency
--  **SCSS** source files included
--  FontAwesome icons
-
-
-## Credits
-- [Bootstrap](http://getbootstrap.com/)
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
-- [GitHub Activity Stream](http://caseyscarborough.com/projects/github-activity/)
-- [GitHub Calendar Plugin](https://github.com/IonicaBizau/github-calendar)
-- [Vanilla RSS](https://github.com/sdepold/jquery-rss)
-- Profile image: [Ben Smith](https://www.flickr.com/photos/dotbenjamin/2577394151)
+**Credits:** [Bootstrap](http://getbootstrap.com/) · [FontAwesome](http://fortawesome.github.io/Font-Awesome/) · [Vanilla RSS](https://github.com/sdepold/jquery-rss) · Profile image: [Ben Smith](https://www.flickr.com/photos/dotbenjamin/2577394151)
