@@ -283,23 +283,6 @@ $(function () {
 		'expandingSpeed': 500,
 		'expandingHeight': 650,
 		'items': [{
-			'title': 'Sprint Analyzer — AI Sprint Retrospective Generator',
-			'description': 'An AI sprint retrospective generator built to give engineering leads a trustworthy read on team delivery — a deterministic-numbers / LLM-prose split means pandas computes every metric from real Jira/ClickUp exports, and the LLM is structurally barred from inventing numbers, only writing prose.<br><br>110+ unit tests run without an API key; validated against real production sprint data from teams I\'ve led.',
-			'thumbnail': thumbnail_paths['sprint_analyzer'],
-			'large': large_paths['sprint_analyzer'],
-			'img_title': titles['sprint_analyzer'],
-			'button_list': [{
-				'title': 'Live Demo',
-				'url': 'https://carsonng.short.gy/sprint-analyzer',
-				'new_window': true
-			}, {
-				'title': 'GitHub',
-				'url': 'https://carsonng.short.gy/sprint-analyzer-carsonng',
-				'new_window': true
-			}
-			],
-			'tags': ['AI Engineering', 'AI Governance', 'Technical Leadership']
-		}, {
 			'title': 'Change Impact Assessor — Human-in-the-Loop AI Risk Gate',
 			'description': 'A retrieval-grounded risk assessor for code/infra changes, deployed via Docker on Hugging Face Spaces with GitHub Actions CI on every push. HIGH-risk changes pause a LangGraph workflow behind a real human-in-the-loop checkpoint — not just an advisory label — with structural anti-hallucination guards.<br><br>Verified live against a production endpoint, with CI-tracked precision/recall scored separately, not a single blended metric.',
 			'thumbnail': thumbnail_paths['change_impact_assessor'],
@@ -312,6 +295,19 @@ $(function () {
 			}, {
 				'title': 'GitHub',
 				'url': 'https://carsonng.short.gy/change-impact-assessor-github',
+				'new_window': true
+			}
+			],
+			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
+		}, {
+			'title': 'AWS AI Code Review & Security Scanning Demo',
+			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
+			'thumbnail': thumbnail_paths['aws_code_review'],
+			'large': large_paths['aws_code_review'],
+			'img_title': titles['aws_code_review'],
+			'button_list': [{
+				'title': 'GitHub',
+				'url': 'https://github.com/CarsonBytes/aws_code_review',
 				'new_window': true
 			}
 			],
@@ -330,18 +326,22 @@ $(function () {
 			],
 			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
 		}, {
-			'title': 'AWS AI Code Review & Security Scanning Demo',
-			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
-			'thumbnail': thumbnail_paths['aws_code_review'],
-			'large': large_paths['aws_code_review'],
-			'img_title': titles['aws_code_review'],
+			'title': 'Sprint Analyzer — AI Sprint Retrospective Generator',
+			'description': 'An AI sprint retrospective generator built to give engineering leads a trustworthy read on team delivery — a deterministic-numbers / LLM-prose split means pandas computes every metric from real Jira/ClickUp exports, and the LLM is structurally barred from inventing numbers, only writing prose.<br><br>110+ unit tests run without an API key; validated against real production sprint data from teams I\'ve led.',
+			'thumbnail': thumbnail_paths['sprint_analyzer'],
+			'large': large_paths['sprint_analyzer'],
+			'img_title': titles['sprint_analyzer'],
 			'button_list': [{
+				'title': 'Live Demo',
+				'url': 'https://carsonng.short.gy/sprint-analyzer',
+				'new_window': true
+			}, {
 				'title': 'GitHub',
-				'url': 'https://github.com/CarsonBytes/aws_code_review',
+				'url': 'https://carsonng.short.gy/sprint-analyzer-carsonng',
 				'new_window': true
 			}
 			],
-			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
+			'tags': ['AI Engineering', 'AI Governance', 'Technical Leadership']
 		}, {
 			'title': 'Adaptive Study Platform — Production RAG',
 			'description': 'An AIGP (AI Governance Professional) exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit that targets weak topics, and Supabase + pgvector RAG for grounded AI explanations on wrong answers.<br><br>Postgres-native vector search means no separate vector database to operate; deployed via Cloudflare Tunnel, with LLM-generated retrospective study plans aggregating wrong-answer patterns into a weakness analysis.',
