@@ -1,0 +1,36 @@
+name: Build static index.html from index.php
+
+on:
+  push:
+    branches: [carsonng, master]
+    paths:
+      - index.php
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Render index.php to index.html
+        run: php index.php > index.html
+
+      - name: Commit rebuilt index.html
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "index.html unchanged, nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "chore: rebuild index.html from index.php"
+          git push

@@ -544,7 +544,7 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">© <?php echo date("Y"); ?> Carson N. All Rights Reserved.</small>
+            <small class="copyright">© <span id="currentYear"></span> Carson N. All Rights Reserved.</small>
         </div>
         <!--//container-->
     </footer>
