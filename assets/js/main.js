@@ -284,7 +284,7 @@ $(function () {
 		'expandingHeight': 650,
 		'items': [{
 			'title': 'Sprint Analyzer — AI Sprint Retrospective Generator',
-			'description': 'An AI-powered sprint retrospective generator with a deterministic-numbers / LLM-prose split — pandas computes every metric from Jira/ClickUp exports, the LLM only writes prose, eliminating fabricated numbers.<br><br>110+ unit tests run without an API key; validated against real production sprint data.',
+			'description': 'An AI sprint retrospective generator built to give engineering leads a trustworthy read on team delivery — a deterministic-numbers / LLM-prose split means pandas computes every metric from real Jira/ClickUp exports, and the LLM is structurally barred from inventing numbers, only writing prose.<br><br>110+ unit tests run without an API key; validated against real production sprint data from teams I\'ve led.',
 			'thumbnail': thumbnail_paths['sprint_analyzer'],
 			'large': large_paths['sprint_analyzer'],
 			'img_title': titles['sprint_analyzer'],
@@ -298,10 +298,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI/ML', 'Python']
+			'tags': ['AI Engineering', 'AI Governance', 'Technical Leadership']
 		}, {
 			'title': 'Change Impact Assessor — Human-in-the-Loop AI Risk Gate',
-			'description': 'A retrieval-grounded risk assessor for code/infra changes. HIGH-risk changes pause a LangGraph workflow behind a real human-in-the-loop checkpoint — not just an advisory label — with structural anti-hallucination guards.<br><br>Verified live against a production endpoint, with CI-tracked precision/recall on every push.',
+			'description': 'A retrieval-grounded risk assessor for code/infra changes, deployed via Docker on Hugging Face Spaces with GitHub Actions CI on every push. HIGH-risk changes pause a LangGraph workflow behind a real human-in-the-loop checkpoint — not just an advisory label — with structural anti-hallucination guards.<br><br>Verified live against a production endpoint, with CI-tracked precision/recall scored separately, not a single blended metric.',
 			'thumbnail': thumbnail_paths['change_impact_assessor'],
 			'large': large_paths['change_impact_assessor'],
 			'img_title': titles['change_impact_assessor'],
@@ -315,10 +315,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI/ML', 'Python', 'LangGraph']
+			'tags': ['AI Engineering', 'AI Governance', 'Cloud & DevOps']
 		}, {
 			'title': 'Quantitative Trade-Analysis Platform',
-			'description': 'A research-driven trading platform for a diversified 22-ETF book: a walk-forward, deflated-Sharpe-tested backtester proves an edge before any capital is risked, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate, and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated paper account.<br><br>80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge (weekly trend-following) plus one validated satellite survived; everything else was rejected with data, not intuition.',
+			'description': 'A research-driven trading platform for a diversified 22-ETF book, engineered so no capital moves on a hunch: a walk-forward, deflated-Sharpe-tested backtester proves an edge first, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate — not a direct trade call — and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated, hard-guarded paper account.<br><br>80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge plus one validated satellite survived; everything else was rejected with data, not intuition.',
 			'thumbnail': thumbnail_paths['quant_dashboard'],
 			'large': large_paths['quant_dashboard'],
 			'img_title': titles['quant_dashboard'],
@@ -328,10 +328,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI/ML', 'Python', 'Trading']
+			'tags': ['AI Engineering', 'AI Governance', 'Cloud & DevOps']
 		}, {
 			'title': 'AWS AI Code Review & Security Scanning Demo',
-			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) — every PR is reviewed and scanned before merge, with critical findings blocking until resolved.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
+			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
 			'thumbnail': thumbnail_paths['aws_code_review'],
 			'large': large_paths['aws_code_review'],
 			'img_title': titles['aws_code_review'],
@@ -341,10 +341,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI/ML', 'AWS', 'Security', 'DevOps']
+			'tags': ['AI Engineering', 'AI Governance', 'Cloud & DevOps']
 		}, {
 			'title': 'Adaptive Study Platform — Production RAG',
-			'description': 'An AIGP (AI Governance Professional) exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit that targets weak topics, and Supabase + pgvector RAG for grounded AI explanations on wrong answers.<br><br>LLM-generated retrospective study plans aggregate wrong-answer patterns into a weakness analysis — Postgres-native vector search means no separate vector database to operate.',
+			'description': 'An AIGP (AI Governance Professional) exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit that targets weak topics, and Supabase + pgvector RAG for grounded AI explanations on wrong answers.<br><br>Postgres-native vector search means no separate vector database to operate; deployed via Cloudflare Tunnel, with LLM-generated retrospective study plans aggregating wrong-answer patterns into a weakness analysis.',
 			'thumbnail': thumbnail_paths['study_platform'],
 			'large': large_paths['study_platform'],
 			'img_title': titles['study_platform'],
@@ -358,10 +358,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI/ML', 'RAG']
+			'tags': ['AI Engineering', 'Cloud & DevOps']
 		}, {
 			'title': 'Event Radar — AI Event Discovery',
-			'description': 'An AI-powered event discovery assistant for Hong Kong: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage ranking (cheap keyword filter, then LLM rerank only on the shortlist) to keep API costs sane.<br><br>Every LLM call degrades gracefully on rate limits or failures instead of taking the app down, and a closed feedback loop (thumbs up/down) adjusts per-user interest weights over time.',
+			'description': 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage ranking (cheap keyword filter, then LLM rerank only on the shortlist) to keep API costs sane.<br><br>Every LLM call degrades gracefully on rate limits or failures instead of taking the app down, and a closed feedback loop (thumbs up/down) adjusts per-user interest weights over time — shipped, monitored, and iterated on as a real product.',
 			'thumbnail': thumbnail_paths['event_radar'],
 			'large': large_paths['event_radar'],
 			'img_title': titles['event_radar'],
@@ -375,10 +375,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI/ML', 'Product']
+			'tags': ['AI Engineering', 'Technical Leadership']
 		}, {
 			'title': 'e-Learning for HKSARS',
-			'description': 'The e-Learning Centre, based on Moodle, is a customizable learning management system adopted by the HKSAR government. Plugin and theme customization is done to meet specific requirements.<br><br>Code or interface access can be demonstrated upon prior request.',
+			'description': 'Government-adopted Moodle-based learning management system for HKSAR — I led the Moodle v2 → v3 upgrade using Node.js and MongoDB, supporting 500+ daily users at 99% uptime.<br><br>Plugin and theme customization delivered to meet specific government requirements; code or interface access can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['moodle'],
 			'large': large_paths['moodle'],
 			'img_title': titles['moodle'],
@@ -388,10 +388,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Web', 'ERP', 'CMS']
+			'tags': ['Cloud & DevOps', 'Technical Leadership']
 		}, {
 			'title': 'Thermometer Interface',
-			'description': 'To accurately address client requirements, an interactive prototype was developed using Figma prior to app development.<br><br>Access to the Figma source link and the corresponding color system can be demonstrated upon prior request.',
+			'description': 'An interactive Figma prototype built to pin down client requirements before a single line of app code was written — validating the interaction design and color system with stakeholders up front to avoid costly rework.<br><br>Figma source link can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['thermometer'],
 			'large': large_paths['thermometer'],
 			'img_title': titles['thermometer'],
@@ -401,19 +401,19 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Mobile app', 'UI/UX design']
+			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'App development for Andy Lau',
-			'description': 'A mobile app is currently under development for Andy Lau, a renowned actor and singer in Hong Kong, and his club, Andy World Club.<br><br>Code or more screenshots can be demonstrated upon prior request.',
+			'description': 'Mobile app development for Andy Lau, a renowned Hong Kong actor and singer, and his fan club Andy World Club.<br><br>Code or more screenshots can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['awc'],
 			'large': large_paths['awc'],
 			'img_title': titles['awc'],
 			'button_list': [
 			],
-			'tags': ['Mobile app', 'UI/UX design']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Website development for Dashijie',
-			'description': 'The web shop was built using the popular Ztore system, a well-known web store in Hong Kong. Customizations were made to the database, CMS, and coupon system to meet specific requirements. Content maintenance is necessary to cater to different seasons.<br><br>Code and interface display can be demonstrated upon prior request.',
+			'description': 'Refactored this Hong Kong e-commerce platform with Laravel and stood up its CI/CD pipeline — AWS EC2, CodePipeline, and Terraform — scaling it to 1,000+ daily API requests and improving transaction speed by 40%.<br><br>Ongoing customizations to the database, CMS, and coupon system for seasonal catalog changes; code and interface can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['dsj'],
 			'large': large_paths['dsj'],
 			'img_title': titles['dsj'],
@@ -427,10 +427,10 @@ $(function () {
 				'new_window': true
 			} */
 			],
-			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+			'tags': ['Cloud & DevOps', 'Technical Leadership']
 		}, {
 			'title': 'Customized ERP',
-			'description': 'Under the Technology Voucher Programme (TVP), customized Enterprise Resource Planning (ERP) systems were developed with unique designs for clients.<br><br>For demo site access, please use the following credentials:<br>Username: admin@company.com<br>Password: 123456<br><br>Code and interface display can be demonstrated upon prior request.',
+			'description': 'Custom Enterprise Resource Planning (ERP) systems delivered under Hong Kong\'s Technology Voucher Programme (TVP) — I owned requirements gathering and delivery for each client\'s unique accounting, HRM, and support-ticket workflows.<br><br>Demo credentials: admin@company.com / 123456. Code and interface can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['erp'],
 			'large': large_paths['erp'],
 			'img_title': titles['erp'],
@@ -440,19 +440,19 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Web', 'ERP', 'CMS']
+			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'Property Management System',
-			'description': 'This Enterprise Resource Planning (ERP) system was developed using the Node.js framework and served as an internal property management system.<br><br>Code and interface display can be demonstrated upon prior request.',
+			'description': 'Internal property management ERP built on Node.js, adopted by a property management enterprise for HRM and task management across housing estates — I led requirements and delivery, with configurable options for other clients\' needs.<br><br>Code and interface can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['elpms'],
 			'large': large_paths['elpms'],
 			'img_title': titles['elpms'],
 			'button_list': [
 			],
-			'tags': ['Web', 'ERP', 'CMS']
+			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'Poster catalog',
-			'description': 'This poster catalog was developed using the Joomla framework.<br><br>For live site access, please use the following credentials:<br>Username: demo<br>Password: Testing!<br><br>The backend panel can be demonstrated upon prior request.',
+			'description': 'Poster catalog built on the Joomla framework, live for demo access (username: demo / password: Testing!).<br><br>Backend panel can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['sensai'],
 			'large': large_paths['sensai'],
 			'img_title': titles['sensai'],
@@ -462,10 +462,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Urban Project',
-			'description': 'The website, which highlights various architecture projects, has been successfully developed and includes an implemented image carousel function.<br><br>CMS can be demonstrated upon prior request.',
+			'description': 'Architecture-portfolio website with a custom image carousel, built and delivered end-to-end.<br><br>CMS can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['urbanp'],
 			'large': large_paths['urbanp'],
 			'img_title': titles['urbanp'],
@@ -479,10 +479,10 @@ $(function () {
 				'new_window': true
 			} */
 			],
-			'tags': ['Web', 'CMS', 'UI/UX design']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Association of Hong Kong Nursing Staff',
-			'description': 'The Magento-based website requires customization for the following key functionalities:<br>- making an API call to the client\'s server upon order confirmation in Magento,<br>- creating a scheduled task for synchronizing updated product stock and new customer data between the client\'s server and the webshop, <br>- integrating a secure 3rd party payment gateway during the checkout process.<br><br>Code or backend panel can be demonstrated upon prior request.',
+			'description': 'Magento-based e-commerce site with custom order-confirmation API calls, a scheduled stock/customer-data sync job, and a secure third-party payment gateway integration.<br><br>Code or backend panel can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['ahkns'],
 			'large': large_paths['ahkns'],
 			'img_title': titles['ahkns'],
@@ -496,18 +496,18 @@ $(function () {
 				'new_window': true
 			} */
 			],
-			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'App for Project Management',
-			'description': 'The mobile app, built upon React Native, has been developed for Project Management with multilingual support. It is connected to an Odoo database. Additionally, there is a UAT (User Acceptance Testing) version specifically designed for internal testing purposes. <br><br>Code can be demonstrated upon prior request.',
+			'description': 'React Native project-management app with multilingual support, connected to an Odoo database — I drove the UAT process end-to-end with a dedicated internal testing build before production rollout.<br><br>Code can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['sb'],
 			'large': large_paths['sb'],
 			'img_title': titles['sb'],
 			'button_list': [],
-			'tags': ['Mobile app', 'UI/UX design']
+			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'Management interface connected with Stripe payment',
-			'description': 'In this project, an online payment service has been developed specifically for hotels. The system utilizes the Stripe API to pre-authorize or capture funds from customer credit cards.<br><br>Code or interface display can be demonstrated upon prior request.',
+			'description': 'Online payment management system for hotels using the Stripe API to pre-authorize or capture customer card funds.<br><br>Code or interface can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['stripe'],
 			'large': large_paths['stripe'],
 			'img_title': titles['stripe'],
@@ -521,10 +521,10 @@ $(function () {
 				'new_window': true
 			} */
 			],
-			'tags': ['Web', 'E-commerce']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Wordpress + WooCommerce',
-			'description': 'The WordPress-based website has been seamlessly integrated with WooCommerce, empowering the site with robust e-commerce functionality. Through this integration, customers can effortlessly browse and purchase products. Furthermore, the website boasts a captivating web design that enhances the presentation of static content, ensuring an engaging and visually appealing user experience.<br><br>Backend panel can be demonstrated upon prior request.',
+			'description': 'WordPress site integrated with WooCommerce for full e-commerce functionality, paired with custom design work for the static content pages.<br><br>Backend panel can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['lhc'],
 			'large': large_paths['lhc'],
 			'img_title': titles['lhc'],
@@ -534,10 +534,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Wordpress development',
-			'description': 'The WordPress-based website boasts a captivating web design that enhances the presentation of static content, ensuring an engaging and visually appealing user experience.<br><br>Backend panel can be demonstrated upon prior request.',
+			'description': 'Custom WordPress site design and development for static content presentation.<br><br>Backend panel can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['nlc'],
 			'large': large_paths['nlc'],
 			'img_title': titles['nlc'],
@@ -547,10 +547,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Web', 'CMS', 'E-commerce', 'UI/UX design']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Single sign-on development',
-			'description': 'This broker agent site requires customization for single sign-on (SSO) functionality. The customization will allow users to sign in once and access both the local and foreign markets without the need for separate sign-ins on each platform.<br><br>Code can be demonstrated upon prior request.',
+			'description': 'Single sign-on (SSO) implementation for a broker agent site, letting users access both local and foreign markets with one login instead of separate sign-ins per platform.<br><br>Code can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['mib'],
 			'large': large_paths['mib'],
 			'img_title': titles['mib'],
@@ -560,10 +560,10 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Web', 'CMS', 'E-commerce']
+			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Maintenance for Citic Securities',
-			'description': 'This broker agent site requires regular updates to its content and menu. To facilitate this, a backend content management system (CMS) and database are currently being developed. Once completed, the site owner will have the ability to easily update the content themselves, ensuring timely and efficient updates.<br><br>Code can be demonstrated upon prior request.',
+			'description': 'Backend CMS and database built for a broker agent site so the owner can self-serve content and menu updates instead of relying on developer changes for every edit.<br><br>Code can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['csb'],
 			'large': large_paths['csb'],
 			'img_title': titles['csb'],
@@ -573,7 +573,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Web', 'CMS']
+			'tags': ['Full-Stack Engineering']
 		}
 		]
 	})
