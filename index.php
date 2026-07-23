@@ -65,7 +65,7 @@
                         <h1 class="name">Carson
                             <a href="https://carsonng.short.gy/carsonng-github" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
-                        <h2 class="desc">IT Project Manager & Team Lead <b>|</b> AWS Solution Architect Professional <b>|</b> Senior Software & DevOps Engineer  <?php /*  @ <b>HKIT.Supply</b>  */ ?>
+                        <h2 class="desc">IT Project Manager & Team Lead <b>|</b> AI Engineering & Governance <b>|</b> AWS Solution Architect Professional <?php /*  @ <b>HKIT.Supply</b>  */ ?>
                         </h2>
                         <?php /* <ul class="social list-inline">
                             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -117,7 +117,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>With over 18 years of experience in ERP systems, AI automation, and scalable cloud solutions, I am skilled in leading cross-functional teams and delivering high-impact projects for clients. Over the last 4 years, I have transitioned into a project management-focused role, leading cross-functional teams to deliver complex solutions and working directly with clients to define requirements. <a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();$('.more-link-sub').show();" data-bs-target="#collapseExample" href="#">More...</a><span class="more-link-sub" style="display: none">More...</span></p>
+                            <p>With over 18 years of experience in ERP systems, applied AI engineering, and scalable cloud solutions, I am skilled in leading cross-functional teams and delivering high-impact projects for clients. In the AI era, I believe a responsible, auditable process matters as much as raw capability — which is why I hold a CISA certification and am pursuing AIGP (AI Governance Professional) alongside hands-on delivery of production RAG and agentic systems. Over the last 4 years, I have transitioned into a project management-focused role, leading cross-functional teams to deliver complex solutions and working directly with clients to define requirements. <a class="more-link" data-bs-toggle="collapse" aria-expanded="true" onclick="$(this).hide();$('.more-link-sub').show();" data-bs-target="#collapseExample" href="#">More...</a><span class="more-link-sub" style="display: none">More...</span></p>
                             <div class="collapse" id="collapseExample">
                                 <p>Currently based in Hong Kong, I engage in technical project and team management, as well as enterprise solutions.</p>
                                 <p>During my time in Germany and Japan from 2009 to 2019, I excelled in collaborative team environments, emphasizing coding standards, code review, and collaborative documentation.</p>
@@ -350,6 +350,14 @@
                                     </div>
                                 </li>
                                 <li class="badge-item">
+                                    <a href="https://carsonng.short.gy/cisa" class="link" target="_blank">
+                                        <img data-src="/assets/images/cisa.png" src="/assets/images/cisa.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="Certified Information Systems Auditor (CISA)" title="Certified Information Systems Auditor (CISA)" data-loaded="true" data-fully-loaded="true">
+                                    </a>
+                                    <div>
+                                        <a href="https://carsonng.short.gy/cisa" class="link" target="_blank">Certified Information Systems Auditor (CISA)</a>
+                                    </div>
+                                </li>
+                                <li class="badge-item">
                                     <a href="https://carsonng.short.gy/certmetrics-verify" class="link" target="_blank">
                                         <img data-src="/assets/images/aws-sap-c02.png" src="/assets/images/aws-sap-c02.png" loading="lazy" typeof="foaf:Image" class="lozad lazyload badge" data-bs-toggle="tooltip" alt="AWS Certified Solutions Architect - Professional" title="AWS Certified Solutions Architect - Professional" data-loaded="true" data-fully-loaded="true">
                                     </a>
@@ -405,6 +413,15 @@
                             <p class="intro">
                                 I understand various languages, including:</p>
                             <div class="skillset">
+
+                                <div class="item">
+                                    <h3 class="level-title">AI/ML Engineering (LangGraph, LlamaIndex, RAG)<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="88"></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
 
                                 <div class="item">
                                     <h3 class="level-title">PHP & Laravel<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>

@@ -194,10 +194,14 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 $(function () {
-	var folder = ['moodle', 'thermometer', 'awc', 'dsj', 'erp', 'elpms', 'sensai', 'urbanp', 'ahkns', 'sb', 'stripe', 'lhc', 'nlc', 'mib', 'csb'];
+	var folder = ['sprint_analyzer', 'change_impact_assessor', 'study_platform', 'event_radar', 'moodle', 'thermometer', 'awc', 'dsj', 'erp', 'elpms', 'sensai', 'urbanp', 'ahkns', 'sb', 'stripe', 'lhc', 'nlc', 'mib', 'csb'];
 	var projects_path = 'assets/images/projects/';
 
 	var images = [];
+	images['sprint_analyzer'] = ['cover.png'];
+	images['change_impact_assessor'] = ['cover.png'];
+	images['study_platform'] = ['cover.png'];
+	images['event_radar'] = ['cover.png'];
 	images['moodle'] = ['landing_blurred.jpg', 'home_blurred.jpg', 'course_list_blurred.jpg', 'course_intro.png', 'resource_list_blurred.png', 'lib_admin.png', 'lib_records_blurred.png'];
 	images['thermometer'] = ['landing_large.jpg', 'indicator2.jpg', 'setup_cook.jpg', 'paired_devices.jpg', 'dark_mode.jpg'];
 	images['awc'] = ['landing.jpg', 'event_detail.jpg', 'popup.jpg', 'event_application.jpg', 'list_detail.jpg'];
@@ -215,6 +219,10 @@ $(function () {
 	images['csb'] = ['front.PNG', 'intro.PNG', 'news.PNG'];
 
 	var titles = [];
+	titles['sprint_analyzer'] = ['Sprint Analyzer cover'];
+	titles['change_impact_assessor'] = ['Change Impact Assessor cover'];
+	titles['study_platform'] = ['Adaptive Study Platform cover'];
+	titles['event_radar'] = ['Event Radar cover'];
 	titles['moodle'] = ['Landing page', 'Home page', 'Course list', 'Course introduction', 'Resource list page', 'Links for Library admin role', 'Library book record list page']
 	titles['thermometer'] = ['indicator 1', 'indicator 2', 'Setup Cook', 'Paired device list', 'Dark Mode'];
 	titles['awc'] = ['Landing page', 'Event detail', 'Popup', 'Event Application', 'List detail'];
@@ -271,6 +279,66 @@ $(function () {
 		'expandingSpeed': 500,
 		'expandingHeight': 650,
 		'items': [{
+			'title': 'Sprint Analyzer — AI Sprint Retrospective Generator',
+			'description': 'An AI-powered sprint retrospective generator with a deterministic-numbers / LLM-prose split — pandas computes every metric from Jira/ClickUp exports, the LLM only writes prose, eliminating fabricated numbers.<br><br>110+ unit tests run without an API key; validated against real production sprint data.',
+			'thumbnail': thumbnail_paths['sprint_analyzer'],
+			'large': large_paths['sprint_analyzer'],
+			'img_title': titles['sprint_analyzer'],
+			'button_list': [{
+				'title': 'Live Demo',
+				'url': 'https://carsonng.short.gy/sprint-analyzer',
+				'new_window': true
+			}, {
+				'title': 'GitHub',
+				'url': 'https://carsonng.short.gy/sprint-analyzer-carsonng',
+				'new_window': true
+			}
+			],
+			'tags': ['AI/ML', 'Python']
+		}, {
+			'title': 'Change Impact Assessor — Human-in-the-Loop AI Risk Gate',
+			'description': 'A retrieval-grounded risk assessor for code/infra changes. HIGH-risk changes pause a LangGraph workflow behind a real human-in-the-loop checkpoint — not just an advisory label — with structural anti-hallucination guards.<br><br>Verified live against a production endpoint, with CI-tracked precision/recall on every push.',
+			'thumbnail': thumbnail_paths['change_impact_assessor'],
+			'large': large_paths['change_impact_assessor'],
+			'img_title': titles['change_impact_assessor'],
+			'button_list': [{
+				'title': 'Live Demo',
+				'url': 'https://carsonng.short.gy/change-impact-assessor',
+				'new_window': true
+			}, {
+				'title': 'GitHub',
+				'url': 'https://carsonng.short.gy/change-impact-assessor-github',
+				'new_window': true
+			}
+			],
+			'tags': ['AI/ML', 'Python', 'LangGraph']
+		}, {
+			'title': 'Adaptive Study Platform — Production RAG',
+			'description': 'A Supabase + pgvector RAG exam-prep application serving real study content and users. Retrieval-augmented Q&A runs on Postgres-native vector search — no separate vector database to operate.<br><br>Multi-provider LLM routing with per-project usage tracking against a shared quota.',
+			'thumbnail': thumbnail_paths['study_platform'],
+			'large': large_paths['study_platform'],
+			'img_title': titles['study_platform'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://study.carsonng.com',
+				'new_window': true
+			}
+			],
+			'tags': ['AI/ML', 'RAG']
+		}, {
+			'title': 'Event Radar — AI Event Discovery',
+			'description': 'A public AI-powered event-discovery app for Hong Kong with personalized matching, a swipe-based deck, and a live local events data connector.<br><br>Engineered request-budget resilience around a shared, rate-limited LLM API with graceful fallback, and a self-supervising backend watchdog for reliable uptime.',
+			'thumbnail': thumbnail_paths['event_radar'],
+			'large': large_paths['event_radar'],
+			'img_title': titles['event_radar'],
+			'button_list': [{
+				'title': 'Live',
+				'url': 'https://events.carsonng.com',
+				'new_window': true
+			}
+			],
+			'tags': ['AI/ML', 'Product']
+		}, {
 			'title': 'e-Learning for HKSARS',
 			'description': 'The e-Learning Centre, based on Moodle, is a customizable learning management system adopted by the HKSAR government. Plugin and theme customization is done to meet specific requirements.<br><br>Code or interface access can be demonstrated upon prior request.',
 			'thumbnail': thumbnail_paths['moodle'],
