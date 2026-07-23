@@ -315,7 +315,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI Engineering', 'AI Governance', 'Cloud & DevOps']
+			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
 		}, {
 			'title': 'Quantitative Trade-Analysis Platform',
 			'description': 'A research-driven trading platform for a diversified 22-ETF book, engineered so no capital moves on a hunch: a walk-forward, deflated-Sharpe-tested backtester proves an edge first, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate — not a direct trade call — and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated, hard-guarded paper account.<br><br>80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge plus one validated satellite survived; everything else was rejected with data, not intuition.',
@@ -328,7 +328,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI Engineering', 'AI Governance', 'Cloud & DevOps']
+			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
 		}, {
 			'title': 'AWS AI Code Review & Security Scanning Demo',
 			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
@@ -341,7 +341,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI Engineering', 'AI Governance', 'Cloud & DevOps']
+			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
 		}, {
 			'title': 'Adaptive Study Platform — Production RAG',
 			'description': 'An AIGP (AI Governance Professional) exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit that targets weak topics, and Supabase + pgvector RAG for grounded AI explanations on wrong answers.<br><br>Postgres-native vector search means no separate vector database to operate; deployed via Cloudflare Tunnel, with LLM-generated retrospective study plans aggregating wrong-answer patterns into a weakness analysis.',
@@ -358,7 +358,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI Engineering', 'Cloud & DevOps']
+			'tags': ['AI Engineering', 'Cloud/DevOps']
 		}, {
 			'title': 'Event Radar — AI Event Discovery',
 			'description': 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage ranking (cheap keyword filter, then LLM rerank only on the shortlist) to keep API costs sane.<br><br>Every LLM call degrades gracefully on rate limits or failures instead of taking the app down, and a closed feedback loop (thumbs up/down) adjusts per-user interest weights over time — shipped, monitored, and iterated on as a real product.',
@@ -388,7 +388,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Cloud & DevOps', 'Technical Leadership']
+			'tags': ['Cloud/DevOps', 'Technical Leadership']
 		}, {
 			'title': 'Thermometer Interface',
 			'description': 'An interactive Figma prototype built to pin down client requirements before a single line of app code was written — validating the interaction design and color system with stakeholders up front to avoid costly rework.<br><br>Figma source link can be demonstrated upon request.',
@@ -427,7 +427,7 @@ $(function () {
 				'new_window': true
 			} */
 			],
-			'tags': ['Cloud & DevOps', 'Technical Leadership']
+			'tags': ['Cloud/DevOps', 'Technical Leadership']
 		}, {
 			'title': 'Customized ERP',
 			'description': 'Custom Enterprise Resource Planning (ERP) systems delivered under Hong Kong\'s Technology Voucher Programme (TVP) — I owned requirements gathering and delivery for each client\'s unique accounting, HRM, and support-ticket workflows.<br><br>Demo credentials: admin@company.com / 123456. Code and interface can be demonstrated upon request.',
