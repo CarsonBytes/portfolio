@@ -244,6 +244,12 @@ $(function () {
 	titles['csb'] = ['Front page', 'Intro page', 'News page'];
 
 	var covers = [];
+	covers['sprint_analyzer'] = ['cover_thumb.png'];
+	covers['change_impact_assessor'] = ['cover_thumb.png'];
+	covers['quant_dashboard'] = ['cover_thumb.png'];
+	covers['aws_code_review'] = ['cover_thumb.png'];
+	covers['study_platform'] = ['cover_thumb.png'];
+	covers['event_radar'] = ['cover_thumb.png'];
 	covers['moodle'] = 'landing_blurred_thumb.jpg';
 	covers['thermometer'] = ['landing.jpg'];
 	covers['awc'] = ['logo.jpg'];
