@@ -198,12 +198,12 @@ $(function () {
 	var projects_path = 'assets/images/projects/';
 
 	var images = [];
-	images['sprint_analyzer'] = ['cover.png'];
-	images['change_impact_assessor'] = ['cover.png'];
-	images['quant_dashboard'] = ['cover.png'];
-	images['aws_code_review'] = ['cover.png'];
-	images['study_platform'] = ['cover.png'];
-	images['event_radar'] = ['cover.png'];
+	images['sprint_analyzer'] = ['landing.png'];
+	images['change_impact_assessor'] = ['landing.png', 'assessment_result.png'];
+	images['quant_dashboard'] = ['repo_readme.png'];
+	images['aws_code_review'] = ['pr_overview.png', 'q_developer_review.png'];
+	images['study_platform'] = ['landing.png'];
+	images['event_radar'] = ['landing.png', 'insights.png'];
 	images['moodle'] = ['landing_blurred.jpg', 'home_blurred.jpg', 'course_list_blurred.jpg', 'course_intro.png', 'resource_list_blurred.png', 'lib_admin.png', 'lib_records_blurred.png'];
 	images['thermometer'] = ['landing_large.jpg', 'indicator2.jpg', 'setup_cook.jpg', 'paired_devices.jpg', 'dark_mode.jpg'];
 	images['awc'] = ['landing.jpg', 'event_detail.jpg', 'popup.jpg', 'event_application.jpg', 'list_detail.jpg'];
@@ -221,12 +221,12 @@ $(function () {
 	images['csb'] = ['front.PNG', 'intro.PNG', 'news.PNG'];
 
 	var titles = [];
-	titles['sprint_analyzer'] = ['Sprint Analyzer cover'];
-	titles['change_impact_assessor'] = ['Change Impact Assessor cover'];
-	titles['quant_dashboard'] = ['Quant Trading Dashboard cover'];
-	titles['aws_code_review'] = ['AWS AI Code Review cover'];
-	titles['study_platform'] = ['Adaptive Study Platform cover'];
-	titles['event_radar'] = ['Event Radar cover'];
+	titles['sprint_analyzer'] = ['Sprint Analyzer dashboard'];
+	titles['change_impact_assessor'] = ['Change Impact Assessor input form', 'HIGH-risk assessment pending human sign-off'];
+	titles['quant_dashboard'] = ['Quantitative Trade-Analysis Platform research findings'];
+	titles['aws_code_review'] = ['Real PR showing automated review bots', 'Amazon Q Developer security findings'];
+	titles['study_platform'] = ['Adaptive Study Platform dashboard'];
+	titles['event_radar'] = ['Event Radar event feed', 'LLM cost & latency observability'];
 	titles['moodle'] = ['Landing page', 'Home page', 'Course list', 'Course introduction', 'Resource list page', 'Links for Library admin role', 'Library book record list page']
 	titles['thermometer'] = ['indicator 1', 'indicator 2', 'Setup Cook', 'Paired device list', 'Dark Mode'];
 	titles['awc'] = ['Landing page', 'Event detail', 'Popup', 'Event Application', 'List detail'];
