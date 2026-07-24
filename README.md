@@ -44,6 +44,10 @@ The common thread: governance mechanisms that are load-bearing parts of the syst
 - Zend Certified Engineer
 - AIGP – Artificial Intelligence Governance Professional *(in progress)*
 
+## How this site is built
+
+Static PHP → HTML source, hand-tuned tag taxonomy, real Playwright-captured screenshots (not stock art), and a few real judgment calls along the way — including a redaction decision that's a small case study in the same governance thinking described above. Details in [BUILD_LOG.md](BUILD_LOG.md).
+
 ---
 
 ## About this template
