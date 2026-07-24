@@ -304,7 +304,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
+			'tags': ['Cloud/DevOps', 'AI Governance', 'AI Engineering']
 		}, {
 			'title': 'AWS AI Code Review & Security Scanning Demo',
 			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
