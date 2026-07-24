@@ -200,7 +200,7 @@ $(function () {
 	var images = [];
 	images['sprint_analyzer'] = ['landing.png'];
 	images['change_impact_assessor'] = ['landing.png', 'assessment_result.png'];
-	images['quant_dashboard'] = ['board.png', 'signals_gates.png', 'repo_readme.png'];
+	images['quant_dashboard'] = ['board.png', 'signals_gates.png'];
 	images['aws_code_review'] = ['pr_overview.png', 'q_developer_review.png'];
 	images['study_platform'] = ['landing.png'];
 	images['event_radar'] = ['landing.png', 'insights.png'];
@@ -223,7 +223,7 @@ $(function () {
 	var titles = [];
 	titles['sprint_analyzer'] = ['Sprint Analyzer dashboard'];
 	titles['change_impact_assessor'] = ['Change Impact Assessor input form', 'HIGH-risk assessment pending human sign-off'];
-	titles['quant_dashboard'] = ['Live paper-trading dashboard', 'Deterministic risk-gate status per instrument', 'Research findings from the public repo'];
+	titles['quant_dashboard'] = ['Live paper-trading dashboard', 'Deterministic risk-gate status per instrument'];
 	titles['aws_code_review'] = ['Real PR showing automated review bots', 'Amazon Q Developer security findings'];
 	titles['study_platform'] = ['Adaptive Study Platform dashboard'];
 	titles['event_radar'] = ['Event Radar event feed', 'LLM cost & latency observability'];
