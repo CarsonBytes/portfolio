@@ -200,7 +200,7 @@ $(function () {
 	var images = [];
 	images['sprint_analyzer'] = ['landing.png'];
 	images['change_impact_assessor'] = ['landing.png', 'assessment_result.png'];
-	images['quant_dashboard'] = ['repo_readme.png'];
+	images['quant_dashboard'] = ['board.png', 'signals_gates.png', 'repo_readme.png'];
 	images['aws_code_review'] = ['pr_overview.png', 'q_developer_review.png'];
 	images['study_platform'] = ['landing.png'];
 	images['event_radar'] = ['landing.png', 'insights.png'];
@@ -223,7 +223,7 @@ $(function () {
 	var titles = [];
 	titles['sprint_analyzer'] = ['Sprint Analyzer dashboard'];
 	titles['change_impact_assessor'] = ['Change Impact Assessor input form', 'HIGH-risk assessment pending human sign-off'];
-	titles['quant_dashboard'] = ['Quantitative Trade-Analysis Platform research findings'];
+	titles['quant_dashboard'] = ['Live paper-trading dashboard', 'Deterministic risk-gate status per instrument', 'Research findings from the public repo'];
 	titles['aws_code_review'] = ['Real PR showing automated review bots', 'Amazon Q Developer security findings'];
 	titles['study_platform'] = ['Adaptive Study Platform dashboard'];
 	titles['event_radar'] = ['Event Radar event feed', 'LLM cost & latency observability'];
@@ -320,11 +320,15 @@ $(function () {
 			'tags': ['AI Engineering', 'AI Governance', 'Cloud/DevOps']
 		}, {
 			'title': 'Quantitative Trade-Analysis Platform',
-			'description': 'A research-driven trading platform for a diversified 22-ETF book, engineered so no capital moves on a hunch: a walk-forward, deflated-Sharpe-tested backtester proves an edge first, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate — not a direct trade call — and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated, hard-guarded paper account.<br><br>80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge plus one validated satellite survived; everything else was rejected with data, not intuition.',
+			'description': 'A research-driven trading platform for a diversified 22-ETF book, engineered so no capital moves on a hunch: a walk-forward, deflated-Sharpe-tested backtester proves an edge first, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate — not a direct trade call — and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated, hard-guarded paper account.<br><br>The public dashboard shows the paper-trading instance, including the live "Signals & Gates" view — every instrument scored against explicit entry rules (strength, R:R, cooldown, de-correlation), with the exact reason a trade is blocked shown, not just a pass/fail. 80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge plus one validated satellite survived; everything else was rejected with data, not intuition.',
 			'thumbnail': thumbnail_paths['quant_dashboard'],
 			'large': large_paths['quant_dashboard'],
 			'img_title': titles['quant_dashboard'],
 			'button_list': [{
+				'title': 'Live',
+				'url': 'https://quant.carsonng.com/',
+				'new_window': true
+			}, {
 				'title': 'GitHub',
 				'url': 'https://github.com/CarsonBytes/trade_analysis',
 				'new_window': true
