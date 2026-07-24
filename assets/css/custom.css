@@ -39,6 +39,14 @@ body[data-theme="dark"] .wagwep-container ul#portfolio-filter a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+body[data-theme="dark"] .wagwep-container ul#portfolio-filter a:hover {
+  color: #222;
+}
+
+body[data-theme="dark"] .wagwep-container ul#portfolio-filter li.current a {
+  color: #fff;
+}
+
 .width-full.f6.px-0.px-md-5.py-1 {
   display: none;
 }
