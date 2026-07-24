@@ -65,7 +65,7 @@
                         <h1 class="name">Carson
                             <a href="https://carsonng.short.gy/carsonng-github" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
                         </h1>
-                        <h2 class="desc">AI Governance Leadership <b>|</b> AI Engineering <b>|</b> AWS Solution Architect Professional <?php /*  @ <b>HKIT.Supply</b>  */ ?>
+                        <h2 class="desc">AI Governance Leadership <b>|</b> Agentic AI Engineering <b>|</b> AWS Solution Architect Professional <?php /*  @ <b>HKIT.Supply</b>  */ ?>
                         </h2>
                         <?php /* <ul class="social list-inline">
                             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
