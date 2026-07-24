@@ -35,6 +35,10 @@ body[data-theme="dark"] .text-muted {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+body[data-theme="dark"] .wagwep-container ul#portfolio-filter a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .width-full.f6.px-0.px-md-5.py-1 {
   display: none;
 }
