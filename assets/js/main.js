@@ -313,7 +313,7 @@ $(function () {
 			'img_title': titles['aws_code_review'],
 			'button_list': [{
 				'title': 'GitHub',
-				'url': 'https://github.com/CarsonBytes/aws_code_review',
+				'url': 'https://carsonng.short.gy/aws-code-review-github',
 				'new_window': true
 			}
 			],
@@ -326,11 +326,11 @@ $(function () {
 			'img_title': titles['quant_dashboard'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://quant.carsonng.com/',
+				'url': 'https://carsonng.short.gy/quant-live',
 				'new_window': true
 			}, {
 				'title': 'GitHub',
-				'url': 'https://github.com/CarsonBytes/trade_analysis',
+				'url': 'https://carsonng.short.gy/quant-trade-analysis-github',
 				'new_window': true
 			}
 			],
@@ -360,11 +360,11 @@ $(function () {
 			'img_title': titles['study_platform'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://study.carsonng.com',
+				'url': 'https://carsonng.short.gy/study-platform-live',
 				'new_window': true
 			}, {
 				'title': 'GitHub',
-				'url': 'https://github.com/CarsonBytes/study_platform',
+				'url': 'https://carsonng.short.gy/study-platform-github',
 				'new_window': true
 			}
 			],
@@ -377,11 +377,11 @@ $(function () {
 			'img_title': titles['event_radar'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://events.carsonng.com',
+				'url': 'https://carsonng.short.gy/event-radar-live',
 				'new_window': true
 			}, {
 				'title': 'GitHub',
-				'url': 'https://github.com/CarsonBytes/event_planner',
+				'url': 'https://carsonng.short.gy/event-radar-github',
 				'new_window': true
 			}
 			],
@@ -394,7 +394,7 @@ $(function () {
 			'img_title': titles['moodle'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://www.elc.swd.gov.hk/',
+				'url': 'https://carsonng.short.gy/elc-hksars-live',
 				'new_window': true
 			}
 			],
@@ -429,11 +429,11 @@ $(function () {
 			'img_title': titles['dsj'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://www.dashijie.com.hk/',
+				'url': 'https://carsonng.short.gy/dashijie-live',
 				'new_window': true
 			} /* , {
 				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
+				'url': 'https://carsonng.short.gy/elc-hksars-live',
 				'new_window': true
 			} */
 			],
@@ -446,7 +446,7 @@ $(function () {
 			'img_title': titles['erp'],
 			'button_list': [{
 				'title': 'Demo',
-				'url': 'https://hkit.supply/demo/erp/',
+				'url': 'https://carsonng.short.gy/customized-erp-demo',
 				'new_window': true
 			}
 			],
@@ -468,7 +468,7 @@ $(function () {
 			'img_title': titles['sensai'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://sensaihonya.jp/',
+				'url': 'https://carsonng.short.gy/poster-catalog-live',
 				'new_window': true
 			}
 			],
@@ -481,11 +481,11 @@ $(function () {
 			'img_title': titles['urbanp'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://www.urbanp.com/',
+				'url': 'https://carsonng.short.gy/urban-project-live',
 				'new_window': true
 			} /*, {
 				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
+				'url': 'https://carsonng.short.gy/elc-hksars-live',
 				'new_window': true
 			} */
 			],
@@ -498,11 +498,11 @@ $(function () {
 			'img_title': titles['ahkns'],
 			'button_list': [{
 				'title': 'Live (for testing)',
-				'url': 'http://ahkns-eshop-prod-alb1-1925844921.ap-east-1.elb.amazonaws.com/',
+				'url': 'https://carsonng.short.gy/ahkns-live-test',
 				'new_window': true
 			} /*, {
 				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
+				'url': 'https://carsonng.short.gy/elc-hksars-live',
 				'new_window': true
 			} */
 			],
@@ -527,7 +527,7 @@ $(function () {
 				'new_window': true
 			} , {
 				'title': 'Interactive Prototype',
-				'url': 'https://www.elc.swd.gov.hk/',
+				'url': 'https://carsonng.short.gy/elc-hksars-live',
 				'new_window': true
 			} */
 			],
@@ -540,7 +540,7 @@ $(function () {
 			'img_title': titles['lhc'],
 			'button_list': [{
 				'title': 'Live (for testing)',
-				'url': 'https://demo.ladieshealthcare.org/',
+				'url': 'https://carsonng.short.gy/wordpress-woocommerce-demo',
 				'new_window': true
 			}
 			],
@@ -566,7 +566,7 @@ $(function () {
 			'img_title': titles['mib'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://www.mib.com.hk',
+				'url': 'https://carsonng.short.gy/sso-dev-live',
 				'new_window': true
 			}
 			],
@@ -579,7 +579,7 @@ $(function () {
 			'img_title': titles['csb'],
 			'button_list': [{
 				'title': 'Live',
-				'url': 'https://www.citics.com.hk',
+				'url': 'https://carsonng.short.gy/citic-securities-live',
 				'new_window': true
 			}
 			],
