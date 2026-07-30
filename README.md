@@ -1,6 +1,6 @@
 # Carson Ng — Portfolio
 
-[carsonng.com](https://carsonng.com) — AI Governance Leadership · AI Engineering · AWS Solutions Architect Professional
+[carsonng.com](https://carsonng.com) — AI Governance Leadership · Agentic AI Engineering · AWS Solutions Architect Professional
 
 18 years of cross-border engineering experience (Germany + Hong Kong) across ERP systems, applied AI engineering, and scalable cloud solutions. PMP + CISA certified, AIGP (AI Governance Professional) in progress. This repo is the source for my personal portfolio site.
 
