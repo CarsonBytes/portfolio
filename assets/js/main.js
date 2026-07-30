@@ -352,7 +352,7 @@ $(function () {
 			}
 			],
 			'tags': ['AI Engineering', 'AI Governance', 'Technical Leadership']
-		}, {
+		}, /* {
 			'title': 'Adaptive Study Platform — Production RAG',
 			'description': 'An AIGP (AI Governance Professional) exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit that targets weak topics, and Supabase + pgvector RAG for grounded AI explanations on wrong answers.<br><br>Postgres-native vector search means no separate vector database to operate; deployed via Cloudflare Tunnel, with LLM-generated retrospective study plans aggregating wrong-answer patterns into a weakness analysis.',
 			'thumbnail': thumbnail_paths['study_platform'],
@@ -386,7 +386,7 @@ $(function () {
 			}
 			],
 			'tags': ['AI Engineering', 'Technical Leadership']
-		}, {
+		}, */ {
 			'title': 'e-Learning for HKSARS',
 			'description': 'Government-adopted Moodle-based learning management system for HKSAR — I led the Moodle v2 → v3 upgrade using Node.js and MongoDB, supporting 500+ daily users at 99% uptime.<br><br>Plugin and theme customization delivered to meet specific government requirements; code or interface access can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['moodle'],
