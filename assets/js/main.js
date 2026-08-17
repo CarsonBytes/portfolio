@@ -205,7 +205,7 @@ $(function () {
 	images['study_platform'] = ['landing.png'];
 	images['event_radar'] = ['landing.png', 'swipe.png'];
 	images['ai_regulation_radar'] = ['landing.png', 'diff_view.png'];
-	images['command_deck'] = ['landing.png', 'governance.png'];
+	images['command_deck'] = ['cost_usage.png', 'landing.png', 'governance.png'];
 	images['moodle'] = ['landing_blurred.jpg', 'home_blurred.jpg', 'course_list_blurred.jpg', 'course_intro.png', 'resource_list_blurred.png', 'lib_admin.png', 'lib_records_blurred.png'];
 	images['thermometer'] = ['landing_large.jpg', 'indicator2.jpg', 'setup_cook.jpg', 'paired_devices.jpg', 'dark_mode.jpg'];
 	images['awc'] = ['landing.jpg', 'event_detail.jpg', 'popup.jpg', 'event_application.jpg', 'list_detail.jpg'];
@@ -230,7 +230,7 @@ $(function () {
 	titles['study_platform'] = ['Adaptive Study Platform dashboard'];
 	titles['event_radar'] = ['Event Radar public demo feed', 'Swipe-deck discovery mode'];
 	titles['ai_regulation_radar'] = ['AI Regulation Radar tracked sources', 'Real EU AI Act diff, old vs. new text'];
-	titles['command_deck'] = ['Command Deck fleet overview', 'Governance tab — active quarantine/lock state'];
+	titles['command_deck'] = ['Cost & usage — cross-project LLM spend tracking', 'Command Deck fleet overview', 'Governance tab — active quarantine/lock state'];
 	titles['moodle'] = ['Landing page', 'Home page', 'Course list', 'Course introduction', 'Resource list page', 'Links for Library admin role', 'Library book record list page']
 	titles['thermometer'] = ['indicator 1', 'indicator 2', 'Setup Cook', 'Paired device list', 'Dark Mode'];
 	titles['awc'] = ['Landing page', 'Event detail', 'Popup', 'Event Application', 'List detail'];
