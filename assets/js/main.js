@@ -194,7 +194,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 $(function () {
-	var folder = ['sprint_analyzer', 'change_impact_assessor', 'quant_dashboard', 'aws_code_review', 'study_platform', 'event_radar', 'moodle', 'thermometer', 'awc', 'dsj', 'erp', 'elpms', 'sensai', 'urbanp', 'ahkns', 'sb', 'stripe', 'lhc', 'nlc', 'mib', 'csb'];
+	var folder = ['sprint_analyzer', 'change_impact_assessor', 'quant_dashboard', 'aws_code_review', 'study_platform', 'event_radar', 'ai_regulation_radar', 'command_deck', 'moodle', 'thermometer', 'awc', 'dsj', 'erp', 'elpms', 'sensai', 'urbanp', 'ahkns', 'sb', 'stripe', 'lhc', 'nlc', 'mib', 'csb'];
 	var projects_path = 'assets/images/projects/';
 
 	var images = [];
@@ -203,7 +203,9 @@ $(function () {
 	images['quant_dashboard'] = ['board.png', 'signals_gates.png'];
 	images['aws_code_review'] = ['pr_overview.png', 'q_developer_review.png'];
 	images['study_platform'] = ['landing.png'];
-	images['event_radar'] = ['landing.png', 'insights.png'];
+	images['event_radar'] = ['landing.png', 'swipe.png'];
+	images['ai_regulation_radar'] = ['landing.png', 'diff_view.png'];
+	images['command_deck'] = ['landing.png', 'governance.png'];
 	images['moodle'] = ['landing_blurred.jpg', 'home_blurred.jpg', 'course_list_blurred.jpg', 'course_intro.png', 'resource_list_blurred.png', 'lib_admin.png', 'lib_records_blurred.png'];
 	images['thermometer'] = ['landing_large.jpg', 'indicator2.jpg', 'setup_cook.jpg', 'paired_devices.jpg', 'dark_mode.jpg'];
 	images['awc'] = ['landing.jpg', 'event_detail.jpg', 'popup.jpg', 'event_application.jpg', 'list_detail.jpg'];
@@ -226,7 +228,9 @@ $(function () {
 	titles['quant_dashboard'] = ['Live paper-trading dashboard', 'Deterministic risk-gate status per instrument'];
 	titles['aws_code_review'] = ['Real PR showing automated review bots', 'Amazon Q Developer security findings'];
 	titles['study_platform'] = ['Adaptive Study Platform dashboard'];
-	titles['event_radar'] = ['Event Radar event feed', 'LLM cost & latency observability'];
+	titles['event_radar'] = ['Event Radar public demo feed', 'Swipe-deck discovery mode'];
+	titles['ai_regulation_radar'] = ['AI Regulation Radar tracked sources', 'Real EU AI Act diff, old vs. new text'];
+	titles['command_deck'] = ['Command Deck fleet overview', 'Governance tab — active quarantine/lock state'];
 	titles['moodle'] = ['Landing page', 'Home page', 'Course list', 'Course introduction', 'Resource list page', 'Links for Library admin role', 'Library book record list page']
 	titles['thermometer'] = ['indicator 1', 'indicator 2', 'Setup Cook', 'Paired device list', 'Dark Mode'];
 	titles['awc'] = ['Landing page', 'Event detail', 'Popup', 'Event Application', 'List detail'];
@@ -250,6 +254,8 @@ $(function () {
 	covers['aws_code_review'] = ['cover_thumb.png'];
 	covers['study_platform'] = ['cover_thumb.png'];
 	covers['event_radar'] = ['cover_thumb.png'];
+	covers['ai_regulation_radar'] = ['cover_thumb.png'];
+	covers['command_deck'] = ['cover_thumb.png'];
 	covers['moodle'] = 'landing_blurred_thumb.jpg';
 	covers['thermometer'] = ['landing.jpg'];
 	covers['awc'] = ['logo.jpg'];
@@ -369,15 +375,15 @@ $(function () {
 			}
 			],
 			'tags': ['Agentic-AI Engineering', 'Cloud/DevOps']
-		}, {
+		}, */ {
 			'title': 'Event Radar — AI Event Discovery',
-			'description': 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage ranking (cheap keyword filter, then LLM rerank only on the shortlist) to keep API costs sane.<br><br>Every LLM call degrades gracefully on rate limits or failures instead of taking the app down, and a closed feedback loop (thumbs up/down) adjusts per-user interest weights over time — shipped, monitored, and iterated on as a real product.',
+			'description': 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage-plus-embedding ranking (keyword filter → semantic similarity → LLM rerank on the shortlist only) to keep API costs sane. A closed feedback loop (thumbs up/down) adjusts per-user interest weights over time, and every LLM-referenced event is validated against the real candidate set before being trusted — hallucinated IDs are rejected, not displayed.<br><br>150 tests, a bilingual disclaimer, and Crawl-delay-compliant scraping — operated, not just shipped once: real production bugs found and fixed live, including a missing Cache-Control header silently serving stale JS to every visitor and an HKT day-boundary bug undercounting daily LLM usage.',
 			'thumbnail': thumbnail_paths['event_radar'],
 			'large': large_paths['event_radar'],
 			'img_title': titles['event_radar'],
 			'button_list': [{
-				'title': 'Live',
-				'url': 'https://carsonng.short.gy/event-radar-live',
+				'title': 'Live Demo',
+				'url': 'https://carsonng.short.gy/event-radar-demo',
 				'new_window': true
 			}, {
 				'title': 'GitHub',
@@ -385,8 +391,38 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Agentic-AI Engineering', 'Technical Leadership']
-		}, */ {
+			'tags': ['Agentic-AI Engineering', 'AI Governance', 'Technical Leadership']
+		}, {
+			'title': 'AI Regulation Radar',
+			'description': 'Monitors EU AI Act, NIST AI RMF, and HK PCPD regulatory sources, diffs legal text changes, and generates plain-English impact assessments via RAG + LLM. Public and private views are the same running app filtered by content sensitivity, not just access — a real architectural split between who can reach it and what they\'re shown.<br><br>Deployed on its own GCP VM behind systemd + a dedicated Cloudflare Tunnel, with a daily cron-driven check pipeline monitoring 4 regulatory sources for real text changes.',
+			'thumbnail': thumbnail_paths['ai_regulation_radar'],
+			'large': large_paths['ai_regulation_radar'],
+			'img_title': titles['ai_regulation_radar'],
+			'button_list': [{
+				'title': 'Live Demo',
+				'url': 'https://carsonng.short.gy/ai-regulation-radar',
+				'new_window': true
+			}
+			],
+			'tags': ['AI Governance', 'Agentic-AI Engineering', 'Cloud/DevOps']
+		}, {
+			'title': 'Command Deck',
+			'description': 'A personal ops center for a small fleet of live services: cross-project LLM cost tracking, service-health monitoring, and Telegram alerting, evolved into real agent-safety infrastructure. A deliberate quarantine/restart-eligibility gate distinguishes "an operator paused this on purpose" from "this process is actually dead," so automated recovery never fights a deliberate hold.<br><br>Monitors 9 services across the whole personal SaaS fleet with live uptime tracking, auto-heal, and an incident log — the Governance tab shown here captures a real quarantine lock engaged on a live service, not a mocked-up state.',
+			'thumbnail': thumbnail_paths['command_deck'],
+			'large': large_paths['command_deck'],
+			'img_title': titles['command_deck'],
+			'button_list': [{
+				'title': 'Live Demo',
+				'url': 'https://carsonng.short.gy/command-deck',
+				'new_window': true
+			}, {
+				'title': 'GitHub',
+				'url': 'https://carsonng.short.gy/command-deck-github',
+				'new_window': true
+			}
+			],
+			'tags': ['AI Governance', 'Cloud/DevOps', 'Technical Leadership']
+		}, {
 			'title': 'e-Learning for HKSARS',
 			'description': 'Government-adopted Moodle-based learning management system for HKSAR — I led the Moodle v2 → v3 upgrade using Node.js and MongoDB, supporting 500+ daily users at 99% uptime.<br><br>Plugin and theme customization delivered to meet specific government requirements; code or interface access can be demonstrated upon request.',
 			'thumbnail': thumbnail_paths['moodle'],
