@@ -325,8 +325,8 @@ $(function () {
 			'large': large_paths['quant_dashboard'],
 			'img_title': titles['quant_dashboard'],
 			'button_list': [{
-				'title': 'Live',
-				'url': 'https://carsonng.short.gy/quant-live',
+				'title': 'Paper Account',
+				'url': 'https://carsonng.short.gy/quant',
 				'new_window': true
 			}, {
 				'title': 'GitHub',
