@@ -310,7 +310,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Cloud/DevOps', 'AI Governance', 'Agentic-AI Engineering']
+			'tags': ['Cloud/DevOps', 'AI Governance']
 		}, {
 			'title': 'AWS AI Code Review & Security Scanning Demo',
 			'description': 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
@@ -323,7 +323,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Agentic-AI Engineering', 'AI Governance', 'Cloud/DevOps']
+			'tags': ['AI Governance', 'Cloud/DevOps']
 		}, {
 			'title': 'Quantitative Trade-Analysis Platform',
 			'description': 'A research-driven trading platform for a diversified 22-ETF book, engineered so no capital moves on a hunch: a walk-forward, deflated-Sharpe-tested backtester proves an edge first, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate — not a direct trade call — and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated, hard-guarded paper account.<br><br>The public dashboard shows the paper-trading instance, including the live "Signals & Gates" view — every instrument scored against explicit entry rules (strength, R:R, cooldown, de-correlation), with the exact reason a trade is blocked shown, not just a pass/fail. 80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge plus one validated satellite survived; everything else was rejected with data, not intuition.',
@@ -340,7 +340,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Agentic-AI Engineering', 'AI Governance', 'Cloud/DevOps']
+			'tags': ['AI Governance', 'Cloud/DevOps']
 		}, {
 			'title': 'Sprint Analyzer — AI Sprint Retrospective Generator',
 			'description': 'An AI sprint retrospective generator built to give engineering leads a trustworthy read on team delivery — a deterministic-numbers / LLM-prose split means pandas computes every metric from real Jira/ClickUp exports, and the LLM is structurally barred from inventing numbers, only writing prose.<br><br>110+ unit tests run without an API key; validated against real production sprint data from teams I\'ve led.',
@@ -357,7 +357,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Agentic-AI Engineering', 'AI Governance', 'Technical Leadership']
+			'tags': ['AI Governance', 'Technical Leadership']
 		}, /* {
 			'title': 'Adaptive Study Platform — Production RAG',
 			'description': 'An AIGP (AI Governance Professional) exam-prep tool built for my own certification study: FSRS-scheduled spaced repetition, an epsilon-greedy bandit that targets weak topics, and Supabase + pgvector RAG for grounded AI explanations on wrong answers.<br><br>Postgres-native vector search means no separate vector database to operate; deployed via Cloudflare Tunnel, with LLM-generated retrospective study plans aggregating wrong-answer patterns into a weakness analysis.',
@@ -374,7 +374,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Agentic-AI Engineering', 'Cloud/DevOps']
+			'tags': ['Cloud/DevOps']
 		}, */ {
 			'title': 'Event Radar — AI Event Discovery',
 			'description': 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage-plus-embedding ranking (keyword filter → semantic similarity → LLM rerank on the shortlist only) to keep API costs sane. A closed feedback loop (thumbs up/down) adjusts per-user interest weights over time, and every LLM-referenced event is validated against the real candidate set before being trusted — hallucinated IDs are rejected, not displayed.<br><br>150 tests, a bilingual disclaimer, and Crawl-delay-compliant scraping — operated, not just shipped once: real production bugs found and fixed live, including a missing Cache-Control header silently serving stale JS to every visitor and an HKT day-boundary bug undercounting daily LLM usage.',
@@ -391,7 +391,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['Agentic-AI Engineering', 'AI Governance', 'Technical Leadership']
+			'tags': ['AI Governance', 'Technical Leadership']
 		}, {
 			'title': 'AI Regulation Radar',
 			'description': 'Monitors EU AI Act, NIST AI RMF, and HK PCPD regulatory sources, diffs legal text changes, and generates plain-English impact assessments via RAG + LLM. Public and private views are the same running app filtered by content sensitivity, not just access — a real architectural split between who can reach it and what they\'re shown.<br><br>Deployed on its own GCP VM behind systemd + a dedicated Cloudflare Tunnel, with a daily cron-driven check pipeline monitoring 4 regulatory sources for real text changes.',
@@ -404,7 +404,7 @@ $(function () {
 				'new_window': true
 			}
 			],
-			'tags': ['AI Governance', 'Agentic-AI Engineering', 'Cloud/DevOps']
+			'tags': ['AI Governance', 'Cloud/DevOps']
 		}, {
 			'title': 'Command Deck',
 			'description': 'A personal ops center for a small fleet of live services: cross-project LLM cost tracking, service-health monitoring, and Telegram alerting, evolved into real agent-safety infrastructure. A deliberate quarantine/restart-eligibility gate distinguishes "an operator paused this on purpose" from "this process is actually dead," so automated recovery never fights a deliberate hold.<br><br>Monitors 9 services across the whole personal SaaS fleet with live uptime tracking, auto-heal, and an incident log — the Governance tab shown here captures a real quarantine lock engaged on a live service, not a mocked-up state.',
