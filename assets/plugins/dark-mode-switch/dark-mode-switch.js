@@ -45,10 +45,10 @@ function resetTheme() {
   if (darkSwitch.checked) {
     document.body.setAttribute("data-theme", "dark");
     localStorage.setItem("darkSwitch", "dark");
-    $('.github_logo').prop('src','/assets/images/GitHub_Logo_White.png');
+    document.querySelectorAll(".github_logo").forEach(function (img) { img.src = "/assets/images/GitHub_Logo_White.png"; });
   } else {
     document.body.setAttribute("data-theme", "light");
     localStorage.removeItem("darkSwitch");
-    $('.github_logo').prop('src','/assets/images/GitHub_Logo.png');
+    document.querySelectorAll(".github_logo").forEach(function (img) { img.src = "/assets/images/GitHub_Logo.png"; });
   }
 }

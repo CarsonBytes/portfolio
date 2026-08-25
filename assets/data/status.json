@@ -1,0 +1,12 @@
+{
+  "updated": "2026-08-25T00:00:00Z",
+  "source": "Command Deck fleet monitor — overwrite this file from the fleet's health check so the dots stay truthful. Keys are project folder names; values: up | degraded | down (absent = no dot).",
+  "services": {
+    "change_impact_assessor": "up",
+    "quant_dashboard": "up",
+    "sprint_analyzer": "up",
+    "event_radar": "up",
+    "ai_regulation_radar": "up",
+    "command_deck": "up"
+  }
+}

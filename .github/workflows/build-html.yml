@@ -34,3 +34,8 @@ jobs:
           git add index.html
           git commit -m "chore: rebuild index.html from index.php"
           git push
+
+      - name: Lighthouse budget gate
+        run: |
+          npm install -g @lhci/cli
+          lhci autorun --collect.staticDistDir=. --assert.budgetsFile=lighthouse-budgets.json

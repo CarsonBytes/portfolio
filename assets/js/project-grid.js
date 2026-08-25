@@ -316,6 +316,56 @@
 		}
 	];
 
+	var caseStudies = {
+		change_impact_assessor: {
+			problem: 'Code/infra changes get risk labels nobody acts on — a HIGH-risk flag that doesn\u2019t stop anything is just a comment.',
+			constraint: 'High-stakes calls can\u2019t rest on LLM judgment, and the assessor must never invent incidents or services.',
+			decision: 'HIGH-risk output pauses the LangGraph workflow behind a real interrupt + checkpointer until a human acknowledges; approvers are chosen by 3 deterministic rules; invented names are dropped against the service catalog.',
+			outcome: 'Verified live against the production endpoint; CI scores precision, recall, and classification accuracy separately.'
+		},
+		aws_code_review: {
+			problem: 'PR review comments get read eventually — over-privileged IAM roles and vulnerable dependencies still merge.',
+			constraint: 'Findings must block, not advise, and the gate must run on every PR without a human remembering to check.',
+			decision: 'Amazon Q Developer review + Amazon Inspector scanning gate every pull request; critical findings block the merge until resolved.',
+			outcome: 'On a real example PR the bots caught an AdministratorAccess IAM role, a known-CVE dependency, and a missing CloudFormation security property — before merge.'
+		},
+		quant_dashboard: {
+			problem: 'Trading on an LLM\u2019s market opinion is capital moving on a hunch.',
+			constraint: 'No trade without a statistically proven edge; the LLM may inform but never decide.',
+			decision: 'A walk-forward, deflated-Sharpe-tested backtester proves the edge first; a multi-agent analyst feeds a deterministic risk gate with explicit entry rules (strength, R:R, cooldown, de-correlation).',
+			outcome: '80+ strategy ideas tested — one core edge plus one validated satellite survived; the public dashboard shows the live gate and the exact reason each blocked trade was blocked.'
+		},
+		sprint_analyzer: {
+			problem: 'LLM-generated sprint metrics look plausible — and are occasionally invented.',
+			constraint: 'Every number must trace to a row in the source export; the LLM must never be the source of a metric.',
+			decision: 'A deterministic-numbers / LLM-prose split: pandas computes all metrics from Jira/ClickUp exports, and the LLM writes prose only.',
+			outcome: '110+ unit tests run without an API key; validated against real production sprint data from led teams.'
+		},
+		event_radar: {
+			problem: 'LLM-recommended events can be hallucinated — confidently wrong IDs that destroy user trust.',
+			constraint: 'Recommendations must reference only real, currently-listed events, and API cost must stay bounded.',
+			decision: 'Two-stage-plus-embedding ranking (keyword filter \u2192 semantic similarity \u2192 LLM rerank on the shortlist only); every LLM-referenced event is validated against the candidate set; thumbs feedback adjusts interest weights.',
+			outcome: '150 tests; hallucinated IDs rejected in production; operated live with real bugs found and fixed (stale-cache header, HKT day-boundary usage bug).'
+		},
+		ai_regulation_radar: {
+			problem: 'Regulatory text (EU AI Act, NIST AI RMF, HK PCPD) changes quietly — manual tracking doesn\u2019t scale.',
+			constraint: 'Impact assessments must be grounded in the actual text diff, not the LLM\u2019s summary of its own memory.',
+			decision: 'A daily cron diffs 4 regulatory sources; RAG + LLM generates plain-English impact assessments from the changed text; public/private views are one app filtered by content sensitivity.',
+			outcome: 'Deployed on a dedicated GCP VM behind systemd + a dedicated Cloudflare Tunnel, monitoring 4 sources daily.'
+		},
+		command_deck: {
+			problem: 'Automated recovery can fight an operator — restarting a service a human paused on purpose.',
+			constraint: '\u201CIntentionally paused\u201D and \u201Cactually dead\u201D must be distinguishable states; cost and health must be visible across the whole fleet.',
+			decision: 'A quarantine/restart-eligibility gate separates deliberate holds from liveness failures, alongside cross-project LLM cost tracking and Telegram alerting.',
+			outcome: 'Monitors 9 live services with auto-heal and an incident log; the Governance tab shows a real quarantine lock engaged on a live service.'
+		}
+	};
+
+	var ciBadges = {
+		change_impact_assessor: { repo: 'CarsonBytes/change_impact_assessor', workflow: 'ci.yml', label: 'CI' },
+		aws_code_review: { repo: 'CarsonBytes/aws_code_review', workflow: 'inspector-pr-scan.yml', label: 'Inspector scan' }
+	};
+
 	// Featured projects sort first within each section. Among featured
 	// projects, explicit featuredOrder wins (lower first); otherwise falls
 	// back to original array order -- stable either way. This is the one
@@ -422,6 +472,7 @@
 			card.className = 'project-card' + (project.featured ? ' featured-project' : '');
 			card.dataset.tags = project.tags.join(',');
 			card.dataset.index = globalIndex;
+			card.dataset.folder = project.folder;
 			card.tabIndex = 0;
 			card.setAttribute('role', 'button');
 			card.setAttribute('aria-label', 'View details for ' + project.title);
@@ -432,7 +483,7 @@
 			if (project.featured) {
 				var badge = document.createElement('span');
 				badge.className = 'featured-badge';
-				badge.innerHTML = '<i class="fas fa-star"></i>Featured';
+				badge.innerHTML = '<svg class="svg-icon" aria-hidden="true"><use href="#i-star"/></svg>Featured';
 				thumbWrap.appendChild(badge);
 			}
 
@@ -525,7 +576,18 @@
 		currentImageIndex = 0;
 
 		modalTitle.textContent = currentProject.title;
-		modalDescription.innerHTML = currentProject.description;
+		var cs = caseStudies[currentProject.folder];
+		if (cs) {
+			modalDescription.innerHTML =
+				'<div class="case-study">' +
+				'<div class="case-row"><span class="case-label">Problem</span><span>' + cs.problem + '</span></div>' +
+				'<div class="case-row"><span class="case-label">Constraint</span><span>' + cs.constraint + '</span></div>' +
+				'<div class="case-row"><span class="case-label">Governance decision</span><span>' + cs.decision + '</span></div>' +
+				'<div class="case-row"><span class="case-label">Outcome</span><span>' + cs.outcome + '</span></div>' +
+				'</div>';
+		} else {
+			modalDescription.innerHTML = currentProject.description;
+		}
 
 		modalButtons.innerHTML = '';
 		currentProject.buttons.forEach(function (btn) {
@@ -537,11 +599,28 @@
 			a.textContent = btn.title;
 			modalButtons.appendChild(a);
 		});
+		var ci = ciBadges[currentProject.folder];
+		if (ci) {
+			var badgeLink = document.createElement('a');
+			badgeLink.href = 'https://github.com/' + ci.repo + '/actions/workflows/' + ci.workflow;
+			badgeLink.target = '_blank';
+			badgeLink.rel = 'noopener';
+			badgeLink.className = 'ci-badge';
+			var badgeImg = document.createElement('img');
+			badgeImg.src = 'https://github.com/' + ci.repo + '/actions/workflows/' + ci.workflow + '/badge.svg';
+			badgeImg.alt = ci.label + ' status badge';
+			badgeImg.loading = 'lazy';
+			badgeLink.appendChild(badgeImg);
+			modalButtons.appendChild(badgeLink);
+		}
 
 		renderModalImage();
 
 		modal.hidden = false;
 		document.body.classList.add('project-modal-open');
+		if (window.location.hash !== '#' + currentProject.folder) {
+			history.replaceState(null, '', '#' + currentProject.folder);
+		}
 	}
 
 	function closeModal() {
@@ -576,11 +655,57 @@
 	}
 
 	function openFromHash() {
-		var hash = window.location.hash.replace('#', '');
+		var hash = decodeURIComponent(window.location.hash.replace('#', ''));
+		if (!hash) return;
 		var index = parseInt(hash, 10);
 		if (!isNaN(index) && index >= 0 && index < allProjects.length) {
 			openModal(index);
+			return;
 		}
+		var bySlug = -1;
+		for (var i = 0; i < allProjects.length; i++) {
+			if (allProjects[i].folder === hash) { bySlug = i; break; }
+		}
+		if (bySlug !== -1) openModal(bySlug);
+	}
+
+	function loadStatusDots() {
+		fetch('assets/data/status.json')
+			.then(function (r) { return r.ok ? r.json() : null; })
+			.then(function (data) {
+				if (!data || !data.services) return;
+				document.querySelectorAll('.project-card').forEach(function (card) {
+					var state = data.services[card.dataset.folder];
+					if (state !== 'up' && state !== 'degraded') return;
+					var thumb = card.querySelector('.project-card-thumb');
+					if (!thumb) return;
+					var dot = document.createElement('span');
+					dot.className = 'status-dot' + (state === 'degraded' ? ' status-degraded' : '');
+					dot.innerHTML = '<span class="status-dot-pulse"></span>' + (state === 'up' ? 'Live' : 'Degraded');
+					thumb.appendChild(dot);
+				});
+			})
+			.catch(function () {});
+	}
+
+	function injectProjectJsonLd() {
+		aiProjects.forEach(function (p) {
+			var urlBtn = p.buttons.filter(function (b) { return /demo|paper|live/i.test(b.title); })[0] || p.buttons[0];
+			if (!urlBtn) return;
+			var el = document.createElement('script');
+			el.type = 'application/ld+json';
+			el.textContent = JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'SoftwareApplication',
+				'name': p.title,
+				'description': p.summary,
+				'url': urlBtn.url,
+				'applicationCategory': 'WebApplication',
+				'operatingSystem': 'Web',
+				'author': { '@type': 'Person', 'name': 'Carson N.', 'url': 'https://carsonng.com/' }
+			});
+			document.head.appendChild(el);
+		});
 	}
 
 	document.addEventListener('DOMContentLoaded', function () {
@@ -591,6 +716,8 @@
 		cacheModalRefs();
 		initModalEvents();
 		openFromHash();
+		injectProjectJsonLd();
+		loadStatusDots();
 	});
 
 	window.addEventListener('hashchange', openFromHash);

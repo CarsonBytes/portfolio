@@ -71,6 +71,14 @@
 </script>
 
 <body data-theme="dark">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <symbol id="i-github" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+        <symbol id="i-location" viewBox="0 0 384 512"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></symbol>
+        <symbol id="i-star" viewBox="0 0 576 512"><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></symbol>
+        <symbol id="i-star-half" viewBox="0 0 576 512"><path d="M288 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.995 275.8 .0131 287.1-.0391L288 439.8zM433.2 512C432.1 512.1 431 512.1 429.9 512H433.2z"/></symbol>
+        <symbol id="i-grad-cap" viewBox="0 0 640 512"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/></symbol>
+    </svg>
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container">
@@ -79,7 +87,7 @@
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
                     <div class="profile-content">
                         <h1 class="name">Carson N.
-                            <a href="https://carsonng.short.gy/carsonng-github" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><i class="fab fa-github"></i></a>
+                            <a href="https://carsonng.short.gy/carsonng-github" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><svg class="svg-icon" aria-hidden="true"><use href="#i-github"/></svg></a>
                         </h1>
                         <h2 class="desc">AI Governance Leadership <b>|</b> Agentic AI Engineering <b>|</b> AWS Solution Architect Professional <?php /*  @ <b>HKIT.Supply</b>  */ ?>
                         </h2>
@@ -115,7 +123,7 @@
                             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
                         </div>
                     </div><!--//dark-mode-switch-->
-                    <a class="btn btn-cta-primary" href="https://carsonng.short.gy/whatsapp-contact" target="_blank"><i class="fa-brands fa-whatsapp"></i><!-- <i class="fas fa-paper-plane"></i> --> Contact
+                    <a class="btn btn-cta-primary" href="https://carsonng.short.gy/whatsapp-contact" target="_blank"><svg class="svg-icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Contact
                         Me</a>
                 </div>
                 <!--//col-->
@@ -206,6 +214,18 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="colophon section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">How This Site Is Built</h2>
+                        <div class="content">
+                            <p>No framework, no build step you can't read in a minute: static PHP → HTML, a hand-rolled vanilla-JS project grid, and a pre-commit Playwright smoke test. Deploys run through Netlify + Cloudflare with an automated edge-purge; CI rebuilds this page from source and enforces a Lighthouse budget on every push. The full list of judgment calls lives in the <a href="https://github.com/CarsonBytes/portfolio/blob/master/BUILD_LOG.md" target="_blank" rel="noopener">build log</a>.</p>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
 
                 <div id="project-modal" class="project-modal" hidden>
                     <div class="project-modal-backdrop"></div>
@@ -411,10 +431,10 @@
                         <!-- <h2 class="heading sr-only">Basic Information</h2> -->
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location: </span>Hong Kong
+                                <li><svg class="svg-icon" aria-hidden="true"><use href="#i-location"/></svg><span class="sr-only">Location: </span>Hong Kong
                                 </li>
                                 <!-- <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span>carsonng2000 [at] gmail</li> -->
-                                <li><i class="fa-brands fa-whatsapp"></i><!-- <i class="fas fa-phone"></i> --><span class="sr-only">WhatsApp: </span><a target="_blank" href="https://carsonng.short.gy/whatsapp-contact">+852 5917 3926</a></li>
+                                <li><svg class="svg-icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span class="sr-only">WhatsApp: </span><a target="_blank" href="https://carsonng.short.gy/whatsapp-contact">+852 5917 3926</a></li>
                             </ul>
                         </div>
                         <!--//content-->
@@ -572,7 +592,7 @@
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc (Hons) in
+                                <h3 class="title"><svg class="svg-icon" aria-hidden="true"><use href="#i-grad-cap"/></svg> BSc (Hons) in
                                     Information Engineering</h3>
                                 <h4 class="university">Chinese University of Hong Kong <span class="year">(2005-2008)</span>
                                 </h4>
@@ -592,27 +612,27 @@
                             <ul class="list-unstyled">
                                 <li class="item">
                                     <span class="title"><strong>Cantonese:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs" /><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                    <span class="level">Native Speaker <br class="visible-xs" /><svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> </span>
                                 </li>
                                 <!--//item-->
                                 <li class="item">
                                     <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Professional Working <br class="visible-sm visible-xs" /><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                    <span class="level">Professional Working <br class="visible-sm visible-xs" /><svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star-half"/></svg></span>
                                 </li>
                                 <!--//item-->
                                 <li class="item">
                                     <span class="title"><strong>German:</strong></span>
-                                    <span class="level">Professional Working <br class="visible-sm visible-xs" /><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                    <span class="level">Professional Working <br class="visible-sm visible-xs" /><svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg></span>
                                 </li>
                                 <!--//item-->
                                 <li class="item">
                                     <span class="title"><strong>Mandarin:</strong></span>
-                                    <span class="level">Limited - Professional Working <br class="visible-sm visible-xs" /><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                    <span class="level">Limited - Professional Working <br class="visible-sm visible-xs" /><svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star-half"/></svg></span>
                                 </li>
                                 <!--//item-->
                                 <li class="item">
                                     <span class="title"><strong>Japanese:</strong></span>
-                                    <span class="level">Intermediate (Passed JLPT N2) <br class="visible-sm visible-xs" /><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                    <span class="level">Intermediate (Passed JLPT N2) <br class="visible-sm visible-xs" /><svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg> <svg class="svg-icon"><use href="#i-star"/></svg></span>
                                 </li>
                                 <!--//item-->
                             </ul>
@@ -633,17 +653,15 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">© <span id="currentYear"></span> Carson N. All Rights Reserved.</small>
+            <small class="copyright">© <span id="currentYear"></span> Carson N. All Rights Reserved. · <a href="privacy.html">Privacy</a></small>
         </div>
         <!--//container-->
     </footer>
     <!--//footer-->
 
     <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
     <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.js"></script>
     <?php /*<!-- github calendar plugin -->
     <!-- <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script> -->
