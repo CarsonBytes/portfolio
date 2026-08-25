@@ -35,18 +35,6 @@ body[data-theme="dark"] .text-muted {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-body[data-theme="dark"] .wagwep-container ul#portfolio-filter a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-body[data-theme="dark"] .wagwep-container ul#portfolio-filter a:hover {
-  color: #222;
-}
-
-body[data-theme="dark"] .wagwep-container ul#portfolio-filter li.current a {
-  color: #fff;
-}
-
 .width-full.f6.px-0.px-md-5.py-1 {
   display: none;
 }
@@ -80,46 +68,6 @@ body[data-theme="light"] .info .svg-inline--fa {
   color: #767a7f
 }
 
-@media (min-width: 768px) {
-
-  .og-fullimg,
-  .og-details {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-  }
-
-  .og-details {
-    flex-direction: column;
-  }
-
-  #og-grid>li>a>img {
-    max-width: 300px;
-  }
-}
-
-
-@media (max-width: 767px) {
-  #og-grid>li>a>img {
-    max-width: 250px;
-  }
-
-  .og-expander-inner {
-    display       : flex;
-    flex-direction: column;
-  }
-}
-
-.og-grid li a figure {
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
-}
-
-.og-grid li a figure span {
-  margin: 0 20px;
-}
-
 .featured-badge {
   position: absolute;
   top: 8px;
@@ -138,11 +86,6 @@ body[data-theme="light"] .info .svg-inline--fa {
 
 .featured-badge i {
   font-size: 10px;
-}
-
-.og-details p,
-.og-details a.link-button {
-  font-size: 16px !important;
 }
 
 .badge-list {
