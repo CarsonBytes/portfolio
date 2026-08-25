@@ -49,8 +49,8 @@ OTHER_TAB_COUNTS = {
 }
 
 HASH_TITLE_CHECKS = {
-    0: "Quantitative Trade-Analysis Platform",
-    1: "Command Deck",
+    0: "Command Deck",
+    1: "Quantitative Trade-Analysis Platform",
     6: "AI Regulation Radar",
     7: "e-Learning for HKSARS",
     21: "Citic Securities Broker Site",
@@ -141,8 +141,8 @@ def run_browser_checks(base_url):
 
         ai_titles_in_order = ai_cards.locator(".project-card-title").all_text_contents()
         check(
-            "featured AI projects sort first, in original relative order",
-            ai_titles_in_order[0] == "Quantitative Trade-Analysis Platform" and ai_titles_in_order[1] == "Command Deck",
+            "featured AI projects sort first, Command Deck ahead of Quant",
+            ai_titles_in_order[0] == "Command Deck" and ai_titles_in_order[1] == "Quantitative Trade-Analysis Platform",
             f"got {ai_titles_in_order[:2]}",
         )
 

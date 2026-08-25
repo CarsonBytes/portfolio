@@ -46,7 +46,8 @@
 				{ title: 'GitHub', url: 'https://carsonng.short.gy/quant-trade-analysis-github' }
 			],
 			tags: ['Deterministic Gates over LLM Judgment'],
-			featured: true
+			featured: true,
+			featuredOrder: 1
 		},
 		{
 			title: 'Sprint Analyzer — AI Sprint Retrospective Generator',
@@ -105,7 +106,8 @@
 				{ title: 'GitHub', url: 'https://carsonng.short.gy/command-deck-github' }
 			],
 			tags: ['Deterministic Gates over LLM Judgment'],
-			featured: true
+			featured: true,
+			featuredOrder: 0
 		}
 	];
 
@@ -314,15 +316,23 @@
 		}
 	];
 
-	// Featured projects sort first within each section (stable -- relative
-	// order otherwise unchanged), so this is the one place display order is
-	// decided; hash indices and card order both derive from it.
+	// Featured projects sort first within each section. Among featured
+	// projects, explicit featuredOrder wins (lower first); otherwise falls
+	// back to original array order -- stable either way. This is the one
+	// place display order is decided; hash indices and card order both
+	// derive from it.
 	function featuredFirst(projects) {
 		return projects
 			.map(function (p, i) { return { p: p, i: i }; })
 			.sort(function (a, b) {
 				var byFeatured = (b.p.featured ? 1 : 0) - (a.p.featured ? 1 : 0);
-				return byFeatured !== 0 ? byFeatured : a.i - b.i;
+				if (byFeatured !== 0) return byFeatured;
+				if (a.p.featured && b.p.featured) {
+					var aOrder = a.p.featuredOrder !== undefined ? a.p.featuredOrder : a.i;
+					var bOrder = b.p.featuredOrder !== undefined ? b.p.featuredOrder : b.i;
+					if (aOrder !== bOrder) return aOrder - bOrder;
+				}
+				return a.i - b.i;
 			})
 			.map(function (entry) { return entry.p; });
 	}
