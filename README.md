@@ -47,7 +47,7 @@ The common thread: governance mechanisms that are load-bearing parts of the syst
 
 ## How this site is built
 
-Static PHP → HTML source, hand-tuned tag taxonomy, real Playwright-captured screenshots (not stock art), and a few real judgment calls along the way — including a redaction decision that's a small case study in the same governance thinking described above. Details in [BUILD_LOG.md](BUILD_LOG.md).
+Static PHP → HTML source, a hand-rolled vanilla-JS project grid (no framework, no jQuery dependency), two purpose-built tag taxonomies instead of one generic one, real Playwright-captured screenshots (not stock art), a pre-commit smoke test, and a few real judgment calls along the way — including a redaction decision that's a small case study in the same governance thinking described above. Details in [BUILD_LOG.md](BUILD_LOG.md).
 
 ---
 
