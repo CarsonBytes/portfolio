@@ -20,11 +20,7 @@
     <!-- Global CSS -->
     <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- elastic grid -->
-    <!-- <link rel="stylesheet" type="text/css" href="jquery-elastic-grid-master/css/demo.css" /> -->
-    <link rel="stylesheet" type="text/css" href="jquery-elastic-grid-master/css/elastic_grid.min.css" />
-
-    <!-- Theme CSS -->
+        <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
     <link id="theme-style" rel="stylesheet" href="assets/css/custom.css">
@@ -121,7 +117,8 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Other Projects</h2>
                         <div class="content">
-                            <div id="elastic_grid_demo"></div>
+                            <nav id="other-filter-nav" class="project-filter-nav"></nav>
+                            <div id="other-grid" class="project-grid"></div>
                         </div>
                     </div>
                 </section>
@@ -391,14 +388,7 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
     <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.js"></script>
-        <!-- elastic grid -->
-    <script src="jquery-elastic-grid-master/js/modernizr.custom.js"></script>
-    <script src="jquery-elastic-grid-master/js/classie.js"></script>
-    <script type="text/javascript" src="jquery-elastic-grid-master/js/jquery.elastislide.js"></script>
-    <script type="text/javascript" src="jquery-elastic-grid-master/js/jquery.hoverdir.js"></script>
-    <script type="text/javascript" src="jquery-elastic-grid-master/js/elastic_grid.js"></script>
-
-    <!-- AI project grid (vanilla JS, no jQuery dependency) -->
+        <!-- project grid (vanilla JS, replaces jquery-elastic-grid for both project sections) -->
     <script type="text/javascript" src="assets/js/project-grid.js"></script>
 
     <!-- custom js -->

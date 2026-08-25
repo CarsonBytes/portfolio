@@ -32,10 +32,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css">
 
 */ ?>
-    <!-- elastic grid -->
-    <!-- <link rel="stylesheet" type="text/css" href="jquery-elastic-grid-master/css/demo.css" /> -->
-    <link rel="stylesheet" type="text/css" href="jquery-elastic-grid-master/css/elastic_grid.min.css" />
-
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
@@ -141,7 +137,8 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Other Projects</h2>
                         <div class="content">
-                            <div id="elastic_grid_demo"></div>
+                            <nav id="other-filter-nav" class="project-filter-nav"></nav>
+                            <div id="other-grid" class="project-grid"></div>
                         </div>
                     </div>
                 </section>
@@ -604,14 +601,7 @@
     <script type="text/javascript" src="assets/plugins/lightgallery/lightgallery.umd.car.js"></script>
     <script type="text/javascript" src="assets/plugins/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
 */ ?>
-    <!-- elastic grid -->
-    <script src="jquery-elastic-grid-master/js/modernizr.custom.js"></script>
-    <script src="jquery-elastic-grid-master/js/classie.js"></script>
-    <script type="text/javascript" src="jquery-elastic-grid-master/js/jquery.elastislide.js"></script>
-    <script type="text/javascript" src="jquery-elastic-grid-master/js/jquery.hoverdir.js"></script>
-    <script type="text/javascript" src="jquery-elastic-grid-master/js/elastic_grid.js"></script>
-
-    <!-- AI project grid (vanilla JS, no jQuery dependency) -->
+    <!-- project grid (vanilla JS, replaces jquery-elastic-grid for both project sections) -->
     <script type="text/javascript" src="assets/js/project-grid.js"></script>
 
     <!-- custom js -->
