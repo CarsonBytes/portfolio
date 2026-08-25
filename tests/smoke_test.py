@@ -49,8 +49,9 @@ OTHER_TAB_COUNTS = {
 }
 
 HASH_TITLE_CHECKS = {
-    0: "Change Impact Assessor",
-    6: "Command Deck",
+    0: "Quantitative Trade-Analysis Platform",
+    1: "Command Deck",
+    6: "AI Regulation Radar",
     7: "e-Learning for HKSARS",
     21: "Citic Securities Broker Site",
 }
@@ -137,6 +138,13 @@ def run_browser_checks(base_url):
 
         featured = set(page.locator(".project-card.featured-project .project-card-title").all_text_contents())
         check("featured badges on exactly the right 2 projects", featured == FEATURED_TITLES, f"got {featured}")
+
+        ai_titles_in_order = ai_cards.locator(".project-card-title").all_text_contents()
+        check(
+            "featured AI projects sort first, in original relative order",
+            ai_titles_in_order[0] == "Quantitative Trade-Analysis Platform" and ai_titles_in_order[1] == "Command Deck",
+            f"got {ai_titles_in_order[:2]}",
+        )
 
         # -- Other Projects grid --
         other_cards = page.locator("#other-grid .project-card")

@@ -314,6 +314,22 @@
 		}
 	];
 
+	// Featured projects sort first within each section (stable -- relative
+	// order otherwise unchanged), so this is the one place display order is
+	// decided; hash indices and card order both derive from it.
+	function featuredFirst(projects) {
+		return projects
+			.map(function (p, i) { return { p: p, i: i }; })
+			.sort(function (a, b) {
+				var byFeatured = (b.p.featured ? 1 : 0) - (a.p.featured ? 1 : 0);
+				return byFeatured !== 0 ? byFeatured : a.i - b.i;
+			})
+			.map(function (entry) { return entry.p; });
+	}
+
+	aiProjects = featuredFirst(aiProjects);
+	otherProjects = featuredFirst(otherProjects);
+
 	// Global, flat project list. Index here is what #<n> hash deep-links use
 	// and what each card's data-index refers to, so the two sections share
 	// one modal without needing to know about each other.
