@@ -396,10 +396,17 @@ body.project-modal-open {
 .metrics-strip {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 28px 44px;
   margin-top: 22px;
   padding-top: 18px;
   border-top: 1px solid #e8e8e8;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .metric-value {
