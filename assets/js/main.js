@@ -272,7 +272,7 @@ $(function () {
 		'expandingHeight': 650,
 		'items': [{
 			'title': 'e-Learning for HKSARS — Government LMS Upgrade at Scale',
-			'description': 'Government-adopted Moodle-based learning management system for HKSAR — I led the Moodle v2 → v3 upgrade using Node.js and MongoDB, supporting 500+ daily users at 99% uptime.<br><br>Plugin and theme customization delivered to meet specific government requirements; code or interface access can be demonstrated upon request.',
+			'description': 'Government-adopted Moodle-based learning management system for HKSAR — I led the Moodle v2 → v3 upgrade using Node.js and MongoDB, supporting 500+ daily users at 99% uptime.<br><br>Plugin and theme customizations met specific government requirements; code or interface access available on request.',
 			'thumbnail': thumbnail_paths['moodle'],
 			'large': large_paths['moodle'],
 			'img_title': titles['moodle'],
@@ -285,7 +285,7 @@ $(function () {
 			'tags': ['Cloud/DevOps', 'Technical Leadership']
 		}, {
 			'title': 'Thermometer Interface — Smart Cooking Companion App (UX Prototype)',
-			'description': 'An interactive Figma prototype for a smart cooking thermometer\'s companion app, built to pin down client requirements before a single line of app code was written — validating the interaction design and color system with stakeholders up front to avoid costly rework.<br><br>Figma source link can be demonstrated upon request.',
+			'description': 'An interactive Figma prototype for a smart cooking thermometer\'s companion app, built to pin down client requirements before a single line of app code was written — validating the interaction design and color system with stakeholders up front to avoid costly rework.<br><br>Figma source available on request.',
 			'thumbnail': thumbnail_paths['thermometer'],
 			'large': large_paths['thermometer'],
 			'img_title': titles['thermometer'],
@@ -298,7 +298,7 @@ $(function () {
 			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'Andy Lau Fan Club App — Mobile Development for a HK Icon',
-			'description': 'Mobile app development for Andy Lau, a renowned Hong Kong actor and singer, and his fan club Andy World Club.<br><br>Code or more screenshots can be demonstrated upon request.',
+			'description': 'Mobile app development for Andy Lau — a renowned Hong Kong actor and singer — and his fan club, Andy World Club.<br><br>Code and additional screenshots available on request.',
 			'thumbnail': thumbnail_paths['awc'],
 			'large': large_paths['awc'],
 			'img_title': titles['awc'],
@@ -307,7 +307,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Dashijie E-Commerce — Laravel Refactor + AWS CI/CD',
-			'description': 'Refactored this Hong Kong e-commerce platform with Laravel and stood up its CI/CD pipeline — AWS EC2, CodePipeline, and Terraform — scaling it to 1,000+ daily API requests and improving transaction speed by 40%.<br><br>Ongoing customizations to the database, CMS, and coupon system for seasonal catalog changes; code and interface can be demonstrated upon request.',
+			'description': 'Refactored this Hong Kong e-commerce platform with Laravel and stood up its CI/CD pipeline — AWS EC2, CodePipeline, and Terraform — scaling it to 1,000+ daily API requests and improving transaction speed by 40%.<br><br>Ongoing customizations to the database, CMS, and coupon system for seasonal catalog changes; code and interface available on request.',
 			'thumbnail': thumbnail_paths['dsj'],
 			'large': large_paths['dsj'],
 			'img_title': titles['dsj'],
@@ -324,7 +324,7 @@ $(function () {
 			'tags': ['Cloud/DevOps', 'Technical Leadership']
 		}, {
 			'title': 'Customized ERP — Hong Kong Technology Voucher Programme',
-			'description': 'Custom Enterprise Resource Planning (ERP) systems delivered under Hong Kong\'s Technology Voucher Programme (TVP) — I owned requirements gathering and delivery for each client\'s unique accounting, HRM, and support-ticket workflows.<br><br>Demo credentials: admin@company.com / 123456. Code and interface can be demonstrated upon request.',
+			'description': 'Custom Enterprise Resource Planning (ERP) systems delivered under Hong Kong\'s Technology Voucher Programme (TVP) — I owned requirements gathering and delivery for each client\'s unique accounting, HRM, and support-ticket workflows.<br><br>Demo credentials: admin@company.com / 123456. Code and interface available on request.',
 			'thumbnail': thumbnail_paths['erp'],
 			'large': large_paths['erp'],
 			'img_title': titles['erp'],
@@ -337,7 +337,7 @@ $(function () {
 			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'Property Management ERP — HRM &amp; Task Management for Housing Estates',
-			'description': 'Internal property management ERP built on Node.js, adopted by a property management enterprise for HRM and task management across housing estates — I led requirements and delivery, with configurable options for other clients\' needs.<br><br>Code and interface can be demonstrated upon request.',
+			'description': 'Internal property management ERP built on Node.js, adopted by a property management enterprise for HRM and task management across housing estates — I led requirements and delivery, with configurable options for other clients\' needs.<br><br>Code and interface available on request.',
 			'thumbnail': thumbnail_paths['elpms'],
 			'large': large_paths['elpms'],
 			'img_title': titles['elpms'],
@@ -346,7 +346,7 @@ $(function () {
 			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'Poster Catalog — Joomla E-Commerce Build',
-			'description': 'Poster catalog built on the Joomla framework, live for demo access (username: demo / password: Testing!).<br><br>Backend panel can be demonstrated upon request.',
+			'description': 'Poster catalog built on Joomla, live for demo access (username: demo / password: Testing!).<br><br>Backend panel available on request.',
 			'thumbnail': thumbnail_paths['sensai'],
 			'large': large_paths['sensai'],
 			'img_title': titles['sensai'],
@@ -359,7 +359,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Urban Projects — Architecture Studio Portfolio Site',
-			'description': 'Architecture-portfolio website with a custom image carousel, built and delivered end-to-end.<br><br>CMS can be demonstrated upon request.',
+			'description': 'Architecture-studio portfolio site — including a Lantau Island villa development — with a custom image carousel, built and delivered end-to-end.<br><br>CMS available on request.',
 			'thumbnail': thumbnail_paths['urbanp'],
 			'large': large_paths['urbanp'],
 			'img_title': titles['urbanp'],
@@ -376,7 +376,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Association of Hong Kong Nursing Staff — Magento E-Commerce',
-			'description': 'Magento-based e-commerce site with custom order-confirmation API calls, a scheduled stock/customer-data sync job, and a secure third-party payment gateway integration.<br><br>Code or backend panel can be demonstrated upon request.',
+			'description': 'Magento-based e-commerce site with custom order-confirmation API calls, a scheduled stock/customer-data sync job, and a secure third-party payment gateway integration.<br><br>Code or backend panel available on request.',
 			'thumbnail': thumbnail_paths['ahkns'],
 			'large': large_paths['ahkns'],
 			'img_title': titles['ahkns'],
@@ -393,7 +393,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Project Management App — React Native + Odoo Integration',
-			'description': 'React Native project-management app with multilingual support, connected to an Odoo database — I drove the UAT process end-to-end with a dedicated internal testing build before production rollout.<br><br>Code can be demonstrated upon request.',
+			'description': 'React Native project-management app with multilingual support, connected to an Odoo database — I drove the UAT process end-to-end with a dedicated internal testing build before production rollout.<br><br>Code available on request.',
 			'thumbnail': thumbnail_paths['sb'],
 			'large': large_paths['sb'],
 			'img_title': titles['sb'],
@@ -401,7 +401,7 @@ $(function () {
 			'tags': ['Technical Leadership', 'Full-Stack Engineering']
 		}, {
 			'title': 'Hotel Payment Management — Stripe Pre-Auth &amp; Capture System',
-			'description': 'Online payment management system for hotels using the Stripe API to pre-authorize or capture customer card funds.<br><br>Code or interface can be demonstrated upon request.',
+			'description': 'Online payment management system for hotels using the Stripe API to pre-authorize or capture customer card funds.<br><br>Code or interface available on request.',
 			'thumbnail': thumbnail_paths['stripe'],
 			'large': large_paths['stripe'],
 			'img_title': titles['stripe'],
@@ -418,7 +418,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'WooCommerce Storefront — Custom WordPress E-Commerce Build',
-			'description': 'WordPress site integrated with WooCommerce for full e-commerce functionality, paired with custom design work for the static content pages.<br><br>Backend panel can be demonstrated upon request.',
+			'description': 'WordPress site integrated with WooCommerce for full e-commerce functionality, paired with custom design work for the static content pages.<br><br>Backend panel available on request.',
 			'thumbnail': thumbnail_paths['lhc'],
 			'large': large_paths['lhc'],
 			'img_title': titles['lhc'],
@@ -431,7 +431,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'NLC City Church — Custom WordPress Development',
-			'description': 'Custom WordPress site design and development for static content presentation.<br><br>Backend panel can be demonstrated upon request.',
+			'description': 'Custom WordPress design and development for the church\'s public site, still live in production today.<br><br>Backend panel available on request.',
 			'thumbnail': thumbnail_paths['nlc'],
 			'large': large_paths['nlc'],
 			'img_title': titles['nlc'],
@@ -444,7 +444,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Cross-Market SSO — Broker Platform Authentication',
-			'description': 'Single sign-on (SSO) implementation for a broker agent site, letting users access both local and foreign markets with one login instead of separate sign-ins per platform.<br><br>Code can be demonstrated upon request.',
+			'description': 'Single sign-on (SSO) implementation for a broker agent site, letting users access both local and foreign markets with one login instead of separate sign-ins per platform.<br><br>Code available on request.',
 			'thumbnail': thumbnail_paths['mib'],
 			'large': large_paths['mib'],
 			'img_title': titles['mib'],
@@ -457,7 +457,7 @@ $(function () {
 			'tags': ['Full-Stack Engineering']
 		}, {
 			'title': 'Citic Securities Broker Site — Self-Serve CMS &amp; Database',
-			'description': 'Backend CMS and database built for a broker agent site so the owner can self-serve content and menu updates instead of relying on developer changes for every edit.<br><br>Code can be demonstrated upon request.',
+			'description': 'Backend CMS and database built for a broker agent site so the owner can self-serve content and menu updates instead of relying on developer changes for every edit.<br><br>Code available on request.',
 			'thumbnail': thumbnail_paths['csb'],
 			'large': large_paths['csb'],
 			'img_title': titles['csb'],
