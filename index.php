@@ -14,8 +14,8 @@
     <meta property="og:url" content="https://carsonng.com/">
     <meta property="og:title" content="Carson N. — AI Governance &amp; Agentic AI Engineering">
     <meta property="og:description" content="Trustworthy by construction: human-in-the-loop checkpoints, deterministic gates over LLM judgment, structural anti-hallucination.">
-    <meta property="og:image" content="https://carsonng.com/assets/images/happy.png">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://carsonng.com/assets/images/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -36,9 +36,6 @@
 
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
 
     <!-- Global CSS -->
     <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> -->
