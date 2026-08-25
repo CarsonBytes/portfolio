@@ -624,6 +624,18 @@ $(function () {
 		]
 	})
 
+	var featuredTitles = ['Command Deck', 'Quantitative Trade-Analysis Platform'];
+	$('#elastic_grid_demo .og-grid > li').each(function () {
+		var itemTitle = $(this).find('figure span').text();
+		var isFeatured = featuredTitles.some(function (t) {
+			return itemTitle.indexOf(t) === 0;
+		});
+		if (isFeatured) {
+			$(this).addClass('featured-project');
+			$(this).find('> a').prepend('<span class="featured-badge"><i class="fas fa-star"></i>Featured</span>');
+		}
+	});
+
 	$("#elastic_grid_demo").imagesLoaded(function () {
 		if ($(location).attr('hash').substring(1) != '') {
 			$('li[data-id="' + $(location).attr('hash').substring(1) + '"] a').trigger('click');

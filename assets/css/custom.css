@@ -120,6 +120,32 @@ body[data-theme="light"] .info .svg-inline--fa {
   margin: 0 20px;
 }
 
+.og-grid li.featured-project > a {
+  border: 2px solid #479FC8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #479FC8;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.featured-badge i {
+  font-size: 10px;
+}
+
 .og-details p,
 .og-details a.link-button {
   font-size: 16px !important;
