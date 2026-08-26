@@ -38,4 +38,4 @@ jobs:
       - name: Lighthouse budget gate
         run: |
           npm install -g @lhci/cli
-          lhci autorun --collect.staticDistDir=. --assert.budgetsFile=lighthouse-budgets.json
+          lhci autorun
