@@ -80,7 +80,7 @@
                         </h1>
                         <h2 class="desc">AI Governance Leadership <b>|</b> Agentic AI Engineering <b>|</b> AWS Solution Architect Professional                         </h2>
                                                 <div class="icons">
-                            <a target="_blank" class="fadein" href="https://carsonng.short.gy/capitaine-stack" data-bs-toggle="tooltip" title="My Stack Overflow Profile"><svg class="svg-icon so-icon" aria-hidden="true"><use href="#i-stackoverflow"/></svg></a>
+                            <a target="_blank" class="fadein" href="https://carsonng.short.gy/capitaine-stack"><img src="https://stackoverflow.com/users/flair/242058.png?theme=dark" width="208" height="58" alt="My Stack Overflow Profile" data-bs-toggle="tooltip" title="My Stack Overflow Profile"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/carsonng-linkedin"><img class="linkedin_logo" src="/assets/images/64px-LinkedIn_logo_initials.png" height="58" alt="My LinkedIn Profile" data-bs-toggle="tooltip" title="My LinkedIn Profile"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/carsonng-github"><img class="github_logo" src="/assets/images/GitHub_Logo_White.png" height="58" alt="My Github Profile" data-bs-toggle="tooltip" title="My Github Profile"></a>
                             <a target="_blank" class="fadein" href="https://carsonng.short.gy/credly-pmp"><img data-src="/assets/images/pmp.png" height="58" alt="Project Management Professional" data-bs-toggle="tooltip" title="Project Management Professional" loading="lazy" typeof="foaf:Image" class="lozad lazyload" src="/assets/images/pmp.png" data-loaded="true" data-fully-loaded="true"></a>
@@ -115,10 +115,24 @@
     </header>
     <!--//header-->
 
+    <nav class="section-nav" aria-label="Section navigation">
+        <div class="container">
+            <div class="section-nav-inner">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#ai-projects">AI Projects</a>
+                <a href="#other-projects">Other Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#languages">Languages</a>
+            </div>
+        </div>
+    </nav>
     <div class="container sections-wrapper py-5">
         <div class="row">
             <div class="primary col-lg-7 col-xl-8 col-xxl-9 col-12">
-                <section class="about section">
+                <section id="about" class="about section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
@@ -150,7 +164,7 @@
                 </section>
                 <!--//section-->
 
-                <section class="experience section">
+                <section id="experience" class="experience section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Recent Experience</h2>
                         <div class="content">
@@ -176,7 +190,7 @@
                 </section>
                 <!--//section-->
 
-                <section class="projects section">
+                <section id="ai-projects" class="projects section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">AI &amp; Governance Projects</h2>
                         <div class="content">
@@ -186,7 +200,7 @@
                     </div>
                 </section>
 
-                <section class="projects section">
+                <section id="other-projects" class="projects section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Other Projects</h2>
                         <div class="content">
@@ -207,6 +221,11 @@
                     <!--//section-inner-->
                 </section>
                 <!--//section-->
+
+                <div class="bottom-cta">
+                    <a class="btn btn-cta-primary" href="https://carsonng.short.gy/whatsapp-contact" target="_blank">Let's talk AI governance →</a>
+                    <p class="text-muted" style="margin-top:8px; font-size:13px;">Response within 24h · Hong Kong (HKT)</p>
+                </div>
 
                 <div id="project-modal" class="project-modal" hidden>
                     <div class="project-modal-backdrop"></div>
@@ -246,7 +265,7 @@
                 </aside>
                 <!--//aside-->
 
-                <aside class="certifications aside section">
+                <aside id="certifications" class="certifications aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Certifications</h2>
                         <div class="content">
@@ -316,7 +335,7 @@
                 </aside>
                 <!--//section-->
 
-                <aside class="skills aside section">
+                <aside id="skills" class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
@@ -390,7 +409,7 @@
                 </aside>
                 <!--//section-->
 
-                <aside class="education aside section">
+                <aside id="education" class="education aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Education</h2>
                         <div class="content">
@@ -408,7 +427,7 @@
                 </aside>
                 <!--//section-->
 
-                <aside class="languages aside section">
+                <aside id="languages" class="languages aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Languages</h2>
                         <div class="content">
@@ -469,6 +488,7 @@
         <!-- project grid (vanilla JS, replaces jquery-elastic-grid for both project sections) -->
     <script type="text/javascript" src="assets/js/project-grid.js"></script>
 
+    <button id="backToTop" aria-label="Back to top">↑</button>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
