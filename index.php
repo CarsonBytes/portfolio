@@ -219,7 +219,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">How This Site Is Built</h2>
                         <div class="content">
-                            <p>No framework, no build step you can't read in a minute: static PHP → HTML, a hand-rolled vanilla-JS project grid, and a pre-commit Playwright smoke test. Deploys run through Netlify + Cloudflare with an automated edge-purge; CI rebuilds this page from source and enforces a Lighthouse budget on every push. The full list of judgment calls lives in the <a href="https://github.com/CarsonBytes/portfolio/blob/master/BUILD_LOG.md" target="_blank" rel="noopener">build log</a>.</p>
+                            <p>No framework, no build step you can't read in a minute: static PHP → HTML, a hand-rolled vanilla-JS project grid, and a pre-commit Playwright smoke test. Deploys run through Netlify + Cloudflare with an automated edge-purge; CI rebuilds this page from source and enforces a Lighthouse budget on every push.</p>
                         </div>
                         <!--//content-->
                     </div>
