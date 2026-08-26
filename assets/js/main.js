@@ -21,29 +21,35 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 		backBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 	}
 	var navLinks = document.querySelectorAll('.section-nav a');
-	var sections = [];
-	navLinks.forEach(function (a) {
-		var id = a.getAttribute('href').slice(1);
-		var el = document.getElementById(id);
-		if (el) sections.push({ id: id, el: el, link: a });
-	});
-	if (sections.length && 'IntersectionObserver' in window) {
-		var obs = new IntersectionObserver(function (entries) {
-			entries.forEach(function (entry) {
-				if (entry.isIntersecting) {
-					var id = entry.target.id;
-					navLinks.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + id); });
-				}
-			});
-		}, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
-		sections.forEach(function (s) { obs.observe(s.el); });
+	var ticking = false;
+	function updateActive() {
+		var nav = document.querySelector('.section-nav');
+		var navBottom = nav ? nav.offsetHeight + 8 : 60;
+		var best = null, bestDist = Infinity;
+		navLinks.forEach(function (a) {
+			var el = document.getElementById(a.getAttribute('href').slice(1));
+			if (!el) return;
+			var d = el.getBoundingClientRect().top - navBottom;
+			var dist = d <= 24 ? -d : d + 10000;
+			if (dist < bestDist) { bestDist = dist; best = a; }
+		});
+		navLinks.forEach(function (l) { l.classList.toggle('active', l === best); });
+		ticking = false;
+	}
+	if (navLinks.length) {
+		window.addEventListener('scroll', function () {
+			if (!ticking) { requestAnimationFrame(updateActive); ticking = true; }
+		}, { passive: true });
+		window.addEventListener('resize', updateActive);
 		navLinks.forEach(function (a) {
 			a.addEventListener('click', function (e) {
 				e.preventDefault();
 				var target = document.getElementById(a.getAttribute('href').slice(1));
 				if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 				history.replaceState(null, '', a.getAttribute('href'));
+				setTimeout(updateActive, 350);
 			});
 		});
+		updateActive();
 	}
 })();
