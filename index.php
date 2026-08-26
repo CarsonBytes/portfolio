@@ -219,7 +219,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">How This Site Is Built</h2>
                         <div class="content">
-                            <p>No framework, no build step you can't read in a minute: static PHP → HTML, a hand-rolled vanilla-JS project grid, and a pre-commit Playwright smoke test. Deploys run through Netlify + Cloudflare with an automated edge-purge; CI rebuilds this page from source and enforces a Lighthouse budget on every push.</p>
+                            <p>A deliberately bounded stack: static PHP → HTML — PHP's only job is stripping legacy comment blocks — and one data-driven vanilla-JS module with a single render path, so the whole codebase stays at inspection size. A pre-commit Playwright smoke test guards every change; CI rebuilds from source, enforces a Lighthouse budget on every push, and ships through Netlify + Cloudflare with an automated edge-purge.</p>
                         </div>
                         <!--//content-->
                     </div>
