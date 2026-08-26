@@ -654,7 +654,7 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">© <span id="currentYear"></span> Carson N. All Rights Reserved. · <a href="privacy.html">Privacy</a></small>
+            <small class="copyright">© <span id="currentYear"></span> Carson N. All Rights Reserved. · <a class="sr-only" href="privacy.html">Privacy</a></small>
         </div>
         <!--//container-->
     </footer>
