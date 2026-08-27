@@ -123,7 +123,7 @@
         <div class="container">
             <div class="row align-items-center" style="padding: 0 30px;">
                 <div class="col">
-                    <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="profile image" />
+                    <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/happy.png" alt="Carson N. — Head of AI Governance, Hong Kong" />
                     <div class="profile-content">
                         <h1 class="name">Carson N.
                             <a href="https://carsonng.short.gy/carsonng-github" data-bs-toggle="tooltip" title="My GitHub" target="_blank" class="fadein"><svg class="svg-icon" aria-hidden="true"><use href="#i-github"/></svg></a>
@@ -164,11 +164,6 @@
                     </div><!--//dark-mode-switch-->
                     <a class="btn btn-cta-primary" href="https://carsonng.short.gy/whatsapp-contact" target="_blank"><svg class="svg-icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Contact
                         Me</a>
-                    <div class="mt-2">
-                        <a class="preferred-source-link" href="https://www.google.com/preferences/source?q=carsonng.com" target="_blank" rel="noopener">
-                            <svg class="svg-icon" aria-hidden="true" style="width:16px;height:16px;margin-right:4px;vertical-align:middle;"><use href="#i-star"/></svg>Preferred Source
-                        </a>
-                    </div>
                 </div>
                 <!--//col-->
             </div>
