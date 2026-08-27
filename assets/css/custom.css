@@ -875,3 +875,21 @@ body[data-theme="dark"] .project-card-thumb.skeleton {
     text-decoration: none;
   }
 }
+
+.preferred-source-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.preferred-source-link:hover {
+  color: #4285f4;
+}
+[data-theme="dark"] .preferred-source-link {
+  color: #aaa;
+}
+[data-theme="dark"] .preferred-source-link:hover {
+  color: #8ab4f8;
+}
