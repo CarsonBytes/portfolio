@@ -313,6 +313,20 @@
 			],
 			tags: ['CMS & Web Platforms'],
 			featured: false
+		},
+		{
+			title: 'How This Site Is Built',
+			summary: 'One PHP preprocess, one vanilla-JS module, one render path — the whole codebase stays at inspection size.',
+			description: 'A deliberately bounded stack: static PHP strips legacy comment blocks into clean HTML, and a single data-driven vanilla-JS module (<code>project-grid.js</code>) renders both project grids from one data source — no build step, no framework, no bundler.<br><br>A pre-commit Playwright smoke test guards every change (23 checks); CI rebuilds from source on every push, enforces a Lighthouse performance budget (0.8+ perf, ≤300KB JS, ≤1200KB total), and ships through Netlify + Cloudflare with an automated edge-purge via <code>deploy.ps1</code>.',
+			folder: 'site_architecture',
+			cover: 'cover.svg',
+			images: [],
+			imgTitles: [],
+			buttons: [
+				{ title: 'GitHub', url: 'https://github.com/CarsonBytes/portfolio' }
+			],
+			tags: ['Open Source'],
+			featured: false
 		}
 	];
 

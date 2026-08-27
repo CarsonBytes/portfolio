@@ -184,6 +184,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
                 <a href="#languages">Languages</a>
+                <a href="#how-this-site-is-built">How Built</a>
             </div>
         </div>
     </nav>
@@ -268,7 +269,7 @@
                     </div>
                 </section>
 
-                <section class="colophon section">
+                <section id="how-this-site-is-built" class="colophon section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">How This Site Is Built</h2>
                         <div class="content">
@@ -652,7 +653,7 @@
                             <div class="item">
                                 <h3 class="title"><svg class="svg-icon" aria-hidden="true"><use href="#i-grad-cap"/></svg> BSc (Hons) in
                                     Information Engineering</h3>
-                                <h4 class="university">Chinese University of Hong Kong <span class="year">(2005-2008)</span>
+                                <h4 class="university">Chinese University of Hong Kong <?php /* <span class="year">(2005-2008)</span> */ ?>
                                 </h4>
                             </div>
                             <!--//item-->
