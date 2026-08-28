@@ -475,6 +475,28 @@ body.project-modal-open {
   letter-spacing: 0.02em;
 }
 
+.metric-link {
+  text-decoration: none;
+}
+.metric-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cert-more {
+  margin: 14px 0 0;
+  font-size: 13px;
+}
+.cert-more .more-link {
+  color: #479FC8;
+  text-decoration: none;
+  font-weight: 600;
+}
+.cert-more .more-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 body[data-theme="dark"] .metrics-strip {
   border-top-color: #33373c;
 }

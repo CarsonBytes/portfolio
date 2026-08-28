@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="12" fill="#0f172a"/>
+  <rect x="1" y="1" width="798" height="448" rx="11" stroke="#334155" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="60" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">How This Site Is Built</text>
+  <text x="400" y="85" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">Deliberately bounded stack — inspection-size codebase</text>
+
+  <!-- Flow boxes -->
+  <!-- PHP -->
+  <rect x="60" y="140" width="120" height="70" rx="8" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="120" y="170" text-anchor="middle" font-family="monospace" font-size="15" font-weight="600" fill="#818cf8">PHP</text>
+  <text x="120" y="190" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">strip comments</text>
+
+  <!-- Arrow -->
+  <path d="M185 175 L215 175" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- HTML -->
+  <rect x="220" y="140" width="120" height="70" rx="8" fill="#1e293b" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="280" y="170" text-anchor="middle" font-family="monospace" font-size="15" font-weight="600" fill="#22d3ee">HTML</text>
+  <text x="280" y="190" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">clean output</text>
+
+  <!-- Arrow -->
+  <path d="M345 175 L375 175" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- JS -->
+  <rect x="380" y="140" width="120" height="70" rx="8" fill="#1e293b" stroke="#facc15" stroke-width="1.5"/>
+  <text x="440" y="170" text-anchor="middle" font-family="monospace" font-size="15" font-weight="600" fill="#facc15">JS</text>
+  <text x="440" y="190" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">single module</text>
+
+  <!-- Arrow -->
+  <path d="M505 175 L535 175" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Netlify -->
+  <rect x="540" y="140" width="100" height="70" rx="8" fill="#1e293b" stroke="#00c7b7" stroke-width="1.5"/>
+  <text x="590" y="170" text-anchor="middle" font-family="monospace" font-size="13" font-weight="600" fill="#00c7b7">Netlify</text>
+  <text x="590" y="190" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">host</text>
+
+  <!-- Arrow -->
+  <path d="M645 175 L665 175" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Cloudflare -->
+  <rect x="670" y="140" width="100" height="70" rx="8" fill="#1e293b" stroke="#f6821f" stroke-width="1.5"/>
+  <text x="720" y="170" text-anchor="middle" font-family="monospace" font-size="12" font-weight="600" fill="#f6821f">CF</text>
+  <text x="720" y="190" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">edge</text>
+
+  <!-- Bottom row: CI / Tests / Lighthouse -->
+  <!-- CI -->
+  <rect x="100" y="270" width="160" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="180" y="295" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="#e2e8f0">GitHub Actions CI</text>
+  <text x="180" y="313" text-anchor="middle" font-family="system-ui" font-size="10" fill="#64748b">rebuild + Lighthouse gate</text>
+
+  <!-- Tests -->
+  <rect x="320" y="270" width="160" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="#e2e8f0">Playwright Smoke</text>
+  <text x="400" y="313" text-anchor="middle" font-family="system-ui" font-size="10" fill="#64748b">23 pre-commit checks</text>
+
+  <!-- Lighthouse -->
+  <rect x="540" y="270" width="160" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="620" y="295" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="#e2e8f0">Lighthouse Budget</text>
+  <text x="620" y="313" text-anchor="middle" font-family="system-ui" font-size="10" fill="#64748b">0.8+ perf · ≤300KB JS</text>
+
+  <!-- Connecting lines from flow to CI row -->
+  <path d="M280 210 L280 240 L180 270" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
+  <path d="M440 210 L440 270" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
+  <path d="M590 210 L590 240 L620 270" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Tagline -->
+  <text x="400" y="390" text-anchor="middle" font-family="system-ui" font-size="11" fill="#64748b">No build step · No framework · No bundler · Inspection-size codebase</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0 0 L8 3 L0 6" fill="none" stroke="#475569" stroke-width="1"/>
+    </marker>
+  </defs>
+</svg>

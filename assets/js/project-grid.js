@@ -39,8 +39,8 @@
 			description: 'A research-driven trading platform for a diversified 22-ETF book, engineered so no capital moves on a hunch: a walk-forward, deflated-Sharpe-tested backtester proves an edge first, a multi-agent LLM analyst (regime / technical / sentiment) feeds a deterministic risk gate — not a direct trade call — and a live dashboard now trades real money on Interactive Brokers alongside a fully isolated, hard-guarded paper account.<br><br>The public dashboard shows the paper-trading instance, including the live "Signals & Gates" view — every instrument scored against explicit entry rules (strength, R:R, cooldown, de-correlation), with the exact reason a trade is blocked shown, not just a pass/fail. 80+ strategy ideas tested with out-of-sample / DSR discipline — only one core edge plus one validated satellite survived; everything else was rejected with data, not intuition.',
 			folder: 'quant_dashboard',
 			cover: 'cover_thumb.png',
-			images: ['board.png', 'signals_gates.png'],
-			imgTitles: ['Live paper-trading dashboard', 'Deterministic risk-gate status per instrument'],
+			images: ['board.png', 'signals_gates.png', 'alerts.png', 'paper_trades.png', 'retrospective.png'],
+			imgTitles: ['BOARD — live equity & positions (tabs on top)', 'SIGNALS & GATES — deterministic gate per instrument (tabs on top)', 'ALERTS — risk alerts & notifications (tabs on top)', 'PAPER TRADES — simulated trade history (tabs on top)', 'RETROSPECTIVE — trade review & analytics (tabs on top)'],
 			buttons: [
 				{ title: 'Paper Account', url: 'https://carsonng.short.gy/quant' },
 				{ title: 'GitHub', url: 'https://carsonng.short.gy/quant-trade-analysis-github' }
@@ -99,8 +99,8 @@
 			description: 'A personal ops center for a small fleet of live services: cross-project LLM cost tracking, service-health monitoring, and Telegram alerting, evolved into real agent-safety infrastructure. A deliberate quarantine/restart-eligibility gate distinguishes "an operator paused this on purpose" from "this process is actually dead," so automated recovery never fights a deliberate hold.<br><br>Monitors 9 services across the whole personal SaaS fleet with live uptime tracking, auto-heal, and an incident log — the Governance tab shown here captures a real quarantine lock engaged on a live service, not a mocked-up state.',
 			folder: 'command_deck',
 			cover: 'cover_thumb.png',
-			images: ['cost_usage.png', 'landing.png', 'governance.png'],
-			imgTitles: ['Cost & usage — cross-project LLM spend tracking', 'Command Deck fleet overview', 'Governance tab — active quarantine/lock state'],
+			images: ['governance_lock.png', 'landing.png', 'cost_usage.png', 'reliability.png', 'governance.png'],
+			imgTitles: ['GOVERNANCE — active quarantine/lock state', 'OVERVIEW — fleet health & status (tabs on top)', 'COST & USAGE — cross-project LLM spend tracking (tabs on top)', 'RELIABILITY & INCIDENTS — uptime & incident log (tabs on top)', 'GOVERNANCE — policy & controls (tabs on top)'],
 			buttons: [
 				{ title: 'Live Demo', url: 'https://carsonng.short.gy/command-deck' },
 				{ title: 'GitHub', url: 'https://carsonng.short.gy/command-deck-github' }

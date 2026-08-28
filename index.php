@@ -204,7 +204,7 @@
                                     <span class="metric-label">yrs cross-border eng.</span>
                                 </div>
                                 <div class="metric">
-                                    <span class="metric-value">7+</span>
+                                    <a class="metric-value metric-link" href="https://carsonng.short.gy/linkedin-certs" target="_blank" rel="noopener" aria-label="View all 17+ certifications on LinkedIn" title="View all 17+ certifications on LinkedIn">17+</a>
                                     <span class="metric-label">certifications</span>
                                 </div>
                                 <div class="metric">
@@ -564,6 +564,7 @@
                                     </div>
                                 </li>
                             </ul>
+                            <p class="cert-more"><a class="more-link" href="https://carsonng.short.gy/linkedin-certs" target="_blank" rel="noopener">View all 17+ on LinkedIn →</a></p>
 
                         </div>
                         <!--//content-->
