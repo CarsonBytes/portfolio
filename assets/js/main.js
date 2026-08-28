@@ -30,7 +30,7 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 			var el = document.getElementById(a.getAttribute('href').slice(1));
 			if (!el) return;
 			var d = el.getBoundingClientRect().top - navBottom;
-			var dist = d <= 24 ? -d : d + 10000;
+			var dist = d <= 0 ? 10000 - d : d + 10000;
 			if (dist < bestDist) { bestDist = dist; best = a; }
 		});
 		navLinks.forEach(function (l) { l.classList.toggle('active', l === best); });
@@ -44,6 +44,8 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 		navLinks.forEach(function (a) {
 			a.addEventListener('click', function (e) {
 				e.preventDefault();
+				navLinks.forEach(function (l) { l.classList.remove('active'); });
+				a.classList.add('active');
 				var target = document.getElementById(a.getAttribute('href').slice(1));
 				if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 				history.replaceState(null, '', a.getAttribute('href'));
