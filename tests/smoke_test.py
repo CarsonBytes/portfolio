@@ -41,19 +41,21 @@ AI_TAB_COUNTS = {
 }
 
 OTHER_TAB_COUNTS = {
-    "All": 15,
+    "All": 16,
     "Enterprise Systems": 5,
     "E-Commerce & Payments": 5,
     "CMS & Web Platforms": 3,
     "Mobile & Product Design": 2,
+    "Open Source": 1,
 }
 
 HASH_TITLE_CHECKS = {
     0: "Command Deck",
     1: "Quantitative Trade-Analysis Platform",
     6: "AI Regulation Radar",
-    7: "e-Learning for HKSARS",
-    21: "Citic Securities Broker Site",
+    7: "How This Site Is Built",
+    8: "e-Learning for HKSARS",
+    22: "Citic Securities Broker Site",
 }
 
 FEATURED_TITLES = {"Quantitative Trade-Analysis Platform", "Command Deck"}
@@ -148,7 +150,7 @@ def run_browser_checks(base_url):
 
         # -- Other Projects grid --
         other_cards = page.locator("#other-grid .project-card")
-        check("Other Projects grid has 15 cards", other_cards.count() == 15, f"got {other_cards.count()}")
+        check("Other Projects grid has 16 cards", other_cards.count() == 16, f"got {other_cards.count()}")
 
         other_tabs = page.locator("#other-filter-nav a").all_text_contents()
         other_tab_map = {}

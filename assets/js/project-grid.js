@@ -113,6 +113,20 @@
 
 	var otherProjects = [
 		{
+			title: 'How This Site Is Built',
+			summary: 'One PHP preprocess, one vanilla-JS module, one render path — the whole codebase stays at inspection size.',
+			description: 'A deliberately bounded stack: static PHP strips legacy comment blocks into clean HTML, and a single data-driven vanilla-JS module (<code>project-grid.js</code>) renders both project grids from one data source — no build step, no framework, no bundler.<br><br>A pre-commit Playwright smoke test guards every change (23 checks); CI rebuilds from source on every push and enforces a Lighthouse budget across performance (0.8+), accessibility (0.9+), best practices (0.75+), and SEO (0.9+), plus hard caps on JS (≤300KB) and total page weight (≤1200KB).<br><br>SEO is structural, not an afterthought: full metadata (canonical URL, Open Graph, Twitter card), JSON-LD Person and BreadcrumbList schemas, an auto-rendered OG card image, and a robots.txt/sitemap.xml pair — plus a daily-scheduled check for Google Preferred Sources eligibility that opens a GitHub issue the moment the site qualifies. Ships through Netlify + Cloudflare with an automated edge-purge via <code>deploy.ps1</code>.',
+			folder: 'site_architecture',
+			cover: 'cover.svg',
+			images: ['cover.svg'],
+			imgTitles: ['How this site is built — PHP → HTML → JS, tested, gated, and shipped'],
+			buttons: [
+				{ title: 'GitHub', url: 'https://github.com/CarsonBytes/portfolio' }
+			],
+			tags: ['Open Source'],
+			featured: false
+		},
+		{
 			title: 'e-Learning for HKSARS — Government LMS Upgrade at Scale',
 			summary: 'Led a government LMS upgrade serving 500+ daily users at 99% uptime.',
 			description: 'Government-adopted Moodle-based learning management system for HKSAR — I led the Moodle v2 → v3 upgrade using Node.js and MongoDB, supporting 500+ daily users at 99% uptime.<br><br>Plugin and theme customizations met specific government requirements; code or interface access available on request.',
@@ -143,7 +157,7 @@
 		{
 			title: 'Andy Lau Fan Club App — Mobile Development for a HK Icon',
 			summary: 'Mobile app for a Hong Kong icon and his official fan club.',
-			description: 'Mobile app development for Andy Lau — a renowned Hong Kong actor and singer — and his fan club, Andy World Club.<br><br>Code and additional screenshots available on request.',
+			description: 'Mobile app development for Andy Lau — a renowned Hong Kong actor and singer — and his fan club, Andy World Club.',
 			folder: 'awc',
 			cover: 'logo.jpg',
 			images: ['landing.jpg', 'event_detail.jpg', 'popup.jpg', 'event_application.jpg', 'list_detail.jpg'],
@@ -169,14 +183,12 @@
 		{
 			title: 'Customized ERP — Hong Kong Technology Voucher Programme',
 			summary: 'Client ERP systems delivered under Hong Kong\'s Technology Voucher Programme.',
-			description: 'Custom Enterprise Resource Planning (ERP) systems delivered under Hong Kong\'s Technology Voucher Programme (TVP) — I owned requirements gathering and delivery for each client\'s unique accounting, HRM, and support-ticket workflows.<br><br>Demo credentials: admin@company.com / 123456. Code and interface available on request.',
+			description: 'Custom Enterprise Resource Planning (ERP) systems delivered under Hong Kong\'s Technology Voucher Programme (TVP) — I owned requirements gathering and delivery for each client\'s unique accounting, HRM, and support-ticket workflows.',
 			folder: 'erp',
 			cover: 'accounting_dashboard_thumb.PNG',
 			images: ['accounting_dashboard.PNG', 'login.PNG', 'role_permissions.PNG', 'support_ticket_system.PNG', 'chat_messenger.PNG', 'edit_insurance_policy.PNG', 'export_renewal_notice.PNG'],
 			imgTitles: ['Accounting dashboard', 'login', 'Role permissions', 'Support ticket system', 'Chat messenger', 'Edit insurance policy', 'Export renewal notice'],
-			buttons: [
-				{ title: 'Demo', url: 'https://carsonng.short.gy/customized-erp-demo' }
-			],
+			buttons: [],
 			tags: ['Enterprise Systems'],
 			featured: false
 		},
@@ -195,7 +207,7 @@
 		{
 			title: 'Poster Catalog — Joomla E-Commerce Build',
 			summary: 'Joomla-built e-commerce catalog, live for demo access.',
-			description: 'Poster catalog built on Joomla, live for demo access (username: demo / password: Testing!).<br><br>Backend panel available on request.',
+			description: 'Poster catalog built on Joomla.',
 			folder: 'sensai',
 			cover: 'product_thumb.PNG',
 			images: ['product.PNG', 'ss_main.jpg', '2.gif', '3.gif'],
@@ -314,20 +326,6 @@
 			tags: ['CMS & Web Platforms'],
 			featured: false
 		},
-		{
-			title: 'How This Site Is Built',
-			summary: 'One PHP preprocess, one vanilla-JS module, one render path — the whole codebase stays at inspection size.',
-			description: 'A deliberately bounded stack: static PHP strips legacy comment blocks into clean HTML, and a single data-driven vanilla-JS module (<code>project-grid.js</code>) renders both project grids from one data source — no build step, no framework, no bundler.<br><br>A pre-commit Playwright smoke test guards every change (23 checks); CI rebuilds from source on every push, enforces a Lighthouse performance budget (0.8+ perf, ≤300KB JS, ≤1200KB total), and ships through Netlify + Cloudflare with an automated edge-purge via <code>deploy.ps1</code>.',
-			folder: 'site_architecture',
-			cover: 'cover.svg',
-			images: [],
-			imgTitles: [],
-			buttons: [
-				{ title: 'GitHub', url: 'https://github.com/CarsonBytes/portfolio' }
-			],
-			tags: ['Open Source'],
-			featured: false
-		}
 	];
 
 	var caseStudies = {
