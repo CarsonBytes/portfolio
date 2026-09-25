@@ -65,6 +65,21 @@
 			featured: false
 		},
 		{
+			title: 'SpendLens — Personal Credit Card Spend Monitor',
+			summary: 'Playwright-assisted bank sync + real data pipeline — not just a demo.',
+			description: 'A personal credit-card spend monitor that ingests bank statements via CSV/XLSX/PDF import or assisted Playwright automation, normalizes and deduplicates merchants with fuzzy matching, and auto-categorizes every transaction into 13 categories — with rule-first classification remembered across imports.<br><br>The dashboard shows real analytics: daily burn rate, end-of-month forecast, MoM/YoY comparisons with proper partial-month handling, recurring-charge detection with price-hike flags, and an insights feed — all server-side aggregated from Supabase. 13 months of dummy data ship so both MoM and YoY tables render on day one, with every partial/missing period honestly labeled.',
+			folder: 'spendlens',
+			cover: 'landing.png',
+			images: ['landing.png', 'compare.png'],
+			imgTitles: ['Dashboard — KPI cards, monthly bar, category donut', 'Compare — MoM stacked bar + YoY table'],
+			buttons: [
+				{ title: 'Live Demo', url: 'https://carsonng.short.gy/spendlens-demo' },
+				{ title: 'GitHub', url: 'https://carsonng.short.gy/spendlens-demo-github' }
+			],
+			tags: ['Structural Anti-Hallucination'],
+			featured: false
+		},
+		{
 			title: 'Event Radar — AI Event Discovery',
 			summary: 'AI event discovery for Hong Kong with a closed feedback loop and hallucination rejection.',
 			description: 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage-plus-embedding ranking (keyword filter → semantic similarity → LLM rerank on the shortlist only) to keep API costs sane. A closed feedback loop (thumbs up/down) adjusts per-user interest weights over time, and every LLM-referenced event is validated against the real candidate set before being trusted — hallucinated IDs are rejected, not displayed.<br><br>150 tests, a bilingual disclaimer, and Crawl-delay-compliant scraping — operated, not just shipped once: real production bugs found and fixed live, including a missing Cache-Control header silently serving stale JS to every visitor and an HKT day-boundary bug undercounting daily LLM usage.',
@@ -124,21 +139,6 @@
 				{ title: 'GitHub', url: 'https://github.com/CarsonBytes/portfolio' }
 			],
 			tags: ['Open Source'],
-			featured: false
-		},
-		{
-			title: 'SpendLens — Personal Credit Card Spend Monitor',
-			summary: 'Playwright-assisted bank sync + real data pipeline — not just a demo.',
-			description: 'A personal credit-card spend monitor that ingests bank statements via CSV/XLSX/PDF import or assisted Playwright automation, normalizes and deduplicates merchants with fuzzy matching, and auto-categorizes every transaction into 13 categories — with rule-first classification remembered across imports.<br><br>The dashboard shows real analytics: daily burn rate, end-of-month forecast, MoM/YoY comparisons with proper partial-month handling, recurring-charge detection with price-hike flags, and an insights feed — all server-side aggregated from Supabase. 13 months of dummy data ship so both MoM and YoY tables render on day one, with every partial/missing period honestly labeled.',
-			folder: 'spendlens',
-			cover: 'landing.png',
-			images: ['landing.png', 'compare.png'],
-			imgTitles: ['Dashboard — KPI cards, monthly bar, category donut', 'Compare — MoM stacked bar + YoY table'],
-			buttons: [
-				{ title: 'Live Demo', url: 'https://carsonng.short.gy/spendlens-demo' },
-				{ title: 'GitHub', url: 'https://carsonng.short.gy/spendlens-demo-github' }
-			],
-			tags: ['Structural Anti-Hallucination'],
 			featured: false
 		},
 		{
