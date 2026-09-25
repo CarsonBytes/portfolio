@@ -69,7 +69,7 @@
 			summary: 'Playwright-assisted bank sync + real data pipeline — not just a demo.',
 			description: 'A personal credit-card spend monitor that ingests bank statements via CSV/XLSX/PDF import or assisted Playwright automation, normalizes and deduplicates merchants with fuzzy matching, and auto-categorizes every transaction into 13 categories — with rule-first classification remembered across imports.<br><br>The dashboard shows real analytics: daily burn rate, end-of-month forecast, MoM/YoY comparisons with proper partial-month handling, recurring-charge detection with price-hike flags, and an insights feed — all server-side aggregated from Supabase. 13 months of dummy data ship so both MoM and YoY tables render on day one, with every partial/missing period honestly labeled.',
 			folder: 'spendlens',
-			cover: 'landing.png',
+			cover: 'cover_thumb.png',
 			images: ['landing.png', 'compare.png'],
 			imgTitles: ['Dashboard — KPI cards, monthly bar, category donut', 'Compare — MoM stacked bar + YoY table'],
 			buttons: [
