@@ -71,7 +71,7 @@
 			folder: 'spendlens',
 			cover: 'cover_thumb.png',
 			images: ['landing.png', 'compare.png'],
-			imgTitles: ['Dashboard — KPI cards, monthly bar, category donut', 'Compare — MoM stacked bar + YoY table'],
+			imgTitles: ['Dashboard — KPI cards, charts, and insights', 'Dashboard — spend overview with monthly trends'],
 			buttons: [
 				{ title: 'Live Demo', url: 'https://carsonng.short.gy/spendlens-demo' },
 				{ title: 'GitHub', url: 'https://carsonng.short.gy/spendlens-demo-github' }
