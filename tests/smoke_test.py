@@ -33,10 +33,10 @@ KNOWN_BENIGN_ERROR_PATTERNS = [
 ]
 
 AI_TAB_COUNTS = {
-    "All": 7,
+    "All": 8,
     "Human-in-the-Loop Checkpoints": 1,
     "Deterministic Gates over LLM Judgment": 2,
-    "Structural Anti-Hallucination": 2,
+    "Structural Anti-Hallucination": 3,
     "Automated Compliance Gating": 2,
 }
 
@@ -52,10 +52,11 @@ OTHER_TAB_COUNTS = {
 HASH_TITLE_CHECKS = {
     0: "Command Deck",
     1: "Quantitative Trade-Analysis Platform",
-    6: "AI Regulation Radar",
-    7: "How This Site Is Built",
-    8: "e-Learning for HKSARS",
-    22: "Citic Securities Broker Site",
+    6: "Event Radar",
+    7: "AI Regulation Radar",
+    8: "How This Site Is Built",
+    9: "e-Learning for HKSARS",
+    23: "Citic Securities Broker Site",
 }
 
 FEATURED_TITLES = {"Quantitative Trade-Analysis Platform", "Command Deck"}
@@ -112,7 +113,7 @@ def run_browser_checks(base_url):
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        page = browser.new_page(viewport={"width": 1400, "height": 1000})
+        page = browser.new_page(viewport={"width": 1400, "height": 1000}, color_scheme="dark")
         page.on("console", lambda msg: console_errors.append(msg.text) if msg.type == "error" else None)
         page.on("response", lambda r: bad_responses.append((r.url, r.status)) if r.status >= 400 else None)
 
@@ -128,7 +129,7 @@ def run_browser_checks(base_url):
 
         # -- AI & Governance Projects grid --
         ai_cards = page.locator("#project-grid .project-card")
-        check("AI grid has 7 cards", ai_cards.count() == 7, f"got {ai_cards.count()}")
+        check("AI grid has 8 cards", ai_cards.count() == 8, f"got {ai_cards.count()}")
 
         ai_tabs = page.locator("#project-filter-nav a").all_text_contents()
         ai_tab_map = {}
@@ -163,7 +164,7 @@ def run_browser_checks(base_url):
         # -- filtering actually changes what's visible --
         page.locator("#project-filter-nav a", has_text=re.compile(r"^Structural Anti-Hallucination")).click()
         visible = page.locator("#project-grid .project-card:not([hidden])").count()
-        check("AI filter narrows to 2 visible cards", visible == 2, f"got {visible}")
+        check("AI filter narrows to 3 visible cards", visible == 3, f"got {visible}")
         page.locator("#project-filter-nav a", has_text=re.compile(r"^All")).click()
 
         page.locator("#other-filter-nav a", has_text=re.compile(r"^E-Commerce & Payments")).click()
@@ -190,13 +191,19 @@ def run_browser_checks(base_url):
         page.goto(base_url, wait_until="networkidle", timeout=15000)
 
         # -- dark mode toggle (still jQuery-dependent; verify it didn't break) --
+        # color_scheme=dark makes main.js seed localStorage so the page loads
+        # with the switch ON; toggling then must swap the logo White -> colour.
         github_logo = page.locator("img.github_logo")
         before_src = github_logo.get_attribute("src")
         dark_switch = page.locator("#darkSwitch")
         dark_switch.click(force=True)
         page.wait_for_timeout(200)
         after_src = github_logo.get_attribute("src")
-        check("dark mode toggle swaps GitHub logo", before_src != after_src, f"{before_src} -> {after_src}")
+        check(
+            "dark mode toggle swaps GitHub logo",
+            before_src != after_src and after_src.endswith("/GitHub_Logo.png"),
+            f"{before_src} -> {after_src}",
+        )
         dark_switch.click(force=True)
 
         browser.close()

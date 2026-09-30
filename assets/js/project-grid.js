@@ -114,8 +114,8 @@
 			description: 'A personal ops center for a small fleet of live services: cross-project LLM cost tracking, service-health monitoring, and Telegram alerting, evolved into real agent-safety infrastructure. A deliberate quarantine/restart-eligibility gate distinguishes "an operator paused this on purpose" from "this process is actually dead," so automated recovery never fights a deliberate hold.<br><br>Monitors 9 services across the whole personal SaaS fleet with live uptime tracking, auto-heal, and an incident log — the Governance tab shown here captures a real quarantine lock engaged on a live service, not a mocked-up state.',
 			folder: 'command_deck',
 			cover: 'cover_thumb.png',
-			images: ['governance_lock.png', 'landing.png', 'cost_usage.png', 'reliability.png', 'governance.png'],
-			imgTitles: ['GOVERNANCE — active quarantine/lock state', 'OVERVIEW — fleet health & status (tabs on top)', 'COST & USAGE — cross-project LLM spend tracking (tabs on top)', 'RELIABILITY & INCIDENTS — uptime & incident log (tabs on top)', 'GOVERNANCE — policy & controls (tabs on top)'],
+			images: ['governance_lock.png', 'overview.png', 'supabase.png', 'cost_usage.png', 'reliability.png', 'governance.png', 'access_log.png'],
+			imgTitles: ['GOVERNANCE — active quarantine/lock state', 'OVERVIEW — fleet health & status (tabs on top)', 'SUPABASE — request & egress metering (tabs on top)', 'COST & USAGE — cross-project LLM spend tracking (tabs on top)', 'RELIABILITY & INCIDENTS — uptime & incident log (tabs on top)', 'GOVERNANCE — policy & controls (tabs on top)', 'ACCESS LOG — human visits & traffic mix (tabs on top)'],
 			buttons: [
 				{ title: 'Live Demo', url: 'https://carsonng.short.gy/command-deck' },
 				{ title: 'GitHub', url: 'https://carsonng.short.gy/command-deck-github' }
