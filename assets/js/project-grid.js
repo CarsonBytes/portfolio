@@ -5,33 +5,20 @@
 
 	var aiProjects = [
 		{
-			title: 'Change Impact Assessor — Human-in-the-Loop AI Risk Gate',
-			summary: 'Human-in-the-loop AI risk gate — HIGH-risk changes pause for real sign-off, not a label.',
-			description: 'A retrieval-grounded risk assessor for code/infra changes, deployed via Docker on Hugging Face Spaces with GitHub Actions CI on every push. HIGH-risk changes pause a LangGraph workflow behind a real human-in-the-loop checkpoint — not just an advisory label — with structural anti-hallucination guards.<br><br>Verified live against a production endpoint, with CI-tracked precision/recall scored separately, not a single blended metric.',
-			folder: 'change_impact_assessor',
+			title: 'Command Deck',
+			summary: 'Ops center for a personal SaaS fleet — cost tracking, health checks, and a real quarantine gate.',
+			description: 'A personal ops center for a small fleet of live services: cross-project LLM cost tracking, service-health monitoring, and Telegram alerting, evolved into real agent-safety infrastructure. A deliberate quarantine/restart-eligibility gate distinguishes "an operator paused this on purpose" from "this process is actually dead," so automated recovery never fights a deliberate hold.<br><br>Monitors 9 services across the whole personal SaaS fleet with live uptime tracking, auto-heal, and an incident log — the Governance tab shown here captures a real quarantine lock engaged on a live service, not a mocked-up state.',
+			folder: 'command_deck',
 			cover: 'cover_thumb.png',
-			images: ['landing.png', 'assessment_result.png'],
-			imgTitles: ['Change Impact Assessor input form', 'HIGH-risk assessment pending human sign-off'],
+			images: ['governance_lock.png', 'overview.png', 'supabase.png', 'cost_usage.png', 'reliability.png', 'governance.png', 'access_log.png'],
+			imgTitles: ['GOVERNANCE — active quarantine/lock state', 'OVERVIEW — fleet health & status (tabs on top)', 'SUPABASE — request & egress metering (tabs on top)', 'COST & USAGE — cross-project LLM spend tracking (tabs on top)', 'RELIABILITY & INCIDENTS — uptime & incident log (tabs on top)', 'GOVERNANCE — policy & controls (tabs on top)', 'ACCESS LOG — human visits & traffic mix (tabs on top)'],
 			buttons: [
-				{ title: 'Live Demo', url: 'https://carsonng.short.gy/change-impact-assessor' },
-				{ title: 'GitHub', url: 'https://carsonng.short.gy/change-impact-assessor-github' }
+				{ title: 'Live Demo', url: 'https://carsonng.short.gy/command-deck' },
+				{ title: 'GitHub', url: 'https://carsonng.short.gy/command-deck-github' }
 			],
-			tags: ['Human-in-the-Loop Checkpoints'],
-			featured: false
-		},
-		{
-			title: 'AWS AI Code Review & Security Scanning Demo',
-			summary: 'Automated PR gate: Amazon Q + Inspector block merges on real, caught vulnerabilities.',
-			description: 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
-			folder: 'aws_code_review',
-			cover: 'cover_thumb.png',
-			images: ['pr_overview.png', 'q_developer_review.png'],
-			imgTitles: ['Real PR showing automated review bots', 'Amazon Q Developer security findings'],
-			buttons: [
-				{ title: 'GitHub', url: 'https://carsonng.short.gy/aws-code-review-github' }
-			],
-			tags: ['Automated Compliance Gating'],
-			featured: false
+			tags: ['Deterministic Gates over LLM Judgment'],
+			featured: true,
+			featuredOrder: 0
 		},
 		{
 			title: 'Quantitative Trade-Analysis Platform',
@@ -50,16 +37,30 @@
 			featuredOrder: 1
 		},
 		{
-			title: 'Sprint Analyzer — AI Sprint Retrospective Generator',
-			summary: 'Pandas computes every metric, the LLM only writes prose — no invented numbers.',
-			description: 'An AI sprint retrospective generator built to give engineering leads a trustworthy read on team delivery — a deterministic-numbers / LLM-prose split means pandas computes every metric from real Jira/ClickUp exports, and the LLM is structurally barred from inventing numbers, only writing prose.<br><br>110+ unit tests run without an API key; validated against real production sprint data from teams I\'ve led.',
-			folder: 'sprint_analyzer',
+			title: 'AWS AI Code Review & Security Scanning Demo',
+			summary: 'Automated PR gate: Amazon Q + Inspector block merges on real, caught vulnerabilities.',
+			description: 'An automated pull-request gate combining Amazon Q Developer (AI-powered code review) and Amazon Inspector (security scanning) on AWS — every PR is reviewed and scanned before merge, with critical findings blocking until resolved, not just flagged.<br><br>Built on a real example PR: the bots caught an IAM role with AdministratorAccess, a vulnerable dependency with a known CVE, and a missing CloudFormation security property — all before merge.',
+			folder: 'aws_code_review',
 			cover: 'cover_thumb.png',
-			images: ['landing.png'],
-			imgTitles: ['Sprint Analyzer dashboard'],
+			images: ['pr_overview.png', 'q_developer_review.png'],
+			imgTitles: ['Real PR showing automated review bots', 'Amazon Q Developer security findings'],
 			buttons: [
-				{ title: 'Live Demo', url: 'https://carsonng.short.gy/sprint-analyzer' },
-				{ title: 'GitHub', url: 'https://carsonng.short.gy/sprint-analyzer-carsonng' }
+				{ title: 'GitHub', url: 'https://carsonng.short.gy/aws-code-review-github' }
+			],
+			tags: ['Automated Compliance Gating'],
+			featured: false
+		},
+		{
+			title: 'Event Radar — AI Event Discovery',
+			summary: 'AI event discovery for Hong Kong with a closed feedback loop and hallucination rejection.',
+			description: 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage-plus-embedding ranking (keyword filter → semantic similarity → LLM rerank on the shortlist only) to keep API costs sane. A closed feedback loop (thumbs up/down) adjusts per-user interest weights over time, and every LLM-referenced event is validated against the real candidate set before being trusted — hallucinated IDs are rejected, not displayed.<br><br>150 tests, a bilingual disclaimer, and Crawl-delay-compliant scraping — operated, not just shipped once: real production bugs found and fixed live, including a missing Cache-Control header silently serving stale JS to every visitor and an HKT day-boundary bug undercounting daily LLM usage.',
+			folder: 'event_radar',
+			cover: 'cover_thumb.png',
+			images: ['landing.png', 'swipe.png'],
+			imgTitles: ['Event Radar public demo feed', 'Swipe-deck discovery mode'],
+			buttons: [
+				{ title: 'Live Demo', url: 'https://carsonng.short.gy/event-radar-demo' },
+				{ title: 'GitHub', url: 'https://carsonng.short.gy/event-radar-github' }
 			],
 			tags: ['Structural Anti-Hallucination'],
 			featured: false
@@ -80,21 +81,6 @@
 			featured: false
 		},
 		{
-			title: 'Event Radar — AI Event Discovery',
-			summary: 'AI event discovery for Hong Kong with a closed feedback loop and hallucination rejection.',
-			description: 'An AI-powered event discovery assistant for Hong Kong that I conceived, built, and now operate end-to-end: tell it what you\'re into and it surfaces matching events, ranked and explained by an LLM via two-stage-plus-embedding ranking (keyword filter → semantic similarity → LLM rerank on the shortlist only) to keep API costs sane. A closed feedback loop (thumbs up/down) adjusts per-user interest weights over time, and every LLM-referenced event is validated against the real candidate set before being trusted — hallucinated IDs are rejected, not displayed.<br><br>150 tests, a bilingual disclaimer, and Crawl-delay-compliant scraping — operated, not just shipped once: real production bugs found and fixed live, including a missing Cache-Control header silently serving stale JS to every visitor and an HKT day-boundary bug undercounting daily LLM usage.',
-			folder: 'event_radar',
-			cover: 'cover_thumb.png',
-			images: ['landing.png', 'swipe.png'],
-			imgTitles: ['Event Radar public demo feed', 'Swipe-deck discovery mode'],
-			buttons: [
-				{ title: 'Live Demo', url: 'https://carsonng.short.gy/event-radar-demo' },
-				{ title: 'GitHub', url: 'https://carsonng.short.gy/event-radar-github' }
-			],
-			tags: ['Structural Anti-Hallucination'],
-			featured: false
-		},
-		{
 			title: 'AI Regulation Radar',
 			summary: 'Diffs EU AI Act, NIST, and HK PCPD text changes into plain-English impact assessments.',
 			description: 'Monitors EU AI Act, NIST AI RMF, and HK PCPD regulatory sources, diffs legal text changes, and generates plain-English impact assessments via RAG + LLM. Public and private views are the same running app filtered by content sensitivity, not just access — a real architectural split between who can reach it and what they\'re shown.<br><br>Deployed on its own GCP VM behind systemd + a dedicated Cloudflare Tunnel, with a daily cron-driven check pipeline monitoring 4 regulatory sources for real text changes.',
@@ -109,20 +95,34 @@
 			featured: false
 		},
 		{
-			title: 'Command Deck',
-			summary: 'Ops center for a personal SaaS fleet — cost tracking, health checks, and a real quarantine gate.',
-			description: 'A personal ops center for a small fleet of live services: cross-project LLM cost tracking, service-health monitoring, and Telegram alerting, evolved into real agent-safety infrastructure. A deliberate quarantine/restart-eligibility gate distinguishes "an operator paused this on purpose" from "this process is actually dead," so automated recovery never fights a deliberate hold.<br><br>Monitors 9 services across the whole personal SaaS fleet with live uptime tracking, auto-heal, and an incident log — the Governance tab shown here captures a real quarantine lock engaged on a live service, not a mocked-up state.',
-			folder: 'command_deck',
+			title: 'Sprint Analyzer — AI Sprint Retrospective Generator',
+			summary: 'Pandas computes every metric, the LLM only writes prose — no invented numbers.',
+			description: 'An AI sprint retrospective generator built to give engineering leads a trustworthy read on team delivery — a deterministic-numbers / LLM-prose split means pandas computes every metric from real Jira/ClickUp exports, and the LLM is structurally barred from inventing numbers, only writing prose.<br><br>110+ unit tests run without an API key; validated against real production sprint data from teams I\'ve led.',
+			folder: 'sprint_analyzer',
 			cover: 'cover_thumb.png',
-			images: ['governance_lock.png', 'overview.png', 'supabase.png', 'cost_usage.png', 'reliability.png', 'governance.png', 'access_log.png'],
-			imgTitles: ['GOVERNANCE — active quarantine/lock state', 'OVERVIEW — fleet health & status (tabs on top)', 'SUPABASE — request & egress metering (tabs on top)', 'COST & USAGE — cross-project LLM spend tracking (tabs on top)', 'RELIABILITY & INCIDENTS — uptime & incident log (tabs on top)', 'GOVERNANCE — policy & controls (tabs on top)', 'ACCESS LOG — human visits & traffic mix (tabs on top)'],
+			images: ['landing.png'],
+			imgTitles: ['Sprint Analyzer dashboard'],
 			buttons: [
-				{ title: 'Live Demo', url: 'https://carsonng.short.gy/command-deck' },
-				{ title: 'GitHub', url: 'https://carsonng.short.gy/command-deck-github' }
+				{ title: 'Live Demo', url: 'https://carsonng.short.gy/sprint-analyzer' },
+				{ title: 'GitHub', url: 'https://carsonng.short.gy/sprint-analyzer-carsonng' }
 			],
-			tags: ['Deterministic Gates over LLM Judgment'],
-			featured: true,
-			featuredOrder: 0
+			tags: ['Structural Anti-Hallucination'],
+			featured: false
+		},
+		{
+			title: 'Change Impact Assessor — Human-in-the-Loop AI Risk Gate',
+			summary: 'Human-in-the-loop AI risk gate — HIGH-risk changes pause for real sign-off, not a label.',
+			description: 'A retrieval-grounded risk assessor for code/infra changes, deployed via Docker on Hugging Face Spaces with GitHub Actions CI on every push. HIGH-risk changes pause a LangGraph workflow behind a real human-in-the-loop checkpoint — not just an advisory label — with structural anti-hallucination guards.<br><br>Verified live against a production endpoint, with CI-tracked precision/recall scored separately, not a single blended metric.',
+			folder: 'change_impact_assessor',
+			cover: 'cover_thumb.png',
+			images: ['landing.png', 'assessment_result.png'],
+			imgTitles: ['Change Impact Assessor input form', 'HIGH-risk assessment pending human sign-off'],
+			buttons: [
+				{ title: 'Live Demo', url: 'https://carsonng.short.gy/change-impact-assessor' },
+				{ title: 'GitHub', url: 'https://carsonng.short.gy/change-impact-assessor-github' }
+			],
+			tags: ['Human-in-the-Loop Checkpoints'],
+			featured: false
 		}
 	];
 

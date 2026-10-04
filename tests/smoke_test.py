@@ -52,8 +52,8 @@ OTHER_TAB_COUNTS = {
 HASH_TITLE_CHECKS = {
     0: "Command Deck",
     1: "Quantitative Trade-Analysis Platform",
-    6: "Event Radar",
-    7: "AI Regulation Radar",
+    6: "Sprint Analyzer",
+    7: "Change Impact Assessor",
     8: "How This Site Is Built",
     9: "e-Learning for HKSARS",
     23: "Citic Securities Broker Site",
