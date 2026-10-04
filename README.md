@@ -2,7 +2,7 @@
 
 [carsonng.com](https://carsonng.com) — AI Governance Leadership · Agentic AI Engineering · AWS Solutions Architect Professional
 
-18 years of cross-border engineering experience (Germany + Hong Kong) across ERP systems, applied AI engineering, and scalable cloud solutions. PMP + CISA certified, AIGP (AI Governance Professional) in progress. This repo is the source for my personal portfolio site.
+18 years of cross-border engineering experience (Germany + Hong Kong) across ERP systems, applied AI engineering, and scalable cloud solutions. PMP + CISA certified; leading the ISO/IEC 27001 (ISMS) implementation as lead implementer. This repo is the source for my personal portfolio site.
 
 ## AI Governance Philosophy
 
@@ -43,7 +43,8 @@ The common thread: governance mechanisms that are load-bearing parts of the syst
 - Professional Scrum Master™ II (PSM II)
 - Microsoft Certified: Azure AI Engineer Associate
 - Zend Certified Engineer
-- AIGP – Artificial Intelligence Governance Professional *(in progress)*
+- AIGP – Artificial Intelligence Governance Professional *(on hold — parked in favour of ISO/IEC 27001)*
+- ISO/IEC 27001 (ISMS) implementation *(in progress — lead implementer role, not yet certified)*
 
 ## How this site is built
 
